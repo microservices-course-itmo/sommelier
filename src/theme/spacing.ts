@@ -1,15 +1,4 @@
-export type ThemeSpacing = {
-  extraSmall: string;
-  subtitle: string;
-  subSmall: string;
-  small: string;
-  subMedium: string;
-  medium: string;
-  large: string;
-  ultraLarge: string;
-};
-
-export const spacing: ThemeSpacing = {
+export const spacing = {
   extraSmall: '1rem',
   subSmall: '1.5rem',
   subtitle: '1.75rem',

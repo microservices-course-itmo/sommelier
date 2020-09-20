@@ -1,10 +1,8 @@
-import { DefaultTheme } from 'styled-components';
-
 import { breakpoints } from './breakpoints';
-import { colors } from './colors';
+import { colors } from './Colors/colors';
 import { spacing } from './spacing';
 
-const theme: DefaultTheme = {
+const theme = {
   colors: {
     ...colors,
   },

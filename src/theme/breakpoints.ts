@@ -1,12 +1,4 @@
-export type ThemeBreakpoints = {
-  forPhoneOnly: number;
-  forTabletPortraitUp: number;
-  forTabletLandscapeUp: number;
-  forDesktopUp: number;
-  forBigDesktopUp: number;
-};
-
-export const breakpoints: ThemeBreakpoints = {
+export const breakpoints = {
   forPhoneOnly: 599,
   forTabletPortraitUp: 600,
   forTabletLandscapeUp: 900,

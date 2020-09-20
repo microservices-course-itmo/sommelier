@@ -28,11 +28,9 @@ Run inside another terminal:
 yarn storybook
 ```
 
-This loads the stories from `./stories`.
-
 > NOTE: Stories should reference the components as if using the library, similar to the example playground. This means importing from the root project directory. This has been aliased in the tsconfig and the storybook webpack config as a helper.
 
-### Example
+### Button
 
 Then run the example inside another:
 
@@ -62,12 +60,12 @@ This is the folder structure we set up for you:
 
 ```txt
 /example
-  index.html
-  index.tsx       # test your component here in a demo app
+  colors.html
+  colors.tsx       # test your component here in a demo app
   package.json
   tsconfig.json
 /src
-  index.tsx       # EDIT THIS
+  colors.tsx       # EDIT THIS
 /test
   blah.test.tsx   # EDIT THIS
 .gitignore
@@ -102,7 +100,7 @@ A simple action is included that runs these steps on all pushes:
 Please see the main `tsdx` [optimizations docs](https://github.com/palmerhq/tsdx#optimizations). In particular, know that you can take advantage of development-only optimizations:
 
 ```js
-// ./types/index.d.ts
+// ./types/colors.d.ts
 declare var __DEV__: boolean;
 
 // inside your code...
@@ -117,9 +115,9 @@ You can also choose to install and use [invariant](https://github.com/palmerhq/t
 
 CJS, ESModules, and UMD module formats are supported.
 
-The appropriate paths are configured in `package.json` and `dist/index.js` accordingly. Please report if any issues are found.
+The appropriate paths are configured in `package.json` and `dist/colors.js` accordingly. Please report if any issues are found.
 
-## Deploying the Example Playground
+## Deploying the Button Playground
 
 The Playground is just a simple [Parcel](https://parceljs.org) app, you can deploy it anywhere you would normally deploy that. Here are some guidelines for **manually** deploying with the Netlify CLI (`npm i -g netlify-cli`):
 
