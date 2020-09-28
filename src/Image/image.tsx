@@ -4,17 +4,19 @@ import * as Styled from './image.styled';
 import { border } from './enums/border';
 
 type Props = {
-  image: ImageSourcePropType;
+  image?: ImageSourcePropType;
   width: number;
   height: number;
   border?: border;
-  borderRadius: number;
+  borderRadius?: number;
 }
 
-const MyImage = ({ image, width, height, borderRadius}: Props): ReactElement => (
+const MyImage = ({ width, height, borderRadius}: Props): ReactElement => (
   <Styled.StyledImage>
     <Image
-      source={image}
+      source={{
+        uri: 'https://reactnative.dev/img/tiny_logo.png',
+      }}
       width={width}
       height={height}
       borderRadius={borderRadius}

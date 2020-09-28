@@ -1,5 +1,4 @@
 import React from 'react';
-import { ImageURISource } from 'react-native';
 import { number, select } from '@storybook/addon-knobs';
 import {  } from '@storybook/addon-actions'
 import MyImage from './image';
@@ -17,11 +16,10 @@ export default {
 export const imageKnob = () => {
   <StyledWrapper>
     <MyImage
-      // ???
-      image={new ImageURISource()}
       width={number('width', 256)}
       height={number('height', 256)}
       border={select('border', border, border.SOLID)}
+      borderRadius={number('borderRadius', 0)}
     ></MyImage>
   </StyledWrapper>
 }
