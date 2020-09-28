@@ -8,3 +8,9 @@ export const spacing = {
   large: '4rem',
   ultraLarge: '5rem',
 };
+
+export const SIZE = {
+  sm: "sm",
+  md: "md",
+  lg: "lg"
+} as const;
