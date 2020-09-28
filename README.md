@@ -22,5 +22,13 @@ Run inside another terminal:
 yarn storybook
 ```
 
+### Testing
+
+Run:
+
+```bash
+npm test
+```
+
 ## License 
 [MIT](https://choosealicense.com/licenses/mit/) 
