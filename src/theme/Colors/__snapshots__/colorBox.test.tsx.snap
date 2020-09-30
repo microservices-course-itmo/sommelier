@@ -1,6 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ColorBox component matches the snapshot 1`] = `
+exports[`ColorBox component matches the snapshot black 1`] = `
+<div
+  className="sc-bdnylx jUNzKf"
+  color="#000000"
+  onClick={[Function]}
+  onMouseLeave={[Function]}
+>
+  <span
+    className="sc-gtssRu fvPYcd"
+    color="white"
+  >
+    black
+  </span>
+  <span
+    className="sc-gtssRu fvPYcd"
+    color="white"
+  >
+    #000000
+  </span>
+</div>
+`;
+
+exports[`ColorBox component matches the snapshot white 1`] = `
 <div
   className="sc-bdnylx fuJNuL"
   color="#FFFFFF"
