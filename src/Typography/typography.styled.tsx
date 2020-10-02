@@ -20,10 +20,12 @@ export const THEME = {
 }
 
 type Props = {
-  color: string,
-  bold: boolean,
-  block: boolean
-  size?: keyof typeof SIZE
+  color: string;
+  bold?: boolean;
+  fontWeightText?: number;
+  italic: boolean;
+  block: boolean;
+  size?: keyof typeof SIZE;
   crossedOut?: boolean;
 };
 
@@ -33,6 +35,7 @@ export const StyledH1 = styled.h1<Props>`
   color: ${({ color }) => color};
   font-size: 32px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
@@ -40,6 +43,7 @@ export const StyledH2 = styled.h2<Props>`
   color: ${({ color }) => color};
   font-size: 24px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
@@ -47,6 +51,7 @@ export const StyledH3 = styled.h3<Props>`
   color: ${({ color }) => color};
   font-size: 18.72px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
@@ -54,6 +59,7 @@ export const StyledH4 = styled.h4<Props>`
   color: ${({ color }) => color};
   font-size: 16px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
@@ -61,6 +67,7 @@ export const StyledH5 = styled.h5<Props>`
   color: ${({ color }) => color};
   font-size: 13.28px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
@@ -68,12 +75,25 @@ export const StyledH6 = styled.h6<Props>`
   color: ${({ color }) => color};
   font-size: 10.72px;
   font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'}
 `;
 
 export const StyledText = styled.span<Props>`
   color: ${({ color }) => color};
-  font-weight: ${({ bold }) => bold ? 900 : 100};
+  font-family: 'PT Sans';
+  font-weight: ${({ fontWeightText }) => fontWeightText != undefined && fontWeightText > 400 ? fontWeightText : 400};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
+  display: ${({ block }) => block ? 'block' : 'inline'};
+  ${({ size }) => !!size && THEME.size[size]};
+  text-decoration: ${({ crossedOut }) => crossedOut ? 'line-through' : 'none'};
+`;
+
+export const StyledSubtitle = styled.span<Props>`
+  color: ${({ color }) => color};
+  font-family: 'Playfair Display';
+  font-weight: ${({ fontWeightText }) => fontWeightText != undefined && fontWeightText > 400 ? fontWeightText : 400};
+  font-style: ${({ italic }) => italic ? 'italic' : 'none'};
   display: ${({ block }) => block ? 'block' : 'inline'};
   ${({ size }) => !!size && THEME.size[size]};
   text-decoration: ${({ crossedOut }) => crossedOut ? 'line-through' : 'none'};
