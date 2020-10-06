@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
     "prestorybook": "rnstl",
-    "lint": "eslint 'App/**/*.{js,ts,tsx}'"
+    "lint": "eslint 'App/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
@@ -20,6 +20,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
+    "react-native-svg": "^12.1.0",
+    "react-native-svg-uri": "^1.2.3",
     "react-native-web": "~0.13.12",
     "styled-components": "^5.2.0"
   },
