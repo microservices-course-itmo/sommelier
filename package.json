@@ -5,6 +5,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "test": "jest",
     "eject": "expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
@@ -29,10 +30,13 @@
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.23",
+    "@storybook/addon-storyshots": "^6.0.26",
     "@storybook/react-native-server": "^5.3.23",
+    "@types/jest": "^26.0.14",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
     "@types/react-native": "~0.63.2",
+    "@types/react-test-renderer": "^16.9.3",
     "@types/styled-components": "^5.1.3",
     "@typescript-eslint/eslint-plugin": "^4.3.0",
     "babel-eslint": "^10.1.0",
@@ -47,7 +51,7 @@
     "eslint-plugin-react-hooks": "^4.1.0",
     "eslint-plugin-react-native": "^3.9.1",
     "husky": "^4.2.5",
-    "jest": "^26.4.0",
+    "jest": "^26.5.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "react-native-storybook-loader": "^2.0.2",
@@ -68,7 +72,10 @@
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
-    ]
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    }
   },
   "config": {
     "react-native-storybook-loader": {
