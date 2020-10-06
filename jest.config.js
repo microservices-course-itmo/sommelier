@@ -1,11 +1,11 @@
 module.exports = {
   verbose: true,
-  rootDir: './App',
-};
+  rootDir: '.',
+}
 
 module.exports = async () => {
   return {
     verbose: true,
-    rootDir: './App',
-  };
-};
+    rootDir: '.',
+  }
+}
