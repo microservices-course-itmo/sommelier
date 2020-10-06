@@ -33,6 +33,8 @@
     "@storybook/addon-ondevice-knobs": "^5.3.23",
     "@storybook/addon-storyshots": "^6.0.26",
     "@storybook/react-native-server": "^5.3.23",
+    "@testing-library/jest-native": "^3.4.3",
+    "@testing-library/react-native": "^7.0.2",
     "@types/jest": "^26.0.14",
     "@types/react": "~16.9.35",
     "@types/react-dom": "~16.9.8",
@@ -61,6 +63,7 @@
     "react-native-storybook-loader": "^2.0.2",
     "react-test-renderer": "^16.13.1",
     "ts-jest": "^26.4.1",
+    "tsdx": "^0.14.0",
     "typescript": "^3.9.7",
     "typescript-styled-plugin": "^0.15.0"
   },
@@ -72,27 +75,12 @@
   },
   "jest": {
     "preset": "react-native",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js"
-    ],
     "setupFilesAfterEnv": [
       "@testing-library/jest-native/extend-expect"
     ],
     "transformIgnorePatterns": [
       "node_modules/(?!(jest-)?react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|@sentry/.*)"
-    ],
-    "transform": {
-      "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-      "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
-    "testPathIgnorePatterns": [
-      "\\.snap$",
-      "<rootDir>/node_modules/"
-    ],
-    "cacheDirectory": ".jest/cache"
+    ]
   },
   "config": {
     "react-native-storybook-loader": {
