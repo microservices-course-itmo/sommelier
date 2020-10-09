@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
     "prestorybook": "rnstl",
-    "lint": "eslint 'App/**/*.{js,ts,tsx}'"
+    "lint": "eslint './App/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
