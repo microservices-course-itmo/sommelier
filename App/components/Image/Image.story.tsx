@@ -1,6 +1,5 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
-import { action } from '@storybook/addon-actions'
 import { withKnobs, number, text } from '@storybook/addon-knobs'
 
 import Image from './image'
@@ -14,6 +13,8 @@ const defaultImage = () => (
     )}
     width={number('width', 128)}
     height={number('height', 128)}
+    border={text('border', '5px solid black')}
+    borderRadius={number('borderRadius', 5)}
   >
     {text('text', 'this is an image')}
   </Image>
@@ -23,4 +24,4 @@ storiesOf('Image', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
   .addDecorator(withKnobs)
-  .add('Default image', defaultImage)
+  .add('default', defaultImage)
