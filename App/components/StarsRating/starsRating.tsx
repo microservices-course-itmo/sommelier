@@ -5,33 +5,29 @@ import SvgUri from 'react-native-svg-uri'
 
 type Props = {
   children: ReactNode
-  score?: number
+  score?: number | undefined
   rating?: number
 }
 
-export const StarsRating = ({
-  children = '',
-  score = 10000,
-  rating = 3,
-}: Props) => {
+const preparedStars = (rating) => {
   let stars = []
   for (let i = 1; i <= 5; i++) {
     let path = require('./filledStar.svg')
-    if (i > rating && i <= rating + 0.5) {
-      path = require('./almostFilledStar.svg')
-    } else if (i > rating) {
+    if (i > rating) {
       path = require('./unfilledStar.svg')
     }
     stars.push(<SvgUri width='25' height='25' source={path} />)
   }
-  return (
-    <Styled.container>
-      <Styled.ratingContainer>
-        {stars}
-        <Styled.ratingText>({score})</Styled.ratingText>
-      </Styled.ratingContainer>
-    </Styled.container>
-  )
+  return stars
 }
+
+export const StarsRating = ({ children = '', score, rating }: Props) => (
+  <Styled.container>
+    <Styled.ratingContainer>
+      <Styled.imageContainer>{preparedStars(rating)}</Styled.imageContainer>
+      <Styled.ratingText>{score ? '(' + score + ')' : ''}</Styled.ratingText>
+    </Styled.ratingContainer>
+  </Styled.container>
+)
 
 export default StarsRating

@@ -11,9 +11,9 @@ export const ratingContainer = styled.View`
   align-items: center;
 `
 
-export const imageContainer = styled.Image`
-  width: 25;
-  height: 25;
+export const imageContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
 `
 
 export const ratingText = styled.Text`
