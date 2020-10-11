@@ -5,16 +5,16 @@ import SvgUri from 'react-native-svg-uri'
 
 type Props = {
   children: ReactNode
-  score?: number | undefined
+  score?: number
   rating?: number
 }
 
 const preparedStars = (rating) => {
   let stars = []
   for (let i = 1; i <= 5; i++) {
-    let path = require('./filledStar.svg')
+    let path = require('../../../assets/images/filledStar.svg')
     if (i > rating) {
-      path = require('./unfilledStar.svg')
+      path = require('../../../assets/images/unfilledStar.svg')
     }
     stars.push(<SvgUri width='25' height='25' source={path} />)
   }
