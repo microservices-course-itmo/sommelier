@@ -1,6 +1,7 @@
 import { colors } from './colors'
 import { fonts } from './fonts'
 import { fontSizes } from './fontSizes'
+import { borders } from './borders'
 
 const theme = {
   colors: {
@@ -12,6 +13,9 @@ const theme = {
   fontSizes: {
     ...fontSizes,
   },
+  borders: {
+    ...borders,
+  }
 }
 
 export default theme
