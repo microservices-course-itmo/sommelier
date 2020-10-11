@@ -1,8 +1,8 @@
 import React from 'react'
-import { H1, H2, H3, H4, H5, H6, Text } from './typography'
-import { storiesOf } from '@storybook/react-native'
-import { boolean, select, text, number } from '@storybook/addon-knobs'
 import styled from 'styled-components/native'
+import { storiesOf } from '@storybook/react-native'
+import { boolean, select } from '@storybook/addon-knobs'
+import { H1, H2, H3, H4, H5, H6, Text } from './typography'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import theme from '../../theme/index'
 
@@ -11,17 +11,11 @@ const StyledWrapper = styled.View`
   flex-direction: column;
 `
 
-const FONTSIZES = Object.keys(theme.fontSizes) as Array<
+const FONT_SIZES = Object.keys(theme.fontSizes) as Array<
   keyof typeof theme.fontSizes
-  >
-const COLORS = Object.keys(theme.colors) as Array<
-  keyof typeof theme.colors
-  >
-const FONTS = Object.keys(theme.fonts) as Array<
-  keyof typeof theme.fonts
-  >
-
-
+>
+const COLORS = Object.keys(theme.colors) as Array<keyof typeof theme.colors>
+const FONTS = Object.keys(theme.fonts) as Array<keyof typeof theme.fonts>
 
 export const list = () => (
   <StyledWrapper>
@@ -110,7 +104,7 @@ export const knobs = () => (
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
       fontFamily={select('font-family', FONTS, FONTS[0])}
-      size={select('text font-size', FONTSIZES, FONTSIZES[0])}
+      size={select('text font-size', FONT_SIZES, FONT_SIZES[0])}
       crossedOut={boolean('cross-out', false)}
     >
       Text value
