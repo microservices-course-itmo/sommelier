@@ -11,9 +11,17 @@ const StyledWrapper = styled.View`
   flex-direction: column;
 `
 
-const SIZES = Object.keys(theme.fontSizes) as Array<
+const FONTSIZES = Object.keys(theme.fontSizes) as Array<
   keyof typeof theme.fontSizes
->
+  >
+const COLORS = Object.keys(theme.colors) as Array<
+  keyof typeof theme.colors
+  >
+const FONTS = Object.keys(theme.fonts) as Array<
+  keyof typeof theme.fonts
+  >
+
+
 
 export const list = () => (
   <StyledWrapper>
@@ -50,59 +58,59 @@ export const list = () => (
 export const knobs = () => (
   <StyledWrapper>
     <H1
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H1 value
     </H1>
     <H2
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H2 value
     </H2>
     <H3
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H3 value
     </H3>
     <H4
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H4 value
     </H4>
     <H5
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H5 value
     </H5>
     <H6
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
     >
       H6 value
     </H6>
     <Text
-      color={select('color', theme.colors, 'black')}
+      color={select('color', COLORS, COLORS[1])}
       bold={boolean('bold', false)}
       italic={boolean('font-style: italic', false)}
-      fontFamily={select('font-family', theme.fonts, theme.fonts.Montserrat)}
-      size={select('text font-size', SIZES, SIZES[0])}
+      fontFamily={select('font-family', FONTS, FONTS[0])}
+      size={select('text font-size', FONTSIZES, FONTSIZES[0])}
       crossedOut={boolean('cross-out', false)}
     >
       Text value

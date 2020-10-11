@@ -5,12 +5,12 @@ import { ReactElement } from 'react'
 
 type Props = {
   children: ReactNode
-  color: string
+  color?: keyof typeof theme.colors
   bold?: boolean
-  italic: boolean
+  italic?: boolean
   size?: keyof typeof theme.fontSizes
   crossedOut?: boolean
-  fontFamily: string
+  fontFamily: keyof typeof theme.fonts
 }
 
 export const H1 = ({ color, children, bold, italic, fontFamily }: Props) => (

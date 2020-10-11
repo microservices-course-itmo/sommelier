@@ -2,11 +2,10 @@ import { render } from '@testing-library/react-native'
 import React from 'react'
 
 import { H1, H2, H3, H4, H5, H6, Text } from './typography'
+import theme from '../../theme'
 
 const defaultProps = {
-  color: 'black',
-  fontFamily: 'PtSans',
-  italic: false
+  fontFamily: theme.fonts.PtSans
 }
 
 describe("Typography component", () => {
