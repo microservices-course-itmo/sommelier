@@ -27,13 +27,10 @@ import { View } from 'react-native'
 import theme from 'sommelier/App/theme'
 import { ThemeProvider } from 'styled-components'
 
-import { H1, H3, Text } from 'sommelier/App/components/Typography'
+import { H1 } from 'sommelier/App/components/Typography'
 import Box from 'sommelier/App/components/Box'
-```
 
-- Use them in your Expo project, for example:
-
-```typescript
+// Use them in your Expo project, for example:
 export default function App() {
   return (
     <View>
