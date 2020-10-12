@@ -16,18 +16,43 @@ You could easily use it with a terminal or an emulator.
 
 ### Usage
 
-The recommended workflow is to run app in one terminal:
+- Add Sommelier to your project: `yarn add sommelier`
 
-```bash
-yarn start
+- Import components that you want to use, for example:
+
+```typescript
+import React from 'react'
+import { View } from 'react-native'
+
+import theme from 'sommelier/App/theme'
+import { ThemeProvider } from 'styled-components'
+
+import { H1, H3, Text } from 'sommelier/App/components/Typography'
+import Box from 'sommelier/App/components/Box'
 ```
 
-Then run either Storybook or the example playground:
+- Use them in your Expo project, for example:
 
-### Storybook
-
-Run inside another terminal:
-
-```bash
-yarn storybook
+```typescript
+export default function App() {
+  return (
+    <View>
+      <ThemeProvider theme={theme}>
+        <Box
+          borderRadius={10}
+          color={'black'}
+          backgroundColor={'grayBackground'}
+          m={5}
+        >
+          <H1 fontFamily={'PtSans'} color={'black'}>
+            ABC
+          </H1>
+          <H1 fontFamily={'PtSans'} color={'black'} bold={true} italic={true}>
+            ABC
+          </H1>
+        </Box>
+      </ThemeProvider>
+    </View>
+  )
+}
 ```

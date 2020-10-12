@@ -7,20 +7,20 @@ import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultBox = () => (
   <Box
-    m={number('m', 0)}
-    mh={number('mh', 0)}
-    mv={number('mv', 0)}
-    ml={number('ml', 0)}
-    mr={number('mr', 0)}
-    mt={number('mt', 0)}
-    mb={number('mb', 0)}
-    p={number('p', 0)}
-    ph={number('ph', 0)}
-    pv={number('pv', 0)}
-    pl={number('pl', 0)}
-    pr={number('pr', 0)}
-    pt={number('pt', 0)}
-    pb={number('pb', 0)}
+    m={number('m', NaN)}
+    mh={number('mh', NaN)}
+    mv={number('mv', NaN)}
+    ml={number('ml', NaN)}
+    mr={number('mr', NaN)}
+    mt={number('mt', NaN)}
+    mb={number('mb', NaN)}
+    p={number('p', NaN)}
+    ph={number('ph', NaN)}
+    pv={number('pv', NaN)}
+    pl={number('pl', NaN)}
+    pr={number('pr', NaN)}
+    pt={number('pt', NaN)}
+    pb={number('pb', NaN)}
     border={{
       borderStyle: select(
         'borderStyle',
