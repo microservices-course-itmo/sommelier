@@ -31,6 +31,6 @@
       }
     ]
   },
-  "include": ["App/**/*"],
+  "include": ["App/**/*", "svg.d.ts"],
   "exclude": ["node_modules"]
 }
