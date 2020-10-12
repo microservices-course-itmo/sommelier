@@ -16,7 +16,7 @@ const defaultImage = () => (
     )}
     width={number('width', 128)}
     height={number('height', 128)}
-    border={select('border', BORDERS, `5px ${BORDERS[0]} gray`)}
+    border={select('border', BORDERS, `5px ${BORDERS[2]} gray`)}
     borderRadius={number('borderRadius', 5)}
   />
 )
