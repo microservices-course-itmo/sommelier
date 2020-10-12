@@ -35,12 +35,7 @@ export default function App() {
   return (
     <View>
       <ThemeProvider theme={theme}>
-        <Box
-          borderRadius={10}
-          color={'black'}
-          backgroundColor={'grayBackground'}
-          m={5}
-        >
+        <Box borderRadius={10} backgroundColor={'grayBackground'} m={5}>
           <H1 fontFamily={'PtSans'} color={'black'}>
             ABC
           </H1>
