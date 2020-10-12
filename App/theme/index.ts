@@ -15,7 +15,7 @@ const theme = {
   },
   borders: {
     ...borders,
-  }
+  },
 }
 
 export default theme

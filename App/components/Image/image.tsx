@@ -1,28 +1,23 @@
-import React, { ReactNode } from 'react'
-import { ImageSourcePropType } from 'react-native'
+import React from 'react'
 import * as Styled from './image.styled'
-import { border } from './types/border'
 
 export type Props = {
   image: string
-  width: number
-  height: number
+  width?: number
+  height?: number
   border?: string
   borderRadius?: number
 }
 
-const Image = ({ image = '', width, height, border, borderRadius }: Props) => {
-  return (
-    <Styled.ImageContainerProps
-      children=''
-      source={{ uri: image }}
-      image={image}
-      width={width}
-      height={height}
-      border={border}
-      borderRadius={borderRadius}
-    ></Styled.ImageContainerProps>
-  )
-}
+const Image = ({ image = '', width, height, border, borderRadius }: Props) => (
+  <Styled.ImageContainer
+    source={{ uri: image }}
+    image={image}
+    width={width}
+    height={height}
+    border={border}
+    borderRadius={borderRadius}
+  />
+)
 
 export default Image

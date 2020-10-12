@@ -1,10 +1,16 @@
 import styled from 'styled-components/native'
-import { Props } from './image'
-import { border as borderType } from './types/border'
 
-export const ImageContainerProps = styled.Image<Props>`
+type ImageContainerProps = {
+  image: string
+  width?: number
+  height?: number
+  border?: string
+  borderRadius?: number
+}
+
+export const ImageContainer = styled.Image<ImageContainerProps>`
   width: ${({ width }) => width || 0}px;
   height: ${({ height }) => height || 0}px;
-  border: ${({ border }) => border || ''};
+  border: ${({ border }) => border || 'none'};
   border-radius: ${({ borderRadius }) => borderRadius || 0}px;
 `

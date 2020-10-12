@@ -1,12 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
 import { withKnobs, number, text, select } from '@storybook/addon-knobs'
-import { border } from './types/border'
+import theme from '../../theme'
 
 import Image from './image'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
-const BORDERS = Object.keys(border) as Array<keyof typeof border>
+const BORDERS = Object.keys(theme.borders) as Array<keyof typeof theme.borders>
 
 const defaultImage = () => (
   <Image
