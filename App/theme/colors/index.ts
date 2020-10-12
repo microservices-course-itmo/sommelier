@@ -1,4 +1,5 @@
 export const colors = {
+  transparent: '#00000000',
   white: '#fff',
   black: '#000',
   lightGray: '#fafbfc',
@@ -12,6 +13,7 @@ export const colors = {
 } as const
 
 export const COLOR_KEYS = {
+  transparent: 'transparent',
   white: 'white',
   black: 'black',
   lightGray: 'lightGray',
