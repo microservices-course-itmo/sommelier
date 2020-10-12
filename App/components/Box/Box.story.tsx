@@ -1,16 +1,9 @@
 import React from 'react'
+import { Text, View } from 'react-native'
 import { storiesOf } from '@storybook/react-native/dist'
+import { withKnobs, text, number, select } from '@storybook/addon-knobs'
 import Box from './box'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  color,
-  select,
-} from '@storybook/addon-knobs'
-import { Text, View } from 'react-native'
 
 const defaultBox = () => (
   <Box
