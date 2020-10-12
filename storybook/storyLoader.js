@@ -5,12 +5,12 @@
 
 function loadStories() {
   require('../App/components/Button/Button.story')
-  require('../App/components/StarsRating/starsRating.story')
+  require('../App/components/Typography/typography.story')
 }
 
 const stories = [
   '../App/components/Button/Button.story',
-  '../App/components/StarsRating/starsRating.story',
+  '../App/components/Typography/typography.story',
 ]
 
 module.exports = {

@@ -1,33 +1,33 @@
-import React, { ReactNode } from 'react'
-import { StyleSheet, Image, View, Text } from 'react-native'
-import * as Styled from './starsRating.styled'
+import React from 'react'
 import SvgUri from 'react-native-svg-uri'
+import * as Styled from './starsRating.styled'
+import filledStar from '../../../assets/images/filledStar.svg'
+import unfilledStar from '../../../assets/images/unfilledStar.svg'
 
 type Props = {
-  children: ReactNode
+  rating: number
   score?: number
-  rating?: number
 }
 
-const preparedStars = (rating) => {
-  let stars = []
-  for (let i = 1; i <= 5; i++) {
-    let path = require('../../../assets/images/filledStar.svg')
+const preparedStars = (rating: number) => {
+  const stars = []
+  for (let i = 1; i <= 5; i += 1) {
     if (i > rating) {
-      path = require('../../../assets/images/unfilledStar.svg')
+      stars.push(<SvgUri width='25' height='25' source={unfilledStar} />)
+    } else {
+      stars.push(<SvgUri width='25' height='25' source={filledStar} />)
     }
-    stars.push(<SvgUri width='25' height='25' source={path} />)
   }
   return stars
 }
 
-export const StarsRating = ({ children = '', score, rating }: Props) => (
-  <Styled.container>
-    <Styled.ratingContainer>
-      <Styled.imageContainer>{preparedStars(rating)}</Styled.imageContainer>
-      <Styled.ratingText>{score ? '(' + score + ')' : ''}</Styled.ratingText>
-    </Styled.ratingContainer>
-  </Styled.container>
+const StarsRating = ({ score, rating }: Props) => (
+  <Styled.Container>
+    <Styled.RatingContainer>
+      <Styled.ImageContainer>{preparedStars(rating)}</Styled.ImageContainer>
+      {score && <Styled.RatingText>{score}</Styled.RatingText>}
+    </Styled.RatingContainer>
+  </Styled.Container>
 )
 
 export default StarsRating

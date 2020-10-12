@@ -1,4 +1,5 @@
 export const fonts = {
-  primary: 'Playfair Display',
-  secondary: 'Montserrat',
+  PtSans: 'Playfair Display',
+  PlayfairDisplay: 'Playfair Display',
+  Montserrat: 'Montserrat',
 }

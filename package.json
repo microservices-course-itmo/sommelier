@@ -8,13 +8,15 @@
     "eject": "expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
+    "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
     "prestorybook": "rnstl",
-    "lint": "eslint 'App/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern"
+    "lint": "eslint 'App/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
     "@storybook/addons": "^6.0.25",
     "@storybook/react-native": "^5.3.23",
+    "eslint-plugin-testing-library": "^3.9.0",
     "expo": "~39.0.2",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
@@ -27,7 +29,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
-    "@storybook/addon-knobs": "^5.3",
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.23",
