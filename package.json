@@ -64,7 +64,7 @@
     "typescript": "^3.9.7",
     "typescript-styled-plugin": "^0.15.0"
   },
-  "private": true,
+  "private": false,
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && yarn lint"
@@ -87,5 +87,21 @@
       "pattern": "**/*.story.tsx",
       "outputFile": "./storybook/storyLoader.js"
     }
-  }
+  },
+  "name": "sommelier",
+  "description": "Sommelier is a React-Native UI library made for WineUp.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservices-course-itmo/sommelier.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "microservices-course-itmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microservices-course-itmo/sommelier/issues"
+  },
+  "homepage": "https://github.com/microservices-course-itmo/sommelier#readme"
 }
