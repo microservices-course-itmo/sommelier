@@ -4,8 +4,7 @@ import { BoxProps } from './box.types'
 
 const Box = ({
   children = '',
-  color,
-  backgroundColor,
+  backgroundColor = 'transparent',
   m,
   mh,
   mv,
@@ -23,28 +22,31 @@ const Box = ({
   border,
   borderRadius,
 }: BoxProps) => (
-  <Styled.BoxContainer
-    color={color}
-    backgroundColor={backgroundColor}
-    m={m}
-    mh={mh}
-    mv={mv}
-    ml={ml}
-    mr={mr}
-    mt={mt}
-    mb={mb}
-    p={p}
-    ph={ph}
-    pv={pv}
-    pl={pl}
-    pr={pr}
-    pt={pt}
-    pb={pb}
-    border={border}
-    borderRadius={borderRadius}
-  >
-    {children}
-  </Styled.BoxContainer>
-)
+    <Styled.BoxContainer
+      backgroundColor={backgroundColor}
+      m={m}
+      mh={mh}
+      mv={mv}
+      ml={ml}
+      mr={mr}
+      mt={mt}
+      mb={mb}
+      p={p}
+      ph={ph}
+      pv={pv}
+      pl={pl}
+      pr={pr}
+      pt={pt}
+      pb={pb}
+      border={Object.assign({
+        borderColor: 'black',
+        borderStyle: 'solid',
+        borderWidth: 0,
+      }, border)}
+      borderRadius={borderRadius}
+    >
+      {children}
+    </Styled.BoxContainer>
+  )
 
 export default Box
