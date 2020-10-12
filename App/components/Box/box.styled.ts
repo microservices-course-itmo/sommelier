@@ -29,26 +29,26 @@ background-color: ${({ backgroundColor, theme }) =>
 
 const getMarginVertical = (mv: number) =>
   `
-margin-left: ${mv * 8} px;
-margin-right: ${mv * 8} px;
+margin-left: ${mv * 8}px;
+margin-right: ${mv * 8}px;
 `
 
 const getMarginHorizontal = (mh: number) =>
   `
-margin-top: ${mh * 8} px;
-margin-bottom: ${mh * 8} px;
+margin-top: ${mh * 8}px;
+margin-bottom: ${mh * 8}px;
 `
 
 const getPaddingVertical = (pv: number) =>
   `
-padding-left: ${pv * 8} px;
-padding-right: ${pv * 8} px;
+padding-left: ${pv * 8}px;
+padding-right: ${pv * 8}px;
 `
 
 const getPaddingHorizontal = (ph: number) =>
   `
-padding-top: ${ph * 8} px;
-padding-bottom: ${ph * 8} px;
+padding-top: ${ph * 8}px;
+padding-bottom: ${ph * 8}px;
 `
 
 const getBorder = (border: BorderType) => {
@@ -56,6 +56,6 @@ const getBorder = (border: BorderType) => {
   return `
 ${(borderWidth || borderWidth === 0) ? `border-width: ${borderWidth}px;` : ''}
 ${(borderStyle && theme.borders[borderStyle]) ? `border-style: ${theme.borders[borderStyle]}` : ''}
-${(borderColor && theme.colors[borderColor]) ? `${theme.colors[borderColor]}` : ''}
+${(borderColor && theme.colors[borderColor]) ? `border-сolor: ${theme.colors[borderColor]}` : ''}
 `
 }

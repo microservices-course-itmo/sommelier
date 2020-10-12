@@ -20,7 +20,7 @@ const Box = ({
   pt,
   pb,
   border,
-  borderRadius,
+  borderRadius = 0,
 }: BoxProps) => (
     <Styled.BoxContainer
       backgroundColor={backgroundColor}
