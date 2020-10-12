@@ -1,49 +1,41 @@
 import React, { ReactNode } from 'react'
+import theme from '../../theme'
+
 import * as Styled from './box.styled'
+
+export type borderType = {
+  borderStyle?: keyof typeof theme.borderStyles
+  borderColor?: keyof typeof theme.colors
+  borderWidth?: number
+}
 
 export type Props = {
   children: ReactNode
-
-  color?: string | undefined
-
-  m?: number | undefined
-
-  mh?: number | undefined
-
-  mv?: number | undefined
-
-  ml?: number | undefined
-
-  mr?: number | undefined
-
-  mt?: number | undefined
-
-  mb?: number | undefined
-
-  p?: number | undefined
-
-  ph?: number | undefined
-
-  pv?: number | undefined
-
-  pl?: number | undefined
-
-  pr?: number | undefined
-
-  pt?: number | undefined
-
-  pb?: number | undefined
-
-  border?: string | undefined
-
-  borderRadius?: string | undefined
-
-  boxShadow?: string | undefined
+  color?: keyof typeof theme.colors
+  backgroundColor?: keyof typeof theme.colors
+  m?: number
+  mh?: number
+  mv?: number
+  ml?: number
+  mr?: number
+  mt?: number
+  mb?: number
+  p?: number
+  ph?: number
+  pv?: number
+  pl?: number
+  pr?: number
+  pt?: number
+  pb?: number
+  border?: borderType
+  borderRadius?: number
+  boxShadow?: string
 }
 
 const Box = ({
   children = '',
   color,
+  backgroundColor,
   m,
   mh,
   mv,
@@ -60,10 +52,10 @@ const Box = ({
   pb,
   border,
   borderRadius,
-  boxShadow,
 }: Props) => (
   <Styled.BoxContainer
     color={color}
+    backgroundColor={backgroundColor}
     m={m}
     mh={mh}
     mv={mv}
@@ -80,7 +72,6 @@ const Box = ({
     pb={pb}
     border={border}
     borderRadius={borderRadius}
-    boxShadow={boxShadow}
   >
     {children}
   </Styled.BoxContainer>
