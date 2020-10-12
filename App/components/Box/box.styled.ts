@@ -19,12 +19,14 @@ ${({ ph }) => (!!ph || ph === 0 ? getPaddingHorizontal(ph) : '')}
 ${({ p }) => (!!p || p === 0 ? `padding: ${p * 8}px;` : '')}
 ${({ border }) => (border ? getBorder(border) : '')}
 ${({ borderRadius }) =>
-    (!!borderRadius || borderRadius === 0)
+    !!borderRadius || borderRadius === 0
       ? `borderRadius: ${borderRadius}px;`
       : ''}
 
 backgroundColor: ${({ backgroundColor, theme }) =>
-    backgroundColor && theme.colors[backgroundColor] ? theme.colors[backgroundColor] : ''};
+    backgroundColor && theme.colors[backgroundColor]
+      ? theme.colors[backgroundColor]
+      : ''};
 `
 
 const getMarginVertical = (mv: number) =>
@@ -41,8 +43,8 @@ marginBottom: ${mh * 8}px;
 
 const getPaddingVertical = (pv: number) =>
   `
-paddingLeft: ${pv * 8}px;
-paddingRight: ${pv * 8}px;
+paddingLeft: ${pv * 8} px;
+paddingRight: ${pv * 8} px;
 `
 
 const getPaddingHorizontal = (ph: number) =>
@@ -54,8 +56,16 @@ paddingBottom: ${ph * 8}px;
 const getBorder = (border: BorderType) => {
   const { borderWidth, borderStyle, borderColor } = border
   return `
-${(borderWidth || borderWidth === 0) ? `borderWidth: ${borderWidth}px;` : ''}
-${(borderStyle && theme.borders[borderStyle]) ? `borderStyle: ${theme.borders[borderStyle]}` : ''}
-${(borderColor && theme.colors[borderColor]) ? `borderColor: ${theme.colors[borderColor]}` : ''}
+${borderWidth || borderWidth === 0 ? `borderWidth: ${borderWidth}px;` : ''}
+${
+  borderStyle && theme.borders[borderStyle]
+    ? `borderStyle: ${theme.borders[borderStyle]}`
+    : ''
+}
+${
+  borderColor && theme.colors[borderColor]
+    ? `borderColor: ${theme.colors[borderColor]}`
+    : ''
+}
 `
 }

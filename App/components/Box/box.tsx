@@ -22,31 +22,31 @@ const Box = ({
   border,
   borderRadius = 0,
 }: BoxProps) => (
-    <Styled.BoxContainer
-      backgroundColor={backgroundColor}
-      m={m}
-      mh={mh}
-      mv={mv}
-      ml={ml}
-      mr={mr}
-      mt={mt}
-      mb={mb}
-      p={p}
-      ph={ph}
-      pv={pv}
-      pl={pl}
-      pr={pr}
-      pt={pt}
-      pb={pb}
-      border={Object.assign({
-        borderColor: 'black',
-        borderStyle: 'solid',
-        borderWidth: 0,
-      }, border)}
-      borderRadius={borderRadius}
-    >
-      {children}
-    </Styled.BoxContainer>
-  )
+  <Styled.BoxContainer
+    backgroundColor={backgroundColor}
+    m={m}
+    mh={mh}
+    mv={mv}
+    ml={ml}
+    mr={mr}
+    mt={mt}
+    mb={mb}
+    p={p}
+    ph={ph}
+    pv={pv}
+    pl={pl}
+    pr={pr}
+    pt={pt}
+    pb={pb}
+    border={{
+      borderColor: border?.borderColor || 'black',
+      borderStyle: border?.borderStyle || 'solid',
+      borderWidth: border?.borderWidth || 0,
+    }}
+    borderRadius={borderRadius}
+  >
+    {children}
+  </Styled.BoxContainer>
+)
 
 export default Box

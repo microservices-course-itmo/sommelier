@@ -9,5 +9,5 @@ export const colors = {
   primary: '#0265d6',
   dark: '#0366d6',
   light: '#58a5f0',
-  transparent: '#00000000'
+  transparent: '#00000000',
 }
