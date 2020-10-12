@@ -6,7 +6,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest",
-    "eject": "expo eject",
+    "eject": "rnstl && expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
     "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
@@ -16,6 +16,7 @@
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
     "@storybook/addons": "^6.0.25",
+    "@storybook/addon-knobs": "^5.3",
     "@storybook/react-native": "^5.3.23",
     "expo": "^39.0.3",
     "eslint-plugin-testing-library": "^3.9.0",
@@ -31,7 +32,6 @@
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/preset-flow": "^7.10.4",
-    "@storybook/addon-knobs": "^5.3",
     "@storybook/addon-links": "^5.3",
     "@storybook/addon-ondevice-actions": "^5.3.23",
     "@storybook/addon-ondevice-knobs": "^5.3.23",

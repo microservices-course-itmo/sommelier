@@ -25,7 +25,7 @@ const StarsRating = ({ score, rating }: Props) => (
   <Styled.Container>
     <Styled.RatingContainer>
       <Styled.ImageContainer>{preparedStars(rating)}</Styled.ImageContainer>
-      {score && <Styled.RatingText>{score}</Styled.RatingText>}
+      {!!score && <Styled.RatingText>{score}</Styled.RatingText>}
     </Styled.RatingContainer>
   </Styled.Container>
 )

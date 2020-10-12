@@ -1,24 +1,24 @@
 import styled from 'styled-components/native'
-import { BoxProps, BorderType } from './types'
+import { BoxProps, BorderType } from './box.types'
 import theme from '../../theme'
 
 export const BoxContainer = styled.View<BoxProps>`
-  ${({ ml }) => ml && `margin-left: ${ml * 8}px;`}
-  ${({ mr }) => mr && `margin-right: ${mr * 8}px;`}
-  ${({ mt }) => mt && `margin-top: ${mt * 8}px;`}
-  ${({ mb }) => mb && `margin-bottom: ${mb * 8}px;`}
-  ${({ mv }) => mv && getMarginVertical(mv)}
-  ${({ mh }) => mh && getMarginHorizontal(mh)}
-  ${({ m }) => m && `margin: ${m * 8}px;`}
-  ${({ pl }) => pl && `padding-left: ${pl * 8}px;`}
-  ${({ pr }) => pr && `padding-right: ${pr * 8}px;`}
-  ${({ pt }) => pt && `padding-top: ${pt * 8}px;`}
-  ${({ pb }) => pb && `padding-bottom: ${pb * 8}px;`}
-  ${({ pv }) => pv && getPaddingVertical(pv)}
-  ${({ ph }) => ph && getPaddingHorizontal(ph)}
-  ${({ p }) => p && `padding: ${p * 8}px;`}
+  ${({ ml }) => !!ml && `margin-left: ${ml * 8}px;`}
+  ${({ mr }) => !!mr && `margin-right: ${mr * 8}px;`}
+  ${({ mt }) => !!mt && `margin-top: ${mt * 8}px;`}
+  ${({ mb }) => !!mb && `margin-bottom: ${mb * 8}px;`}
+  ${({ mv }) => !!mv && getMarginVertical(mv)}
+  ${({ mh }) => !!mh && getMarginHorizontal(mh)}
+  ${({ m }) => !!m && `margin: ${m * 8}px;`}
+  ${({ pl }) => !!pl && `padding-left: ${pl * 8}px;`}
+  ${({ pr }) => !!pr && `padding-right: ${pr * 8}px;`}
+  ${({ pt }) => !!pt && `padding-top: ${pt * 8}px;`}
+  ${({ pb }) => !!pb && `padding-bottom: ${pb * 8}px;`}
+  ${({ pv }) => !!pv && getPaddingVertical(pv)}
+  ${({ ph }) => !!ph && getPaddingHorizontal(ph)}
+  ${({ p }) => !!p && `padding: ${p * 8}px;`}
   ${({ border }) => border && getBorder(border)}
-  ${({ borderRadius }) => borderRadius && `border-radius: ${borderRadius}px;`}
+  border-radius: ${({ borderRadius }) => borderRadius}px;
   color: ${({ color, theme }) => color && theme.colors[color]};
   background-color: ${({ backgroundColor, theme }) =>
     backgroundColor && theme.colors[backgroundColor]};

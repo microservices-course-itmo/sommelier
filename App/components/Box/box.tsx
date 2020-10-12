@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Styled from './box.styled'
-import { BoxProps } from './types'
+import { BoxProps } from './box.types'
 
 const Box = ({
   children = '',
