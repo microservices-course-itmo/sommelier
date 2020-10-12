@@ -1,7 +1,6 @@
 import { ThemeProvider } from 'styled-components'
-import React, { ReactNode } from 'react'
+import React from 'react'
 import styled from 'styled-components/native'
-import { StoryFn } from '@storybook/addons'
 import theme from '../theme'
 
 const StyledBufferView = styled.View`

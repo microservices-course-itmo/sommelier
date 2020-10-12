@@ -15,7 +15,7 @@
     },
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "react-hooks", "react-native"],
+  "plugins": ["react", "react-hooks", "react-native", "testing-library"],
   "extends": [
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
@@ -30,6 +30,9 @@
     }
   },
   "rules": {
+    "testing-library/await-async-query": "error",
+    "testing-library/no-await-sync-query": "error",
+    "testing-library/no-debug": "warn",
     "linebreak-style": ["error", "unix"],
     "react/prop-types": 0,
     "react/require-default-props": 0,
@@ -40,6 +43,8 @@
     "import/prefer-default-export": "off",
     "import/extensions": "off",
     "no-unused-vars": "warn",
-    "@typescript-eslint/no-unused-vars": "warn"
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-shadow": "warn",
+    "react/jsx-props-no-spreading": "off"
   }
 }
