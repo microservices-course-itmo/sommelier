@@ -1,13 +1,6 @@
 import React from 'react'
-import { render } from '@testing-library/react-native'
-
-import { ThemeProvider } from 'styled-components'
+import { themeRender } from '../test-utils'
 import { H1, H2, H3, H4, H5, H6, Text } from './typography'
-import theme from '../../theme'
-
-const themeRender = (component: any) => {
-  return render(<ThemeProvider theme={theme}>{component}</ThemeProvider>)
-}
 
 describe('Typography component', () => {
   describe('Component matches snapshot', () => {
