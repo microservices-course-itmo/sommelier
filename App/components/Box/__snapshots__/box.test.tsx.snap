@@ -23,20 +23,6 @@ exports[`Box component Component matches snapshot 1`] = `
     ]
   }
 >
-  <Text
-    color="black"
-    style={
-      Array [
-        Object {
-          "color": "#000",
-          "fontSize": 32,
-          "fontStyle": "normal",
-          "fontWeight": "normal",
-        },
-      ]
-    }
-  >
-    abc
-  </Text>
+  abc
 </View>
 `;

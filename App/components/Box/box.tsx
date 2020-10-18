@@ -1,10 +1,11 @@
 import React from 'react'
 import * as Styled from './box.styled'
 import { BoxProps } from './box.types'
+import { COLOR_KEYS } from '../../theme/colors'
 
 const Box = ({
   children = '',
-  backgroundColor = 'transparent',
+  backgroundColor = COLOR_KEYS.transparent,
   m,
   mh,
   mv,

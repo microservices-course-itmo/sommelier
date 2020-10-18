@@ -1,8 +1,7 @@
 import React, { ReactNode, ReactElement } from 'react'
 import * as Styled from './typography.styled'
 import theme from '../../theme/index'
-import { COLOR_KEYS } from '../../theme/colors/index'
-import { FONT_KEYS } from '../../theme/fonts/index'
+import { COLOR_KEYS } from '../../theme/colors'
 
 type HeaderProps = {
   children: ReactNode

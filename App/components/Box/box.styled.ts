@@ -23,7 +23,7 @@ ${({ borderRadius }) =>
       ? `borderRadius: ${borderRadius}px;`
       : ''}
 
-backgroundColor: ${({ backgroundColor, theme }) =>
+backgroundColor: ${({ backgroundColor }) =>
     backgroundColor && theme.colors[backgroundColor]
       ? theme.colors[backgroundColor]
       : ''};
