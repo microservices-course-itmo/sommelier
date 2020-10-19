@@ -1,14 +1,18 @@
+import { headerSizes } from './headerSizes'
+import { boxSizes } from './boxSizes'
 import { colors } from './colors'
-import { fonts } from './fonts'
 import { fontSizes } from './fontSizes'
 import { borders } from './borders'
 
 const theme = {
+  boxSizes: {
+    ...boxSizes,
+  },
+  headerSize: {
+    ...headerSizes,
+  },
   colors: {
     ...colors,
-  },
-  fonts: {
-    ...fonts,
   },
   fontSizes: {
     ...fontSizes,

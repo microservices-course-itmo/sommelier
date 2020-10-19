@@ -1,12 +1,14 @@
 import 'styled-components'
-import { fonts } from './Fonts'
+import { headerSizes } from './headerSizes'
+import { boxSizes } from './boxSizes'
 import { colors } from './Colors'
-import { fontSizes } from './FontSizes'
 import { borders } from './borders'
+import { fontSizes } from './FontSizes'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
-    fonts: typeof fonts
+    headerSizes: typeof headerSizes
+    boxSizes: typeof boxSizes
     colors: typeof colors
     fontSizes: typeof fontSizes
     borders: typeof borders
