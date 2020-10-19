@@ -1,13 +1,15 @@
 import React, { ReactNode, ReactElement } from 'react'
 import * as Styled from './typography.styled'
 import theme from '../../theme/index'
+import { COLOR_KEYS } from '../../theme/colors/index'
+import { FONT_KEYS } from '../../theme/fonts/index'
 
 type HeaderProps = {
   children: ReactNode
   color?: keyof typeof theme.colors
   bold?: boolean
   italic?: boolean
-  fontFamily: keyof typeof theme.fonts
+  fontFamily?: keyof typeof theme.fonts
 }
 
 type TextProps = HeaderProps & {
@@ -16,11 +18,11 @@ type TextProps = HeaderProps & {
 }
 
 export const H1 = ({
-  color,
   children,
   bold,
   italic,
   fontFamily,
+  color = COLOR_KEYS.black,
 }: HeaderProps) => (
   <Styled.StyledH1
     color={color}
@@ -33,7 +35,7 @@ export const H1 = ({
 )
 
 export const H2 = ({
-  color,
+  color = COLOR_KEYS.black,
   children,
   bold,
   italic,
@@ -50,7 +52,7 @@ export const H2 = ({
 )
 
 export const H3 = ({
-  color,
+  color = COLOR_KEYS.black,
   children,
   bold,
   italic,
@@ -67,7 +69,7 @@ export const H3 = ({
 )
 
 export const H4 = ({
-  color,
+  color = COLOR_KEYS.black,
   children,
   bold,
   italic,
@@ -84,7 +86,7 @@ export const H4 = ({
 )
 
 export const H5 = ({
-  color,
+  color = COLOR_KEYS.black,
   children,
   bold,
   italic,
@@ -101,7 +103,7 @@ export const H5 = ({
 )
 
 export const H6 = ({
-  color,
+  color = COLOR_KEYS.black,
   children,
   bold,
   italic,
@@ -119,7 +121,7 @@ export const H6 = ({
 
 export const Text = ({
   children,
-  color,
+  color = COLOR_KEYS.black,
   bold,
   italic,
   size = 'md',

@@ -14,12 +14,11 @@
     "lint": "eslint './App/**/*.{js,ts,tsx}'"
   },
   "dependencies": {
-    "@storybook/addon-actions": "^5.3",
-    "@storybook/addons": "^6.0.25",
     "@storybook/addon-knobs": "^5.3",
+    "@storybook/addons": "^6.0.25",
     "@storybook/react-native": "^5.3.23",
-    "expo": "^39.0.3",
     "eslint-plugin-testing-library": "^3.9.0",
+    "expo": "^39.0.3",
     "expo-status-bar": "~1.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -64,7 +63,7 @@
     "typescript": "^3.9.7",
     "typescript-styled-plugin": "^0.15.0"
   },
-  "private": true,
+  "private": false,
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && yarn lint"
@@ -87,5 +86,21 @@
       "pattern": "**/*.story.tsx",
       "outputFile": "./storybook/storyLoader.js"
     }
-  }
+  },
+  "name": "sommelier",
+  "description": "Sommelier is a React-Native UI library made for WineUp.",
+  "version": "0.2.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microservices-course-itmo/sommelier.git"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "microservices-course-itmo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/microservices-course-itmo/sommelier/issues"
+  },
+  "homepage": "https://github.com/microservices-course-itmo/sommelier#readme"
 }
