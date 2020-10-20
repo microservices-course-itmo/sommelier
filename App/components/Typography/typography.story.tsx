@@ -44,8 +44,8 @@ export const textKnobs = () => (
     <Text
       color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
       bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      size={select('font-size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.md)}
+      italic={boolean('italic', false)}
+      size={select('size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.md)}
       crossedOut={boolean('cross-out', false)}
     >
       Text value
@@ -58,8 +58,8 @@ export const headerKnobs = () => (
     <Header
       color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
       bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      size={select('font-size', HEADER_SIZES_KEYS, HEADER_SIZES_KEYS.h1)}
+      italic={boolean('italic', false)}
+      size={select('size', HEADER_SIZES_KEYS, HEADER_SIZES_KEYS.h1)}
       crossedOut={boolean('cross-out', false)}
     >
       Header value
