@@ -1,30 +1,10 @@
-import { css } from 'styled-components/native'
-
 export const headerSizes = {
-  h6: css`
-    font-size: 12px;
-    line-height: 20px;
-  `,
-  h5: css`
-    font-size: 16px;
-    line-height: 20px;
-  `,
-  h4: css`
-    font-size: 20px;
-    line-height: 24px;
-  `,
-  h3: css`
-    font-size: 24px;
-    line-height: 24px;
-  `,
-  h2: css`
-    font-size: 30px;
-    line-height: 32px;
-  `,
-  h1: css`
-    font-size: 38px;
-    line-height: 40px;
-  `,
+  h1: '38px',
+  h2: '30px',
+  h3: '24px',
+  h4: '20px',
+  h5: '16px',
+  h6: '12px',
 }
 
 export const HEADER_SIZES_KEYS = {

@@ -8,7 +8,7 @@ const theme = {
   boxSizes: {
     ...boxSizes,
   },
-  headerSize: {
+  headerSizes: {
     ...headerSizes,
   },
   colors: {

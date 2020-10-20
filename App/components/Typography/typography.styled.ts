@@ -1,8 +1,11 @@
 import styled from 'styled-components/native'
-import { StyledHeaderProps, StyledTextProps } from './typography.types'
+import {
+  TypographyProps,
+  StyledHeaderProps,
+  StyledTextProps,
+} from './typography.types'
 
-export const StyledHeader = styled.Text<StyledHeaderProps>`
-  ${({ size, theme }) => theme.headerSizes[size]};
+const StyledTypography = styled.Text<TypographyProps>`
   color: ${({ color, theme }) => !!color && theme.colors[color]};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
@@ -10,11 +13,10 @@ export const StyledHeader = styled.Text<StyledHeaderProps>`
     crossedOut ? 'line-through' : 'none'};
 `
 
-export const StyledText = styled.Text<StyledTextProps>`
+export const StyledHeader = styled(StyledTypography)<StyledHeaderProps>`
+  font-size: ${({ size, theme }) => theme.headerSizes[size]};
+`
+
+export const StyledText = styled(StyledTypography)<StyledTextProps>`
   font-size: ${({ size, theme }) => theme.fontSizes[size]};
-  color: ${({ color, theme }) => !!color && theme.colors[color]};
-  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
-  font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
-  text-decoration: ${({ crossedOut }) =>
-    crossedOut ? 'line-through' : 'none'};
 `

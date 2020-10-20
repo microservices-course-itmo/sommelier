@@ -3,8 +3,9 @@ import { StyledHeader, StyledText } from './typography.styled'
 import { HeaderProps, TextProps } from './typography.types'
 import { COLOR_KEYS } from '../../theme/colors'
 import { HEADER_SIZES_KEYS } from '../../theme/headerSizes'
+import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
 
-const Header = ({
+export const Header = ({
   children,
   bold,
   color,
@@ -47,7 +48,7 @@ export const Text = ({
   color = COLOR_KEYS.black,
   bold,
   italic,
-  size = 'md',
+  size = FONT_SIZE_KEYS.md,
   crossedOut,
 }: TextProps): ReactElement => (
   <StyledText
