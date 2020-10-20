@@ -1,31 +1,22 @@
 import { ReactNode } from 'react'
 import theme from '../../theme'
 
-export type BorderType = {
-  borderStyle?: keyof typeof theme.borders
-  borderColor?: keyof typeof theme.colors
-  borderWidth?: number
-}
+export const SIZE = {
+  xs: 'xs',
+  s: 's',
+  m: 'm',
+  l: 'l',
+  xl: 'xl',
+} as const
 
 export type BoxProps = {
-  children: ReactNode
-  color?: keyof typeof theme.colors
-  backgroundColor?: keyof typeof theme.colors
-  m?: number
-  mh?: number
-  mv?: number
-  ml?: number
-  mr?: number
-  mt?: number
-  mb?: number
-  p?: number
-  ph?: number
-  pv?: number
-  pl?: number
-  pr?: number
-  pt?: number
-  pb?: number
-  border?: BorderType
+  pX: keyof typeof SIZE
+  pY: keyof typeof SIZE
+  mX: keyof typeof SIZE
+  mY: keyof typeof SIZE
   borderRadius?: number
-  boxShadow?: string
+  borderColor: keyof typeof theme.colors
+  backgroundColor?: keyof typeof theme.colors
 }
+
+export type Props = BoxProps & { children: ReactNode }

@@ -1,121 +1,46 @@
-import React, { ReactNode, ReactElement } from 'react'
-import * as Styled from './typography.styled'
-import theme from '../../theme/index'
+import React, { ReactElement } from 'react'
+import { StyledHeader, StyledText } from './typography.styled'
+import { HeaderProps, TextProps } from './typography.types'
 import { COLOR_KEYS } from '../../theme/colors'
+import { HEADER_SIZES_KEYS } from '../../theme/headerSizes'
+import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
 
-type HeaderProps = {
-  children: ReactNode
-  color?: keyof typeof theme.colors
-  bold?: boolean
-  italic?: boolean
-  fontFamily?: keyof typeof theme.fonts
-}
-
-type TextProps = HeaderProps & {
-  size?: keyof typeof theme.fontSizes
-  crossedOut?: boolean
-}
-
-export const H1 = ({
+export const Header = ({
   children,
   bold,
+  color,
+  crossedOut,
   italic,
-  fontFamily,
-  color = COLOR_KEYS.black,
+  size,
 }: HeaderProps) => (
-  <Styled.StyledH1
-    color={color}
+  <StyledHeader
     bold={bold}
+    color={color}
+    crossedOut={crossedOut}
     italic={italic}
-    fontFamily={fontFamily}
+    size={size}
   >
     {children}
-  </Styled.StyledH1>
+  </StyledHeader>
 )
 
-export const H2 = ({
-  color = COLOR_KEYS.black,
-  children,
-  bold,
-  italic,
-  fontFamily,
-}: HeaderProps) => (
-  <Styled.StyledH2
-    color={color}
-    bold={bold}
-    italic={italic}
-    fontFamily={fontFamily}
-  >
-    {children}
-  </Styled.StyledH2>
+export const H1 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h1} />
 )
-
-export const H3 = ({
-  color = COLOR_KEYS.black,
-  children,
-  bold,
-  italic,
-  fontFamily,
-}: HeaderProps) => (
-  <Styled.StyledH3
-    color={color}
-    bold={bold}
-    italic={italic}
-    fontFamily={fontFamily}
-  >
-    {children}
-  </Styled.StyledH3>
+export const H2 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h2} />
 )
-
-export const H4 = ({
-  color = COLOR_KEYS.black,
-  children,
-  bold,
-  italic,
-  fontFamily,
-}: HeaderProps) => (
-  <Styled.StyledH4
-    color={color}
-    bold={bold}
-    italic={italic}
-    fontFamily={fontFamily}
-  >
-    {children}
-  </Styled.StyledH4>
+export const H3 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h3} />
 )
-
-export const H5 = ({
-  color = COLOR_KEYS.black,
-  children,
-  bold,
-  italic,
-  fontFamily,
-}: HeaderProps) => (
-  <Styled.StyledH5
-    color={color}
-    bold={bold}
-    italic={italic}
-    fontFamily={fontFamily}
-  >
-    {children}
-  </Styled.StyledH5>
+export const H4 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h4} />
 )
-
-export const H6 = ({
-  color = COLOR_KEYS.black,
-  children,
-  bold,
-  italic,
-  fontFamily,
-}: HeaderProps) => (
-  <Styled.StyledH6
-    color={color}
-    bold={bold}
-    italic={italic}
-    fontFamily={fontFamily}
-  >
-    {children}
-  </Styled.StyledH6>
+export const H5 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h5} />
+)
+export const H6 = (props: Omit<HeaderProps, 'size'>) => (
+  <Header {...props} size={HEADER_SIZES_KEYS.h6} />
 )
 
 export const Text = ({
@@ -123,18 +48,16 @@ export const Text = ({
   color = COLOR_KEYS.black,
   bold,
   italic,
-  size = 'md',
+  size = FONT_SIZE_KEYS.md,
   crossedOut,
-  fontFamily,
 }: TextProps): ReactElement => (
-  <Styled.StyledText
+  <StyledText
     color={color}
     bold={bold}
     italic={italic}
-    fontFamily={fontFamily}
     size={size}
     crossedOut={crossedOut}
   >
     {children}
-  </Styled.StyledText>
+  </StyledText>
 )

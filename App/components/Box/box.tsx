@@ -1,50 +1,25 @@
 import React from 'react'
 import * as Styled from './box.styled'
-import { BoxProps } from './box.types'
-import { COLOR_KEYS } from '../../theme/colors'
+import { Props } from './box.types'
 
 const Box = ({
-  children = '',
-  backgroundColor = COLOR_KEYS.transparent,
-  m,
-  mh,
-  mv,
-  ml,
-  mr,
-  mt,
-  mb,
-  p,
-  ph,
-  pv,
-  pl,
-  pr,
-  pt,
-  pb,
-  border,
-  borderRadius = 0,
-}: BoxProps) => (
+  pX,
+  pY,
+  mX,
+  mY,
+  children,
+  borderColor,
+  borderRadius,
+  backgroundColor,
+}: Props) => (
   <Styled.BoxContainer
-    backgroundColor={backgroundColor}
-    m={m}
-    mh={mh}
-    mv={mv}
-    ml={ml}
-    mr={mr}
-    mt={mt}
-    mb={mb}
-    p={p}
-    ph={ph}
-    pv={pv}
-    pl={pl}
-    pr={pr}
-    pt={pt}
-    pb={pb}
-    border={{
-      borderColor: border?.borderColor || 'black',
-      borderStyle: border?.borderStyle || 'solid',
-      borderWidth: border?.borderWidth || 0,
-    }}
+    pX={pX}
+    pY={pY}
+    mX={mX}
+    mY={mY}
+    borderColor={borderColor}
     borderRadius={borderRadius}
+    backgroundColor={backgroundColor}
   >
     {children}
   </Styled.BoxContainer>
