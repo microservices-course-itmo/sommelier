@@ -6,7 +6,8 @@ import {
 } from './typography.types'
 
 const StyledTypography = styled.Text<TypographyProps>`
-  color: ${({ color, theme }) => !!color && theme.colors[color]};
+  color: ${({ color, theme }) =>
+    color ? theme.colors[color] : theme.colors.black};
   font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   font-style: ${({ italic }) => (italic ? 'italic' : 'normal')};
   text-decoration: ${({ crossedOut }) =>
