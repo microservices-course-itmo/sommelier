@@ -3,9 +3,9 @@ import { BoxProps } from './box.types'
 
 export const BoxContainer = styled.View<BoxProps>`
   padding: ${({ theme, pX, pY }) =>
-    pX && pY && `${theme.boxSizes[pX]} ${theme.boxSizes[pY]}`};
+    `${pX ? theme.boxSizes[pX] : 0} ${pY ? theme.boxSizes[pY] : 0}`};
   margin: ${({ theme, mX, mY }) =>
-    mX && mY && `${theme.boxSizes[mX]} ${theme.boxSizes[mY]}`};
+    `${mX ? theme.boxSizes[mX] : 0} ${mY ? theme.boxSizes[mY] : 0}`};
   background-color: ${({ theme, backgroundColor }) =>
     !!backgroundColor && theme.colors[backgroundColor]};
   ${({ borderRadius }) => !!borderRadius && `border-radius: ${borderRadius}`};

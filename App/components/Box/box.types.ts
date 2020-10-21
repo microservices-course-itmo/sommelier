@@ -10,10 +10,10 @@ export const SIZE = {
 } as const
 
 export type BoxProps = {
-  pX: keyof typeof SIZE
-  pY: keyof typeof SIZE
-  mX: keyof typeof SIZE
-  mY: keyof typeof SIZE
+  pX?: keyof typeof SIZE
+  pY?: keyof typeof SIZE
+  mX?: keyof typeof SIZE
+  mY?: keyof typeof SIZE
   borderRadius?: number
   borderColor: keyof typeof theme.colors
   backgroundColor?: keyof typeof theme.colors
