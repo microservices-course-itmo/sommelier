@@ -15,7 +15,7 @@ export type BoxProps = {
   mX?: keyof typeof SIZE
   mY?: keyof typeof SIZE
   borderRadius?: number
-  borderColor: keyof typeof theme.colors
+  borderColor?: keyof typeof theme.colors
   backgroundColor?: keyof typeof theme.colors
 }
 

@@ -7,8 +7,8 @@ export const BoxContainer = styled.View<BoxProps>`
   margin: ${({ theme, mX, mY }) =>
     `${mX ? theme.boxSizes[mX] : 0} ${mY ? theme.boxSizes[mY] : 0}`};
   background-color: ${({ theme, backgroundColor }) =>
-    !!backgroundColor && theme.colors[backgroundColor]};
+    backgroundColor ? theme.colors[backgroundColor] : theme.colors.black};
   ${({ borderRadius }) => !!borderRadius && `border-radius: ${borderRadius}`};
   border-color: ${({ theme, borderColor }) =>
-    !!borderColor && theme.colors[borderColor]};
+    borderColor ? theme.colors[borderColor] : theme.colors.black};
 `
