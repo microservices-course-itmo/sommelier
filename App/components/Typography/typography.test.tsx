@@ -4,9 +4,7 @@ import { render } from '@testing-library/react-native'
 import { H1, H2, H3, H4, H5, H6, Text } from './typography'
 import theme from '../../theme'
 
-const defaultProps = {
-  fontFamily: theme.fonts.PtSans,
-}
+const defaultProps = {}
 
 describe('Typography component', () => {
   describe('Component matches snapshot', () => {
