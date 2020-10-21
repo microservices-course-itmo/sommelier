@@ -2,23 +2,19 @@
 
 exports[`Box component Component matches snapshot 1`] = `
 <View
-  backgroundColor="transparent"
-  border={
-    Object {
-      "borderColor": "black",
-      "borderStyle": "solid",
-      "borderWidth": 0,
-    }
-  }
-  borderRadius={0}
   style={
     Array [
       Object {
-        "backgroundColor": "#00000000",
+        "backgroundColor": "#000",
         "borderColor": "#000",
-        "borderRadius": 0,
-        "borderStyle": "solid",
-        "borderWidth": 0,
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
       },
     ]
   }

@@ -2,14 +2,17 @@
 
 exports[`Typography component Component matches snapshot H1 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h1"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 32,
+        "fontSize": 38,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
@@ -20,14 +23,17 @@ exports[`Typography component Component matches snapshot H1 renders correctly 1`
 
 exports[`Typography component Component matches snapshot H2 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h2"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 24,
+        "fontSize": 30,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
@@ -38,14 +44,17 @@ exports[`Typography component Component matches snapshot H2 renders correctly 1`
 
 exports[`Typography component Component matches snapshot H3 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h3"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 18.72,
+        "fontSize": 24,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
@@ -56,14 +65,17 @@ exports[`Typography component Component matches snapshot H3 renders correctly 1`
 
 exports[`Typography component Component matches snapshot H4 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h4"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 16,
+        "fontSize": 20,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
@@ -74,14 +86,17 @@ exports[`Typography component Component matches snapshot H4 renders correctly 1`
 
 exports[`Typography component Component matches snapshot H5 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h5"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 13.28,
+        "fontSize": 16,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
@@ -92,14 +107,17 @@ exports[`Typography component Component matches snapshot H5 renders correctly 1`
 
 exports[`Typography component Component matches snapshot H6 renders correctly 1`] = `
 <Text
-  color="black"
+  size="h6"
   style={
     Array [
       Object {
         "color": "#000",
-        "fontSize": 10.72,
+        "fontSize": 12,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }

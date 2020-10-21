@@ -1,7 +1,6 @@
 import React from 'react'
 import { themeRender } from '../test-utils'
 import Box from './box'
-import { H1 } from '../Typography'
 
 describe('Box component', () => {
   it('Component matches snapshot', () => {

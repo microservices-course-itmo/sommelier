@@ -54,13 +54,10 @@ describe('Typography component', () => {
       const { getByText } = themeRender(<Text crossedOut>abc</Text>)
       expect(getByText('abc').props.crossedOut).toBe(true)
     })
-    it('font-family prop assigns correctly ', () => {
-      const { getByText } = themeRender(<Text fontFamily='PtSans'>abc</Text>)
-      expect(getByText('abc').props.fontFamily).toBe('PtSans')
-    })
     it('size prop assigns correctly ', () => {
       const { getByText } = themeRender(<Text size='lg'>abc</Text>)
       expect(getByText('abc').props.size).toBe('lg')
     })
+    // TEST H
   })
 })
