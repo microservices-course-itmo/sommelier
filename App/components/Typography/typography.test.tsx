@@ -33,7 +33,7 @@ describe('Typography component', () => {
       expect(tree).toMatchSnapshot()
     })
   })
-  describe('Props testing', () => {
+  describe('Text props testing', () => {
     it('color prop assigns correctly', () => {
       const { getByText } = themeRender(<Text color='lightGray'>abc</Text>)
       expect(getByText('abc').props.color).toBe('lightGray')
@@ -50,14 +50,27 @@ describe('Typography component', () => {
       const { getByText } = themeRender(<Text crossedOut>abc</Text>)
       expect(getByText('abc').props.crossedOut).toBe(true)
     })
-    it('crossed-out prop assigns correctly ', () => {
-      const { getByText } = themeRender(<Text crossedOut>abc</Text>)
-      expect(getByText('abc').props.crossedOut).toBe(true)
-    })
     it('size prop assigns correctly ', () => {
       const { getByText } = themeRender(<Text size='lg'>abc</Text>)
       expect(getByText('abc').props.size).toBe('lg')
     })
-    // TEST H
+  })
+  describe('Header props testing', () => {
+    it('color prop assigns correctly', () => {
+      const { getByText } = themeRender(<H1 color='lightGray'>abc</H1>)
+      expect(getByText('abc').props.color).toBe('lightGray')
+    })
+    it('bold prop assigns correctly ', () => {
+      const { getByText } = themeRender(<H1 bold>abc</H1>)
+      expect(getByText('abc').props.bold).toBe(true)
+    })
+    it('italic prop assigns correctly ', () => {
+      const { getByText } = themeRender(<H1 italic>abc</H1>)
+      expect(getByText('abc').props.italic).toBe(true)
+    })
+    it('crossed-out prop assigns correctly ', () => {
+      const { getByText } = themeRender(<H1 crossedOut>abc</H1>)
+      expect(getByText('abc').props.crossedOut).toBe(true)
+    })
   })
 })
