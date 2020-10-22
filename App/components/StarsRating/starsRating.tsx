@@ -1,5 +1,5 @@
 import React from 'react'
-import SvgUri from 'react-native-svg-uri'
+import SvgUri from 'react-native-svg'
 import * as Styled from './starsRating.styled'
 import filledStar from '../../../assets/images/filledStar.svg'
 import unfilledStar from '../../../assets/images/unfilledStar.svg'
@@ -13,9 +13,9 @@ const preparedStars = (rating: number) => {
   const stars = []
   for (let i = 1; i <= 5; i += 1) {
     if (i > rating) {
-      stars.push(<SvgUri width='25' height='25' source={unfilledStar} />)
+      stars.push(<filledStar width='25' height='25' key={i} />)
     } else {
-      stars.push(<SvgUri width='25' height='25' source={filledStar} />)
+      stars.push(<unfilledStar width='25' height='25' key={i} />)
     }
   }
   return stars
