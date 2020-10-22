@@ -1,5 +1,4 @@
 import React from 'react'
-import SvgUri from 'react-native-svg'
 import * as Styled from './starsRating.styled'
 import filledStar from '../../../assets/images/filledStar.svg'
 import unfilledStar from '../../../assets/images/unfilledStar.svg'

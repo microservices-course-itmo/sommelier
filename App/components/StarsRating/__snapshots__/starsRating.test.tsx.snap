@@ -33,7 +33,28 @@ exports[`Stars rating component Component renders correctly 1`] = `
           },
         ]
       }
-    />
+    >
+      <unfilledStar
+        height="25"
+        width="25"
+      />
+      <unfilledStar
+        height="25"
+        width="25"
+      />
+      <unfilledStar
+        height="25"
+        width="25"
+      />
+      <filledStar
+        height="25"
+        width="25"
+      />
+      <filledStar
+        height="25"
+        width="25"
+      />
+    </View>
   </View>
 </View>
 `;
