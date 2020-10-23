@@ -1,5 +1,4 @@
 import styled from 'styled-components/native'
-import { BorderType } from '../Box/box.types'
 
 type ImageContainerProps = {
   width?: number
