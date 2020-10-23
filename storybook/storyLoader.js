@@ -12,7 +12,7 @@ function loadStories() {
 }
 
 const stories = [
-  '../App/components/Box/Box.story',
+  '../App/components/Box/box.story',
   '../App/components/Button/Button.story',
   '../App/components/Image/Image.story',
   '../App/components/StarsRating/starsRating.story',
