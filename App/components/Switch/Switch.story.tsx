@@ -1,13 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
-import {
-  withKnobs,
-  text,
-  boolean,
-  number,
-  color,
-  select,
-} from '@storybook/addon-knobs'
+import { withKnobs, boolean, select } from '@storybook/addon-knobs'
 import Switch from './switch'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
@@ -17,11 +10,11 @@ const defaultSwitch = () => (
       'Type',
       {
         something: 'something',
+        heart: 'heart',
       },
       'heart'
     )}
-    value
-    // onClick={} // тут должен быть экшн))))
+    value={boolean('Value', true)}
     disabled={boolean('Disabled', false)}
   />
 )

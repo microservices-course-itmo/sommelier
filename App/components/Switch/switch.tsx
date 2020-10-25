@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { useEffect, useState } from 'react'
 import SvgUri from 'react-native-svg-uri'
 import filledFavorite from '../../../assets/images/filledFavorite.svg'
 import unfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
@@ -12,29 +12,39 @@ const Switch = ({
   onChange = (): void => {},
   onClick = (): void => {},
   disabled = false,
-}: Props) => (
-  <Styled.SwitchContainer
-    onChange={onChange}
-    onClick={disabled ? (): void => {} : onClick}
-    disabled={disabled}
-  >
-    {(() => {
-      switch (type) {
-        case 'heart': {
-          if (value) {
-            return <SvgUri width='25' height='25' source={filledFavorite} />
+}: Props) => {
+  useEffect(() => {
+    onChange(value)
+  }, [value])
+
+  return (
+    <Styled.SwitchContainer
+      onPress={(event) => {
+        if (!disabled) {
+          onClick(value, event)
+        }
+      }}
+      value={value}
+      disabled={disabled}
+    >
+      {(() => {
+        switch (type) {
+          case 'heart': {
+            if (value) {
+              return <SvgUri width='25' height='25' source={filledFavorite} />
+            }
+            return <SvgUri width='25' height='25' source={unfilledFavorite} />
           }
-          return <SvgUri width='25' height='25' source={unfilledFavorite} />
+          case 'something': {
+            return null // something new
+          }
+          default: {
+            return null
+          }
         }
-        case 'something': {
-          return null // something new
-        }
-        default: {
-          return null
-        }
-      }
-    })()}
-  </Styled.SwitchContainer>
-)
+      })()}
+    </Styled.SwitchContainer>
+  )
+}
 
 export default Switch
