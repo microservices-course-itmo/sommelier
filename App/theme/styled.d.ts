@@ -4,6 +4,8 @@ import { boxSizes } from './boxSizes'
 import { colors } from './Colors'
 import { borders } from './borders'
 import { fontSizes } from './FontSizes'
+import { inputSizes } from './inputSizes/index'
+import { clearButtonMode } from './clearButtonMode/index'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -12,5 +14,7 @@ declare module 'styled-components' {
     colors: typeof colors
     fontSizes: typeof fontSizes
     borders: typeof borders
+    inputSizes: typeof inputSizes
+    clearButtonMode: typeof clearButtonMode
   }
 }

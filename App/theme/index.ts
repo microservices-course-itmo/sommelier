@@ -3,6 +3,8 @@ import { boxSizes } from './boxSizes'
 import { colors } from './colors'
 import { fontSizes } from './fontSizes'
 import { borders } from './borders'
+import { inputSizes } from './inputSizes'
+import { clearButtonMode } from './clearButtonMode/index'
 
 const theme = {
   boxSizes: {
@@ -19,6 +21,12 @@ const theme = {
   },
   borders: {
     ...borders,
+  },
+  inputSizes: {
+    ...inputSizes,
+  },
+  clearButtonMode: {
+    ...clearButtonMode,
   },
 }
 

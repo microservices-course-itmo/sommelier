@@ -9,9 +9,9 @@
     "eject": "rnstl && expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
+    "prettier": "prettier --write App/**/*.{ts,tsx,js}",
     "prestorybook": "rnstl",
-    "lint": "eslint './App/**/*.{js,ts,tsx}'"
+    "lint": "eslint ./App/**/*.{js,ts,tsx}"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
