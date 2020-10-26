@@ -20,9 +20,17 @@ export const ItemsContainer = styled.View`
   justify-content: space-around;
 `
 
-export const NavItemStyle = styled.TouchableOpacity<NavItemProps>`
-  width: 17px;
-  height: 17px;
+export const ItemContainer = styled.TouchableOpacity<NavItemProps>`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: ${({ theme }) => theme.colors.white};
   color: ${({ selected, theme }) =>
     selected ? theme.colors.primaryRed : theme.colors.primaryGray};
+`
+
+export const NavItemStyle = styled.View`
+  margin-bottom: 6px;
+  width: 20px;
+  height: 20px;
 `
