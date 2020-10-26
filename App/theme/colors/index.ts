@@ -10,6 +10,8 @@ export const colors = {
   primary: '#0265d6',
   dark: '#0366d6',
   light: '#58a5f0',
+  primaryRed: '#931332',
+  primaryGray: '#666666',
 } as const
 
 export const COLOR_KEYS = {
@@ -24,4 +26,6 @@ export const COLOR_KEYS = {
   primary: 'primary',
   dark: 'dark',
   light: 'light',
+  primaryRed: 'primaryRed',
+  primaryGray: 'primaryGray',
 } as const

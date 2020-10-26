@@ -11,7 +11,7 @@
     "build-storybook": "build-storybook",
     "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
     "prestorybook": "rnstl",
-    "lint": "eslint './App/**/*.{js,ts,tsx}'"
+    "lint": "eslint './App/**/*.{js,ts,tsx}' --no-error-on-unmatched-pattern"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^5.9.2",

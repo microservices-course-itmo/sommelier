@@ -1,19 +1,20 @@
 import React from 'react'
 import SvgUri from 'react-native-svg-uri'
-import { TouchableOpacity, Text } from 'react-native'
-import menuItem from '../../../assets/images/menuItem1.svg'
+import * as Label from '../Typography'
+import * as Styled from './navbar.styled'
 
-type Props = {
-  icon: string
+export type Props = {
+  icon: object
   onPress: () => void
   text?: string
+  selected: boolean
 }
 
-const Item = ({ icon = '', text, onPress = () => {} }: Props) => (
-  <TouchableOpacity onPress={onPress}>
-    <SvgUri source={{ uri: icon }} />
-    {!!text && <Text>{text}</Text>}
-  </TouchableOpacity>
+const Item = ({ icon, text, onPress }: Props) => (
+  <Styled.NavItemStyle onPress={onPress} selected={false}>
+    <SvgUri source={icon} />
+    {!!text && <Label.H4>{text}</Label.H4>}
+  </Styled.NavItemStyle>
 )
 
 export default Item
