@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components/native'
+import { action } from '@storybook/addon-actions'
+import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import { Input } from './input'
-import { action } from '@storybook/addon-actions'
-import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { INPUT_SIZE_KEYS } from '../../theme/inputSizes'
 
 const StyledWrapper = styled.View`
@@ -22,7 +22,7 @@ export const list = () => (
     <Input
       onChange={() => 's'}
       size='lg'
-      clearButtonMode={true}
+      clearButtonMode
       placeholder='Поиск по избранному'
       editable={false}
     />
@@ -30,7 +30,7 @@ export const list = () => (
     <Input
       onChange={() => 's'}
       size='md'
-      clearButtonMode={true}
+      clearButtonMode
       placeholder='Поиск по избранному'
       editable
     />
@@ -38,7 +38,7 @@ export const list = () => (
     <Input
       onChange={() => 's'}
       size='sm'
-      clearButtonMode={true}
+      clearButtonMode
       placeholder='Поиск по избранному'
       editable
     />
