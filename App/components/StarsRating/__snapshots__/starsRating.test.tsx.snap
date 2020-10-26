@@ -34,23 +34,23 @@ exports[`Stars rating component Component renders correctly 1`] = `
         ]
       }
     >
-      <unfilledStar
+      <SvgMock
         height="25"
         width="25"
       />
-      <unfilledStar
+      <SvgMock
         height="25"
         width="25"
       />
-      <unfilledStar
+      <SvgMock
         height="25"
         width="25"
       />
-      <filledStar
+      <SvgMock
         height="25"
         width="25"
       />
-      <filledStar
+      <SvgMock
         height="25"
         width="25"
       />
