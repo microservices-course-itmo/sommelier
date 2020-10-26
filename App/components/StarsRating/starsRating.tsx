@@ -1,7 +1,7 @@
 import React from 'react'
 import * as Styled from './starsRating.styled'
-import filledStar from '../../../assets/images/filledStar.svg'
-import unfilledStar from '../../../assets/images/unfilledStar.svg'
+import FilledStar from '../../../assets/images/FilledStar.svg'
+import UnfilledStar from '../../../assets/images/UnfilledStar.svg'
 
 type Props = {
   rating: number
@@ -12,9 +12,9 @@ const preparedStars = (rating: number) => {
   const stars = []
   for (let i = 1; i <= 5; i += 1) {
     if (i > rating) {
-      stars.push(<filledStar width='25' height='25' key={i} />)
+      stars.push(<UnfilledStar width='25' height='25' key={i} />)
     } else {
-      stars.push(<unfilledStar width='25' height='25' key={i} />)
+      stars.push(<FilledStar width='25' height='25' key={i} />)
     }
   }
   return stars
