@@ -11,20 +11,14 @@ export type Props = {
   borderRadius?: number
 }
 
-const Image = ({
-  image = '',
-  width,
-  height,
-  border,
-  borderRadius: radius,
-}: Props) => {
-  let borderRadius = radius
-  if (!borderRadius) {
-    borderRadius = Number(border?.split(' ')[0])
+const Image = ({ image = '', width, height, border, borderRadius }: Props) => {
+  let radius = borderRadius
+  if (!radius) {
+    radius = Number(border?.split('px')[0])
   }
   const borderColor = border?.split(' ')[2] as keyof typeof theme.colors
   return (
-    <BoxContainer borderRadius={borderRadius} borderColor={borderColor}>
+    <BoxContainer borderRadius={radius} borderColor={borderColor}>
       <Styled.ImageContainer
         source={{ uri: image }}
         width={width}
