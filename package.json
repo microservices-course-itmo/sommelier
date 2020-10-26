@@ -11,7 +11,7 @@
     "build-storybook": "build-storybook",
     "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
     "prestorybook": "rnstl",
-    "lint": "eslint './App/**/*.{js,ts,tsx}'"
+    "lint": "eslint ./App/**/*.{js,ts,tsx}"
   },
   "dependencies": {
     "@storybook/addon-actions": "^5.3",
@@ -57,9 +57,11 @@
     "eslint-plugin-react-native": "^3.9.1",
     "husky": "^4.2.5",
     "jest": "^26.5.3",
+    "metro-config": "^0.63.0",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "react-native-storybook-loader": "^2.0.2",
+    "react-native-svg-transformer": "^0.14.3",
     "react-test-renderer": "^16.13.1",
     "typescript": "^3.9.7",
     "typescript-styled-plugin": "^0.15.0"
