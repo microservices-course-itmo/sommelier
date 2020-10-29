@@ -49,7 +49,7 @@ export const Input = ({
         onChangeText={(text) => setText(text)}
         maxLength={maxLength}
       />
-      {clearButtonMode ? (
+      {clearButtonMode && (
         <Styled.ViewClose>
           <TouchableOpacity onPress={() => setText('')}>
             <SvgUri
@@ -59,7 +59,7 @@ export const Input = ({
             />
           </TouchableOpacity>
         </Styled.ViewClose>
-      ) : null}
+      )}
     </Styled.StyledView>
   )
 }

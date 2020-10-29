@@ -11,7 +11,7 @@ export const StyledInput = styled.TextInput<Props & TextInputProps>`
   margin-left: 5px;
   font-size: ${({ size, theme }) => theme.fontSizes[size]};
   overflow: hidden;
-  width: 315px;
+  width: 100%;
 `
 
 export const StyledView = styled.View<Props>`
