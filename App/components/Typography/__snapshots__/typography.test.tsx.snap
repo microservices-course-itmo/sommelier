@@ -1,315 +1,139 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text component Component matches snapshot H1 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 32,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot H2 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 24,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot H3 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 18.72,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot H4 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 16,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot H5 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 13.28,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot H6 renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 10.72,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
-exports[`Text component Component matches snapshot Renders correctly 1`] = `
-<Text
-  color="white"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "white",
-        "fontFamily": "PtSans",
-        "fontSize": 12,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-        "textDecorationColor": "black",
-        "textDecorationLine": "none",
-        "textDecorationStyle": "solid",
-      },
-    ]
-  }
->
-  abc
-</Text>
-`;
-
-exports[`Text component Component matches snapshot Text renders correctly 1`] = `
-<Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
-  style={
-    Array [
-      Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 12,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-        "textDecorationColor": "black",
-        "textDecorationLine": "none",
-        "textDecorationStyle": "solid",
-      },
-    ]
-  }
->
-  abc 123
-</Text>
-`;
-
 exports[`Typography component Component matches snapshot H1 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h1"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 32,
+        "color": "#000",
+        "fontSize": 38,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot H2 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h2"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 24,
+        "color": "#000",
+        "fontSize": 30,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot H3 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h3"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 18.72,
+        "color": "#000",
+        "fontSize": 24,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot H4 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h4"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 16,
+        "color": "#000",
+        "fontSize": 20,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot H5 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h5"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 13.28,
+        "color": "#000",
+        "fontSize": 16,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot H6 renders correctly 1`] = `
 <Text
-  color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="h6"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
-        "fontSize": 10.72,
+        "color": "#000",
+        "fontSize": 12,
         "fontStyle": "normal",
         "fontWeight": "normal",
+        "textDecorationColor": "black",
+        "textDecorationLine": "none",
+        "textDecorationStyle": "solid",
       },
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
 
 exports[`Typography component Component matches snapshot Text renders correctly 1`] = `
 <Text
   color="black"
-  fontFamily="PtSans"
-  italic={false}
+  size="md"
   style={
     Array [
       Object {
-        "color": "black",
-        "fontFamily": "PtSans",
+        "color": "#000",
         "fontSize": 12,
         "fontStyle": "normal",
         "fontWeight": "normal",
@@ -320,6 +144,6 @@ exports[`Typography component Component matches snapshot Text renders correctly 
     ]
   }
 >
-  abc 123
+  Abc 123
 </Text>
 `;
