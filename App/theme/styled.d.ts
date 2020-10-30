@@ -13,8 +13,8 @@ declare module 'styled-components' {
     colors: typeof colors
     fontSizes: typeof fontSizes
     borders: typeof borders
-    inputSearchSizes: typeof inputSizes
+    inputSizes: typeof inputSizes
     searchSizes: typeof searchSizes
-    inputSearchFontSizes: typeof inputFontSizes
+    inputFontSizes: typeof inputFontSizes
   }
 }
