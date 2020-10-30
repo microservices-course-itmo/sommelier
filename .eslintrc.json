@@ -34,18 +34,25 @@
     "testing-library/no-await-sync-query": "error",
     "testing-library/no-debug": "warn",
     "linebreak-style": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/prop-types": 0,
     "react/require-default-props": 0,
     "@typescript-eslint/no-use-before-define": [
       "error",
-      { "variables": false }
+      {
+        "variables": false
+      }
     ],
     "import/prefer-default-export": "off",
     "import/extensions": "off",
     "no-unused-vars": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
     "no-shadow": "warn",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-props-no-spreading": "off"
   }
 }
