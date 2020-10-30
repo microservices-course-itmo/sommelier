@@ -14,7 +14,7 @@ type Props = {
   defaultValue?: string
   placeholder?: string
   editable: boolean
-  size: keyof typeof theme.inputSizes
+  size: keyof typeof theme.inputSearchSizes
   maxLength?: number
   value?: string
   onChange: (e: NativeSyntheticEvent<TextInputChangeEventData>) => void
@@ -52,8 +52,8 @@ export const SearchInput = ({
         <Styled.ViewClose>
           <TouchableOpacity onPress={() => setText('')}>
             <Close
-              width={theme.inputFontSizes[size]}
-              height={theme.inputFontSizes[size]}
+              width={theme.inputSearchFontSizes[size]}
+              height={theme.inputSearchFontSizes[size]}
             />
           </TouchableOpacity>
         </Styled.ViewClose>

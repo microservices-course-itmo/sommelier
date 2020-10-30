@@ -1,4 +1,4 @@
-export const inputSizes = {
+export const inputSearchSizes = {
   sm: '20px',
   md: '38px',
   lg: '50px',
@@ -10,7 +10,7 @@ export const searchSizes = {
   lg: '30px',
 } as const
 
-export const inputFontSizes = {
+export const inputSearchFontSizes = {
   sm: '14px',
   md: '16px',
   lg: '18px',

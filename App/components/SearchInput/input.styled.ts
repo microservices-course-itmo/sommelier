@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 import theme from '../../theme/index'
 
 type Props = {
-  size: keyof typeof theme.inputSizes
+  size: keyof typeof theme.inputSearchSizes
 }
 
 type ViewProps = {
