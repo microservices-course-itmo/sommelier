@@ -6,8 +6,6 @@ import theme from '../../theme'
 import Image from './image'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
-const BORDERS = Object.keys(theme.borders) as Array<keyof typeof theme.borders>
-
 const defaultImage = () => (
   <Image
     image={text(
@@ -16,7 +14,33 @@ const defaultImage = () => (
     )}
     width={number('width', 128)}
     height={number('height', 128)}
-    border={select('border', BORDERS, `5px ${BORDERS[2]} gray`)}
+    border={text('border', '5px solid white')}
+    // border={{
+    //   borderStyle: select(
+    //     'borderStyle',
+    //     {
+    //       solid: 'solid',
+    //       dashed: 'dashed',
+    //       dotted: 'dotted',
+    //     },
+    //     'solid'
+    //   ),
+    //   borderColor: select(
+    //     'borderColor',
+    //     {
+    //       white: 'white',
+    //       black: 'black',
+    //       dark: 'dark',
+    //       light: 'light',
+    //       lightGray: 'lightGray',
+    //       primary: 'primary',
+    //       lightGrayBorder: 'lightGrayBorder',
+    //       grayBorder: 'grayBorder',
+    //     },
+    //     'grayBorder'
+    //   ),
+    //   borderWidth: number('borderWidth', 1),
+    // }}
     borderRadius={number('borderRadius', 5)}
   />
 )
