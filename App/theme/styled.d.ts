@@ -4,7 +4,11 @@ import { boxSizes } from './boxSizes'
 import { colors } from './Colors'
 import { borders } from './borders'
 import { fontSizes } from './FontSizes'
-import { inputSizes, searchSizes, inputFontSizes } from './inputSearchSizes'
+import {
+  inputSearchSizes,
+  searchSizes,
+  inputSearchFontSizes,
+} from './inputSearchSizes'
 
 declare module 'styled-components' {
   export interface DefaultTheme {
@@ -13,8 +17,8 @@ declare module 'styled-components' {
     colors: typeof colors
     fontSizes: typeof fontSizes
     borders: typeof borders
-    inputSizes: typeof inputSizes
+    inputSearchSizes: typeof inputSearchSizes
     searchSizes: typeof searchSizes
-    inputFontSizes: typeof inputFontSizes
+    inputSearchFontSizes: typeof inputSearchFontSizes
   }
 }

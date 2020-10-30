@@ -80,7 +80,7 @@ export const InputKnobs = () => (
       editable={boolean('Editable', true)}
       defaultValue={text('DefaultValue text', '')}
       value=''
-      maxLength={number('Max length', 15)}
+      // maxLength={number('Max length', 15)}
     />
   </StyledWrapper>
 )
