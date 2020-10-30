@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components/native'
 import { action } from '@storybook/addon-actions'
 import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import { Input } from './input'
-import { INPUT_SIZE_KEYS } from '../../theme/inputSizes'
+import { SearchInput } from './input'
+import { INPUT_SIZE_KEYS } from '../../theme/inputSearchSizes'
 
 const StyledWrapper = styled.View`
   display: flex;
@@ -19,7 +19,7 @@ const StyledPadding = styled.View`
 
 export const list = () => (
   <StyledWrapper>
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='lg'
       clearButtonMode
@@ -27,7 +27,7 @@ export const list = () => (
       editable={false}
     />
     <StyledPadding />
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='md'
       clearButtonMode
@@ -35,7 +35,7 @@ export const list = () => (
       editable
     />
     <StyledPadding />
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='sm'
       clearButtonMode
@@ -44,7 +44,7 @@ export const list = () => (
     />
     <StyledPadding />
     <StyledPadding />
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='lg'
       clearButtonMode={false}
@@ -52,7 +52,7 @@ export const list = () => (
       editable={false}
     />
     <StyledPadding />
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='md'
       clearButtonMode={false}
@@ -60,7 +60,7 @@ export const list = () => (
       editable
     />
     <StyledPadding />
-    <Input
+    <SearchInput
       onChange={() => 's'}
       size='sm'
       clearButtonMode={false}
@@ -70,16 +70,16 @@ export const list = () => (
   </StyledWrapper>
 )
 
-export const knobs = () => (
+export const InputKnobs = () => (
   <StyledWrapper>
-    <Input
-      onChange={action('Input has been change')}
+    <SearchInput
+      onChange={() => 'onChange called'}
       size={select('size', INPUT_SIZE_KEYS, INPUT_SIZE_KEYS.lg)}
       clearButtonMode={boolean('ClearButtonMode', false)}
       placeholder={text('Placeholder text', 'Поиск по избранному')}
       editable={boolean('Editable', true)}
       defaultValue={text('DefaultValue text', '')}
-      value={text('Value text', '')}
+      value=''
       maxLength={number('Max length', 15)}
     />
   </StyledWrapper>
@@ -93,4 +93,4 @@ storiesOf('Input', module)
 storiesOf('Input', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
-  .add('Input knobs', knobs)
+  .add('Input knobs', () => <InputKnobs />)

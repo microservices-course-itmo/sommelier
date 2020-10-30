@@ -7,8 +7,8 @@ import {
 import SvgUri from 'react-native-svg-uri'
 import theme from '../../theme/index'
 import * as Styled from './input.styled'
-import search from '../../../assets/images/search.svg'
-import close from '../../../assets/images/close.svg'
+import Search from '../../../assets/images/search.svg'
+import Close from '../../../assets/images/close.svg'
 
 type Props = {
   defaultValue?: string
@@ -21,7 +21,7 @@ type Props = {
   clearButtonMode: boolean
 }
 
-export const Input = ({
+export const SearchInput = ({
   defaultValue,
   placeholder,
   editable,
@@ -33,11 +33,10 @@ export const Input = ({
 }: Props) => {
   const [text, setText] = useState(value)
   return (
-    <Styled.StyledView editable={editable} size={size}>
-      <SvgUri
-        width={theme.inputSizes[size]}
-        height={theme.inputSizes[size]}
-        source={search}
+    <Styled.StyledView editable={editable}>
+      <Search
+        width={theme.searchSizes[size]}
+        height={theme.searchSizes[size]}
       />
       <Styled.StyledInput
         defaultValue={defaultValue}
@@ -49,17 +48,16 @@ export const Input = ({
         onChangeText={(text) => setText(text)}
         maxLength={maxLength}
       />
-      {clearButtonMode ? (
+      {clearButtonMode && (
         <Styled.ViewClose>
           <TouchableOpacity onPress={() => setText('')}>
-            <SvgUri
-              width={theme.fontSizes[size]}
-              height={theme.fontSizes[size]}
-              source={close}
+            <Close
+              width={theme.inputFontSizes[size]}
+              height={theme.inputFontSizes[size]}
             />
           </TouchableOpacity>
         </Styled.ViewClose>
-      ) : null}
+      )}
     </Styled.StyledView>
   )
 }
