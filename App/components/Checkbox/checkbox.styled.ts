@@ -1,10 +1,15 @@
 import styled from 'styled-components/native'
 
-export const CheckboxContainer = styled.TouchableOpacity`
-  background-color: ${({ theme }) => theme.colors.primary};
-  padding-vertical: 14;
-  border-radius: 6;
-  border-width: 1;
-  border-color: ${({ theme }) => theme.colors.primary};
-  margin-vertical: 7;
+export const CheckboxContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+`
+
+export const CheckboxText = styled.Text`
+  color: ${({ theme }) => theme.colors.black};
+  align-self: auto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 40px;
 `
