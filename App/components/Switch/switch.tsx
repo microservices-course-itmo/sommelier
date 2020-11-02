@@ -1,41 +1,47 @@
 import React, { useEffect, useState } from 'react'
-import SvgUri from 'react-native-svg-uri'
-import filledFavorite from '../../../assets/images/filledFavorite.svg'
-import unfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
+import { GestureResponderEvent } from 'react-native'
+import FilledFavorite from '../../../assets/images/filledFavorite.svg'
+import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
 import * as Styled from './switch.styled'
+import theme from '../../theme'
 import { Props } from './switch.types'
 
 const Switch = ({
   children,
-  type = 'heart',
+  switchType = 'heart',
   value = false,
   onChange = (): void => {},
   onClick = (): void => {},
   disabled = false,
 }: Props) => {
+  const [stateValue, setStateValue] = useState(value)
+
   useEffect(() => {
-    onChange(value)
-  }, [value])
+    onChange(stateValue)
+  }, [stateValue])
+
+  const toggleSwitch = (event: GestureResponderEvent) => {
+    if (!disabled) {
+      setStateValue(!stateValue)
+      onClick(value, event)
+    }
+  }
 
   return (
     <Styled.SwitchContainer
-      onPress={(event) => {
-        if (!disabled) {
-          onClick(value, event)
-        }
-      }}
-      value={value}
+      onPress={toggleSwitch}
+      value={stateValue}
       disabled={disabled}
     >
       {(() => {
-        switch (type) {
-          case 'heart': {
-            if (value) {
-              return <SvgUri width='25' height='25' source={filledFavorite} />
+        switch (switchType) {
+          case theme.switchTypes.heart: {
+            if (stateValue) {
+              return <FilledFavorite width='25' height='25' />
             }
-            return <SvgUri width='25' height='25' source={unfilledFavorite} />
+            return <UnfilledFavorite width='25' height='25' />
           }
-          case 'something': {
+          case theme.switchTypes.something: {
             return null // something new
           }
           default: {

@@ -3,6 +3,7 @@ import { boxSizes } from './boxSizes'
 import { colors } from './colors'
 import { fontSizes } from './fontSizes'
 import { borders } from './borders'
+import { switchTypes } from './switchTypes'
 
 const theme = {
   boxSizes: {
@@ -19,6 +20,9 @@ const theme = {
   },
   borders: {
     ...borders,
+  },
+  switchTypes: {
+    ...switchTypes,
   },
 }
 

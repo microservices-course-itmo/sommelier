@@ -6,7 +6,7 @@ import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultSwitch = () => (
   <Switch
-    type={select(
+    switchType={select(
       'Type',
       {
         something: 'something',
