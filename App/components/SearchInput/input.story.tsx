@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions'
 import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import { SearchInput } from './input'
+import SearchInput from './input'
 import { INPUT_SIZE_KEYS } from '../../theme/inputSearchSizes'
 
 const StyledWrapper = styled.View`
@@ -80,7 +80,7 @@ export const InputKnobs = () => (
       editable={boolean('Editable', true)}
       defaultValue={text('DefaultValue text', '')}
       value=''
-      // maxLength={number('Max length', 15)}
+      maxLength={number('Max length', 15)}
     />
   </StyledWrapper>
 )

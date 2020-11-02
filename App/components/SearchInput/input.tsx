@@ -4,28 +4,28 @@ import {
   TextInputChangeEventData,
   TouchableOpacity,
 } from 'react-native'
-import SvgUri from 'react-native-svg-uri'
 import theme from '../../theme/index'
 import * as Styled from './input.styled'
 import Search from '../../../assets/images/search.svg'
 import Close from '../../../assets/images/close.svg'
+import { INPUT_SIZE_KEYS } from '../../theme/inputSearchSizes'
 
 type Props = {
   defaultValue?: string
   placeholder?: string
-  editable: boolean
-  size: keyof typeof theme.inputSearchSizes
+  editable?: boolean
+  size?: keyof typeof theme.inputSearchSizes
   maxLength?: number
   value?: string
   onChange: (e: NativeSyntheticEvent<TextInputChangeEventData>) => void
-  clearButtonMode: boolean
+  clearButtonMode?: boolean
 }
 
-export const SearchInput = ({
+const SearchInput = ({
   defaultValue,
   placeholder,
-  editable,
-  size,
+  editable = true,
+  size = INPUT_SIZE_KEYS.md,
   value,
   onChange,
   clearButtonMode,
@@ -61,3 +61,5 @@ export const SearchInput = ({
     </Styled.StyledView>
   )
 }
+
+export default SearchInput
