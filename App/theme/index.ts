@@ -3,6 +3,11 @@ import { boxSizes } from './boxSizes'
 import { colors } from './colors'
 import { fontSizes } from './fontSizes'
 import { borders } from './borders'
+import {
+  inputSearchSizes,
+  searchSizes,
+  inputSearchFontSizes,
+} from './inputSearchSizes'
 
 const theme = {
   boxSizes: {
@@ -19,6 +24,15 @@ const theme = {
   },
   borders: {
     ...borders,
+  },
+  inputSearchSizes: {
+    ...inputSearchSizes,
+  },
+  searchSizes: {
+    ...searchSizes,
+  },
+  inputSearchFontSizes: {
+    ...inputSearchFontSizes,
   },
 }
 
