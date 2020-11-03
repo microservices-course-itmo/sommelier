@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react'
-import { StyleSheet } from 'react-native'
 import NativeCheckbox from '@react-native-community/checkbox'
 import { CheckboxContainer, CheckboxText } from './checkbox.styled'
 

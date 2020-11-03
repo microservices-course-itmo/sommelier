@@ -2,7 +2,7 @@ import { headerSizes } from './headerSizes'
 import { boxSizes } from './boxSizes'
 import { colors } from './colors'
 import { fontSizes } from './fontSizes'
-import { borders } from './borders'
+import { borderStyles } from './borderStyles'
 import { switchTypes } from './switchTypes'
 import {
   inputSearchSizes,
@@ -23,8 +23,8 @@ const theme = {
   fontSizes: {
     ...fontSizes,
   },
-  borders: {
-    ...borders,
+  borderStyles: {
+    ...borderStyles,
   },
   switchTypes: {
     ...switchTypes,

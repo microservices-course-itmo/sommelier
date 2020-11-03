@@ -12,9 +12,13 @@ web-build/
 # macOS
 .DS_Store
 .idea
+
+#Storybook
 storybook/storyLoader.js
+
+#Node.js locks
 package-lock.json
+yarn.lock
 
 # Jest
-#
 .jest/
