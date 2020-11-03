@@ -28,6 +28,7 @@ const theme = {
   },
   switchTypes: {
     ...switchTypes,
+  },
   inputSearchSizes: {
     ...inputSearchSizes,
   },
