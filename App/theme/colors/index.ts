@@ -12,6 +12,8 @@ export const colors = {
   light: '#58a5f0',
   primaryRed: '#931332',
   primaryGray: '#666666',
+  primaryDarkRed: '#680e24',
+  shadowButton: 'rgba(104, 14, 36, 0.25)',
 } as const
 
 export const COLOR_KEYS = {
@@ -28,4 +30,6 @@ export const COLOR_KEYS = {
   light: 'light',
   primaryRed: 'primaryRed',
   primaryGray: 'primaryGray',
+  primaryDarkRed: 'primaryDarkRed',
+  shadowButton: 'shadowButton',
 } as const
