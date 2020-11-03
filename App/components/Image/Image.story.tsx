@@ -11,10 +11,10 @@ const defaultImage = () => (
       'image',
       'https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
     )}
-    width={number('width', 320)}
-    height={number('height', 320)}
-    border={text('border', '15px solid lightGray')}
-    borderRadius={number('borderRadius', 20)}
+    width={number('width', 128)}
+    height={number('height', 128)}
+    border={text('border', '5px solid white')}
+    borderRadius={number('borderRadius', 5)}
   />
 )
 
