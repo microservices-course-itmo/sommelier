@@ -1,7 +1,7 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
-import { SearchInput } from './input'
 import { fireEvent } from '@testing-library/react-native'
+import { themeRender } from '../test-utils'
+import SearchInput from './input'
 
 describe('SearchInput component', () => {
   const mockFn = jest.fn((x) => x + 42)
