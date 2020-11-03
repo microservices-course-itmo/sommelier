@@ -3,6 +3,7 @@ import { boxSizes } from './boxSizes'
 import { colors } from './colors'
 import { fontSizes } from './fontSizes'
 import { borders } from './borders'
+import { switchTypes } from './switchTypes'
 import {
   inputSearchSizes,
   searchSizes,
@@ -25,6 +26,8 @@ const theme = {
   borders: {
     ...borders,
   },
+  switchTypes: {
+    ...switchTypes,
   inputSearchSizes: {
     ...inputSearchSizes,
   },
