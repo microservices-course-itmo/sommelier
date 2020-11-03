@@ -43,7 +43,6 @@ describe('Image component', () => {
         borderRadius={5}
       />
     )
-    console.log(elem.toJSON())
     expect(elem.toJSON().props.borderRadius).toBe(5)
   })
 })
