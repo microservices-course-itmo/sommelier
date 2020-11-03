@@ -10,6 +10,8 @@ export const colors = {
   primary: '#0265d6',
   dark: '#0366d6',
   light: '#58a5f0',
+  notEditableField: 'rgba(127, 127, 127, 0.3)',
+  searchInputBorder: '#9e9e9e',
 } as const
 
 export const COLOR_KEYS = {
@@ -24,4 +26,6 @@ export const COLOR_KEYS = {
   primary: 'primary',
   dark: 'dark',
   light: 'light',
+  notEditableField: 'notEditableField',
+  searchInputBorder: 'searchInputBorder',
 } as const
