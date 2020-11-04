@@ -2,7 +2,7 @@ import 'styled-components'
 import { headerSizes } from './headerSizes'
 import { boxSizes } from './boxSizes'
 import { colors } from './Colors'
-import { borders } from './borders'
+import { borderStyles } from './borderStyles'
 import { fontSizes } from './FontSizes'
 import {
   inputSearchSizes,
@@ -16,7 +16,7 @@ declare module 'styled-components' {
     boxSizes: typeof boxSizes
     colors: typeof colors
     fontSizes: typeof fontSizes
-    borders: typeof borders
+    borderStyles: typeof borderStyles
     inputSearchSizes: typeof inputSearchSizes
     searchSizes: typeof searchSizes
     inputSearchFontSizes: typeof inputSearchFontSizes

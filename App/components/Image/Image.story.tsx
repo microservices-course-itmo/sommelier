@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
-import { withKnobs, number, text, select } from '@storybook/addon-knobs'
-import theme from '../../theme'
+import { withKnobs, number, text } from '@storybook/addon-knobs'
 
 import Image from './image'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
@@ -23,4 +22,4 @@ storiesOf('Image', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
   .addDecorator(withKnobs)
-  .add('default', defaultImage)
+  .add('default image', defaultImage)
