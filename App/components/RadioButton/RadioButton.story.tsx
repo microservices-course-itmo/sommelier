@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react-native'
 import { boolean } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 
-import { RadioButton } from './RadioButton'
+import RadioButton from './RadioButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultRadioButton = () => (

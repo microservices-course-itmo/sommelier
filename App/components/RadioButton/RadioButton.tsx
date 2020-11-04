@@ -8,7 +8,7 @@ type Props = {
   onPress?: () => void
 }
 
-export const RadioButton = ({
+const RadioButton = ({
   checked = true,
   children = 'Red wine',
   onPress = () => {},
@@ -42,3 +42,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#A22841',
   },
 })
+
+export default RadioButton
