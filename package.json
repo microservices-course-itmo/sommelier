@@ -9,11 +9,12 @@
     "eject": "rnstl && expo eject",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prettier": "prettier --write 'App/**/*.{ts,tsx,js}'",
+    "prettier": "prettier --write App/**/*.{ts,tsx,js}",
     "prestorybook": "rnstl",
     "lint": "eslint ./App/**/*.{js,ts,tsx}"
   },
   "dependencies": {
+    "@react-native-community/checkbox": "^0.5.5",
     "@storybook/addon-actions": "^5.3",
     "@storybook/addon-knobs": "^5.3",
     "@storybook/addons": "^6.0.25",
@@ -27,7 +28,6 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
     "react-native-simple-radio-button": "^2.7.4",
     "react-native-svg": "^12.1.0",
-    "react-native-svg-uri": "^1.2.3",
     "react-native-web": "~0.13.12",
     "styled-components": "^5.2.0"
   },
