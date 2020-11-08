@@ -10,7 +10,7 @@ type Props = {
 
 export const RadioButton = ({
   checked = true,
-  children = 'Red wine',
+  children = '',
   onPress = () => {},
 }: Props) => {
   return (
