@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-export const CheckboxContainer = styled.View`
+export const CheckboxContainer = styled.TouchableOpacity`
   flex-direction: row;
   align-items: center;
   width: 100%;
