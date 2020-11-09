@@ -16,30 +16,27 @@ const defaultNavbar = () => (
       onPress={action('tapper-default')}
       selected={true}
       text={text('main', 'Главное')}
-    >
-      <MenuItem1 />
-    </Item>
+      icon={<MenuItem1 />}
+    />
+
     <Item
       onPress={action('tapper-default')}
       selected={false}
       text={text('catalog', 'Каталог')}
-    >
-      <MenuItem2 />
-    </Item>
+      icon={<MenuItem2 />}
+    />
     <Item
       onPress={action('tapper-default')}
       selected={false}
       text={text('favorite', 'Избранное')}
-    >
-      <MenuItem3 />
-    </Item>
+      icon={<MenuItem3 />}
+    />
     <Item
       onPress={action('tapper-default')}
       selected={false}
       text={text('profile', 'Профиль')}
-    >
-      <MenuItem4 />
-    </Item>
+      icon={<MenuItem4 />}
+    />
   </Navbar>
 )
 
