@@ -55,11 +55,11 @@ export const ButtonTextContainer = styled.View`
 
 export const ButtonText = styled.Text`
   align-self: center;
-  font-size: 20px;
   font-weight: 500;
 `
 
 export const Wrapper = styled.View<ButtonProps>`
+  background-color: ${({ theme }) => theme.colors.black};
   position: relative;
   width: ${({ width }) => width || 0};
   height: ${({ height }) => height || 0};
