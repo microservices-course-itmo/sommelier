@@ -8,6 +8,7 @@ function loadStories() {
   require('../App/components/Button/Button.story')
   require('../App/components/Checkbox/checkbox.story')
   require('../App/components/Image/Image.story')
+  require('../App/components/Input/input.story')
   require('../App/components/SearchInput/input.story')
   require('../App/components/StarsRating/starsRating.story')
   require('../App/components/Switch/Switch.story')
@@ -19,6 +20,7 @@ const stories = [
   '../App/components/Button/Button.story',
   '../App/components/Checkbox/checkbox.story',
   '../App/components/Image/Image.story',
+  '../App/components/Input/input.story',
   '../App/components/SearchInput/input.story',
   '../App/components/StarsRating/starsRating.story',
   '../App/components/Switch/Switch.story',
