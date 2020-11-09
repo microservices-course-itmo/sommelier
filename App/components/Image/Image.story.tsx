@@ -1,12 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
-import { withKnobs, number, text, select } from '@storybook/addon-knobs'
-import theme from '../../theme'
+import { withKnobs, number, text } from '@storybook/addon-knobs'
 
 import Image from './image'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-
-const BORDERS = Object.keys(theme.borders) as Array<keyof typeof theme.borders>
 
 const defaultImage = () => (
   <Image
@@ -16,7 +13,7 @@ const defaultImage = () => (
     )}
     width={number('width', 128)}
     height={number('height', 128)}
-    border={select('border', BORDERS, `5px ${BORDERS[2]} gray`)}
+    border={text('border', '5px solid white')}
     borderRadius={number('borderRadius', 5)}
   />
 )
@@ -25,4 +22,4 @@ storiesOf('Image', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
   .addDecorator(withKnobs)
-  .add('default', defaultImage)
+  .add('default image', defaultImage)
