@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { GestureResponderEvent } from 'react-native'
+import { View } from 'react-native'
 import FilledFavorite from '../../../assets/images/filledFavorite.svg'
 import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
+import CheckMark from '../../../assets/images/checkMark.svg'
 import * as Styled from './switch.styled'
 import theme from '../../theme'
 import { Props } from './switch.types'
 
 const Switch = ({
   children,
-  switchType = 'heart',
+  switchType = 'default',
   value = false,
   onChange = (): void => {},
-  onClick = (): void => {},
   disabled = false,
 }: Props) => {
   const [stateValue, setStateValue] = useState(value)
@@ -20,10 +20,9 @@ const Switch = ({
     onChange(stateValue)
   }, [stateValue])
 
-  const toggleSwitch = (event: GestureResponderEvent) => {
+  const toggleSwitch = () => {
     if (!disabled) {
       setStateValue(!stateValue)
-      onClick(value, event)
     }
   }
 
@@ -41,8 +40,18 @@ const Switch = ({
             }
             return <UnfilledFavorite width='25' height='25' />
           }
-          case theme.switchTypes.something: {
-            return null // something new
+          case theme.switchTypes.default: {
+            return (
+              <Styled.Toggle value={stateValue}>
+                <Styled.Notch value={stateValue}>
+                  {stateValue && (
+                    <Styled.Mark>
+                      <CheckMark />
+                    </Styled.Mark>
+                  )}
+                </Styled.Notch>
+              </Styled.Toggle>
+            )
           }
           default: {
             return null
