@@ -7,10 +7,7 @@ import RadioButton from './RadioButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultRadioButton = () => (
-  <RadioButton
-    checked={boolean('checked', true)}
-    onPress={action('tapper-default')}
-  />
+  <RadioButton checked={boolean('checked', true)}>Red Vine</RadioButton>
 )
 
 storiesOf('RadioButton', module)
