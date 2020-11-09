@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { withKnobs, text, boolean } from '@storybook/addon-knobs'
+import { withKnobs, text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
 import Item from './navItem'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
@@ -10,7 +10,6 @@ const defaultNavItem = () => (
   <Item
     onPress={action('tapper-default')}
     text={text('favorite', 'Избранное')}
-    selected={boolean('selected', true)}
     icon={<MenuItem3 />}
   />
 )

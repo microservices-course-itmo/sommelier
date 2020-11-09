@@ -7,7 +7,6 @@ import { COLOR_KEYS } from '../../theme/colors'
 export type Props = {
   onPress: () => void
   text?: string
-  selected: boolean
   icon: ReactNode
 }
 
