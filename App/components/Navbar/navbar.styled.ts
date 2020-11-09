@@ -1,9 +1,5 @@
 import styled from 'styled-components/native'
 
-type NavItemProps = {
-  selected: boolean
-}
-
 export const NavbarContainer = styled.View`
   position: absolute;
   bottom: 0;
@@ -20,13 +16,11 @@ export const ItemsContainer = styled.View`
   justify-content: space-around;
 `
 
-export const ItemContainer = styled.TouchableOpacity<NavItemProps>`
+export const ItemContainer = styled.TouchableOpacity`
   flex: 1;
   justify-content: center;
   align-items: center;
   background-color: ${({ theme }) => theme.colors.white};
-  color: ${({ selected, theme }) =>
-    selected ? theme.colors.primaryRed : theme.colors.primaryGray};
 `
 
 export const NavItemStyle = styled.View`
