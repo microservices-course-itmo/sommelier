@@ -1,20 +1,42 @@
+import { headerSizes } from './headerSizes'
+import { boxSizes } from './boxSizes'
 import { colors } from './colors'
-import { fonts } from './fonts'
 import { fontSizes } from './fontSizes'
-import { borders } from './borders'
+import { borderStyles } from './borderStyles'
+import { switchTypes } from './switchTypes'
+import {
+  inputSearchSizes,
+  searchSizes,
+  inputSearchFontSizes,
+} from './inputSearchSizes'
 
 const theme = {
+  boxSizes: {
+    ...boxSizes,
+  },
+  headerSizes: {
+    ...headerSizes,
+  },
   colors: {
     ...colors,
-  },
-  fonts: {
-    ...fonts,
   },
   fontSizes: {
     ...fontSizes,
   },
-  borders: {
-    ...borders,
+  borderStyles: {
+    ...borderStyles,
+  },
+  switchTypes: {
+    ...switchTypes,
+  },
+  inputSearchSizes: {
+    ...inputSearchSizes,
+  },
+  searchSizes: {
+    ...searchSizes,
+  },
+  inputSearchFontSizes: {
+    ...inputSearchFontSizes,
   },
 }
 
