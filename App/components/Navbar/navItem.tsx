@@ -11,7 +11,7 @@ export type Props = {
 }
 
 const Item = ({ text, onPress, icon }: Props) => (
-  <Styled.ItemContainer onPress={onPress} selected={false}>
+  <Styled.ItemContainer onPress={onPress}>
     <Styled.NavItemStyle>{icon}</Styled.NavItemStyle>
     {!!text && (
       <Label.Text
