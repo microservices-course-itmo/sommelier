@@ -59,7 +59,7 @@ export const headerKnobs = () => (
       color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
       bold={boolean('bold', false)}
       italic={boolean('italic', false)}
-      size={select('size', HEADER_SIZES_KEYS, HEADER_SIZES_KEYS.h1)}
+      size='h1'
       crossedOut={boolean('cross-out', false)}
     >
       Header value
