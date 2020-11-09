@@ -12,6 +12,11 @@ export const colors = {
   light: '#58a5f0',
   notEditableField: 'rgba(127, 127, 127, 0.3)',
   searchInputBorder: '#9e9e9e',
+
+  switchToggleOn: 'rgba(69, 208, 158, 0.5)',
+  switchToggleOff: '#ededed',
+  switchNotchOn: '#45d09e',
+  switchNotchOff: '#e0e0e0',
 } as const
 
 export const COLOR_KEYS = {
@@ -28,4 +33,9 @@ export const COLOR_KEYS = {
   light: 'light',
   notEditableField: 'notEditableField',
   searchInputBorder: 'searchInputBorder',
+
+  switchToggleOn: 'switchToggleOn',
+  switchToggleOff: 'switchToggleOff',
+  switchNotchOn: 'switchNotchOn',
+  switchNotchOff: 'switchNotchOff',
 } as const
