@@ -6,7 +6,6 @@ import { H1, H2, H3, H4, H5, H6, Text, Header } from './typography'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
 import { COLOR_KEYS } from '../../theme/colors'
-import { HEADER_SIZES_KEYS } from '../../theme/headerSizes'
 
 const StyledWrapper = styled.View`
   display: flex;
@@ -59,7 +58,7 @@ export const headerKnobs = () => (
       color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
       bold={boolean('bold', false)}
       italic={boolean('italic', false)}
-      size={select('size', HEADER_SIZES_KEYS, HEADER_SIZES_KEYS.h1)}
+      size='h1'
       crossedOut={boolean('cross-out', false)}
     >
       Header value
