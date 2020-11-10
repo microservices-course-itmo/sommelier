@@ -1,37 +1,26 @@
 import React from 'react'
 import * as Styled from './image.styled'
-import { BoxContainer } from '../Box/box.styled'
+import Box from '../Box/box'
+import { BoxProps } from '../Box/box.types'
+import { COLOR_KEYS } from '../../theme/colors'
 import theme from '../../theme'
 
 export type Props = {
   image: string
   width?: number
   height?: number
-  border?: string
   borderRadius?: number
-}
+  borderColor?: keyof typeof theme.colors
+} & BoxProps
 
-const Image = ({
-  image = '',
-  width,
-  height,
-  border,
-  borderRadius: radius,
-}: Props) => {
-  let borderRadius = radius
-  if (!borderRadius) {
-    borderRadius = Number(border?.split(' ')[0])
-  }
-  const borderColor = border?.split(' ')[2] as keyof typeof theme.colors
-  return (
-    <BoxContainer borderRadius={borderRadius} borderColor={borderColor}>
-      <Styled.ImageContainer
-        source={{ uri: image }}
-        width={width}
-        height={height}
-      />
-    </BoxContainer>
-  )
-}
+const Image = (props: Props) => (
+  <Box {...props}>
+    <Styled.ImageContainer
+      source={{ uri: props.image }}
+      width={props.width}
+      height={props.height}
+    />
+  </Box>
+)
 
 export default Image

@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import Image from './image'
 
 describe('Image component', () => {

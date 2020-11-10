@@ -25,10 +25,7 @@ export const StyledView = styled.View<ViewProps>`
   border-radius: 50px;
   align-items: center;
   overflow: hidden;
-  padding-left: 15px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding: 2px 5px 2px 15px;
   width: 100%;
   background-color: ${({ editable }) =>
     editable ? theme.colors.white : theme.colors.notEditableField};
