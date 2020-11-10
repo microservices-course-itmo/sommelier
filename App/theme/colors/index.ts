@@ -10,6 +10,8 @@ export const colors = {
   primary: '#0265d6',
   dark: '#0366d6',
   light: '#58a5f0',
+  fillGray: '#757575',
+  fillRed: '#A22841',
   primaryRed: '#931332',
   primaryGray: '#666666',
   notEditableField: 'rgba(127, 127, 127, 0.3)',

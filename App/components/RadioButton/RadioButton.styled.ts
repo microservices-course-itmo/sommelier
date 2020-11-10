@@ -11,23 +11,23 @@ export const RadioButtonText = styled.Text`
 `
 
 export const RadioButtonViewUnfilled = styled.View`
-  height: 20
-  width: 20
-  borderRadius: 10
-  borderWidth: 1
-  borderColor: #757575
-  alignItems: center
-  justifyContent: center
-  marginRight: 40
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: ${({ theme }) => theme.colors.fillGray};
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
 `
 
 export const RadioButtonViewFilled = styled.View`
-  width: 20
-  height: 20
-  borderRadius: 10
-  borderColor: #A22841
-  backgroundColor: #A22841
-  alignItems: center
-  justifyContent: center
-  marginRight: 40
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  border-color: ${({ theme }) => theme.colors.fillRed};
+  background-color: ${({ theme }) => theme.colors.fillRed};
+  align-items: center;
+  justify-content: center;
+  margin-right: 40px;
 `
