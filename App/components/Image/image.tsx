@@ -2,7 +2,6 @@ import React from 'react'
 import * as Styled from './image.styled'
 import Box from '../Box/box'
 import { BoxProps } from '../Box/box.types'
-import { COLOR_KEYS } from '../../theme/colors'
 import theme from '../../theme'
 
 export type Props = {
@@ -13,14 +12,17 @@ export type Props = {
   borderColor?: keyof typeof theme.colors
 } & BoxProps
 
-const Image = (props: Props) => (
-  <Box {...props}>
-    <Styled.ImageContainer
-      source={{ uri: props.image }}
-      width={props.width}
-      height={props.height}
-    />
-  </Box>
-)
+const Image = (props: Props) => {
+  const { image, width, height } = props
+  return (
+    <Box {...props}>
+      <Styled.ImageContainer
+        source={{ uri: image }}
+        width={width}
+        height={height}
+      />
+    </Box>
+  )
+}
 
 export default Image
