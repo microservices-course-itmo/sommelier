@@ -8,7 +8,6 @@ import theme from '../../theme'
 import { Props } from './switch.types'
 
 const Switch = ({
-  children,
   switchType = 'default',
   value = false,
   onChange = (): void => {},
