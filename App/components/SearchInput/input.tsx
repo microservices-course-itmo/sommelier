@@ -22,14 +22,14 @@ type Props = {
 }
 
 const SearchInput = ({
-  defaultValue,
-  placeholder,
-  editable = true,
-  size = INPUT_SIZE_KEYS.md,
   value,
   onChange,
-  clearButtonMode,
   maxLength,
+  placeholder,
+  defaultValue,
+  clearButtonMode,
+  editable = true,
+  size = INPUT_SIZE_KEYS.md,
 }: Props) => {
   const [text, setText] = useState(value)
   return (
