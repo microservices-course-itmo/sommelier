@@ -1,7 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
 import Switch from './switch'
-import { Text } from '../Typography'
 
 describe('Switch component', () => {
   const mockFn = jest.fn()
@@ -11,15 +10,7 @@ describe('Switch component', () => {
   })
   it('Component with all props matches snapshot', () => {
     const tree = themeRender(
-      <Switch
-        switchType='heart'
-        value
-        onChange={mockFn}
-        onClick={mockFn}
-        disabled
-      >
-        <Text>abc</Text>
-      </Switch>
+      <Switch switchType='heart' value onChange={mockFn} disabled />
     ).toJSON()
     expect(tree).toMatchSnapshot()
   })
