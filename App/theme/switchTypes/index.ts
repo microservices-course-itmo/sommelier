@@ -1,4 +1,4 @@
 export const switchTypes = {
+  default: 'default',
   heart: 'heart',
-  something: 'something',
 }

@@ -15,6 +15,11 @@ export const colors = {
   priceInputBorder: '#dcdcdc',
   priceInputPlaceholedText: '#B5B5B5',
   priceInputText: '#333333',
+
+  switchToggleOn: 'rgba(69, 208, 158, 0.5)',
+  switchToggleOff: '#ededed',
+  switchNotchOn: '#45d09e',
+  switchNotchOff: '#e0e0e0',
 } as const
 
 export const COLOR_KEYS = {
@@ -34,4 +39,9 @@ export const COLOR_KEYS = {
   priceInputBorder: 'priceInputBorder',
   priceInputPlaceholedText: 'priceInputPlaceholedText',
   priceInputText: 'priceInputText',
+
+  switchToggleOn: 'switchToggleOn',
+  switchToggleOff: 'switchToggleOff',
+  switchNotchOn: 'switchNotchOn',
+  switchNotchOff: 'switchNotchOff',
 } as const

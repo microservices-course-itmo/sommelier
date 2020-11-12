@@ -9,12 +9,12 @@ const defaultSwitch = () => (
     switchType={select(
       'Type',
       {
-        something: 'something',
+        default: 'default',
         heart: 'heart',
       },
       'heart'
     )}
-    value={boolean('Value', true)}
+    value={false}
     disabled={boolean('Disabled', false)}
   />
 )
