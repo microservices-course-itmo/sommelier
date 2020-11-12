@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import Switch from './switch'
 import { Text } from '../Typography'
 

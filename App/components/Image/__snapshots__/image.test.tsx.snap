@@ -2,7 +2,6 @@
 
 exports[`Image component Component matches snapshot 1`] = `
 <View
-  borderRadius={NaN}
   style={
     Array [
       Object {
@@ -29,7 +28,6 @@ exports[`Image component Component matches snapshot 1`] = `
     style={
       Array [
         Object {
-          "borderRadius": 0,
           "height": 0,
           "width": 0,
         },
