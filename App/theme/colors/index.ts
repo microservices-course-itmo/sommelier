@@ -14,6 +14,9 @@ export const colors = {
   primaryGray: '#666666',
   notEditableField: 'rgba(127, 127, 127, 0.3)',
   searchInputBorder: '#9e9e9e',
+  priceInputBorder: '#dcdcdc',
+  priceInputPlaceholedText: '#B5B5B5',
+  priceInputText: '#333333',
 
   switchToggleOn: 'rgba(69, 208, 158, 0.5)',
   switchToggleOff: '#ededed',
@@ -37,6 +40,9 @@ export const COLOR_KEYS = {
   primaryGray: 'primaryGray',
   notEditableField: 'notEditableField',
   searchInputBorder: 'searchInputBorder',
+  priceInputBorder: 'priceInputBorder',
+  priceInputPlaceholedText: 'priceInputPlaceholedText',
+  priceInputText: 'priceInputText',
 
   switchToggleOn: 'switchToggleOn',
   switchToggleOff: 'switchToggleOff',
