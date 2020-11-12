@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/native'
-import { withKnobs } from '@storybook/addon-knobs'
+import { withKnobs, text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native/dist'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import Input from './input'
@@ -23,8 +23,22 @@ const list = () => (
   </Container>
 )
 
+const knobs = () => (
+  <Container>
+    <Input placeholder={text('placeholder Text 1', 'От')} />
+    <Padding />
+    <Input placeholder={text('placeholder Text 2', 'До')} />
+  </Container>
+)
+
 storiesOf('Input Price', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
   .addDecorator(withKnobs)
   .add('Input list', list)
+
+storiesOf('Input Price', module)
+  .addDecorator(BufferView)
+  .addDecorator(ThemeDecorator)
+  .addDecorator(withKnobs)
+  .add('Input knobs', knobs)

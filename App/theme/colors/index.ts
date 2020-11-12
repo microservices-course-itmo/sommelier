@@ -12,6 +12,9 @@ export const colors = {
   light: '#58a5f0',
   notEditableField: 'rgba(127, 127, 127, 0.3)',
   searchInputBorder: '#9e9e9e',
+  priceInputBorder: '#dcdcdc',
+  priceInputPlaceholedText: '#B5B5B5',
+  priceInputText: '#333333',
 } as const
 
 export const COLOR_KEYS = {
@@ -28,4 +31,7 @@ export const COLOR_KEYS = {
   light: 'light',
   notEditableField: 'notEditableField',
   searchInputBorder: 'searchInputBorder',
+  priceInputBorder: 'priceInputBorder',
+  priceInputPlaceholedText: 'priceInputPlaceholedText',
+  priceInputText: 'priceInputText',
 } as const

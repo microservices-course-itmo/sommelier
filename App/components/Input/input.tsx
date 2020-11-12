@@ -1,64 +1,65 @@
-import React, { useState, useCallback, useRef } from 'react'
+import React, { useState, useCallback } from 'react'
 import { TextInput } from 'react-native'
-import {
-  Container,
-  PlaceholderLabel,
-  LabeledInput,
-  RubleIcon,
-} from './input.styled'
+
+import * as Styled from './input.styled'
+
 import Ruble from '../../../assets/images/ruble.svg'
 
-interface InputProps {
-  placeholder: string
+type Props = {
+  placeholder?: string
+  value?: string
 }
 
-interface InputReference extends TextInput {
-  value: string
-}
-
-const Input: React.FC<InputProps> = ({ placeholder, ...rest }) => {
+const InputPrice = ({ placeholder, value = '' }: Props) => {
   const [isFocused, setIsFocused] = useState(false)
-  const [isFilled, setIsFilled] = useState(false)
+  const [text, setText] = useState(value)
 
-  const inputRef = useRef<InputReference>(null)
+  const inputRef = React.createRef<TextInput>()
 
   const handleInputFocus = useCallback(() => {
     setIsFocused(true)
-  }, [])
+  }, [setIsFocused])
 
   const handleInputBlur = useCallback(() => {
     setIsFocused(false)
+  }, [setIsFocused])
 
-    if (inputRef.current) setIsFilled(!!inputRef.current.value)
-  }, [])
+  const toggleFocus = useCallback(() => {
+    setIsFocused(!isFocused)
+  }, [isFocused, setIsFocused])
 
-  const handleChangeText = useCallback((text) => {
-    if (inputRef.current) inputRef.current.value = text
-  }, [])
+  const textInput = useCallback(
+    (text) => {
+      setText(text)
+    },
+    [text, setText]
+  )
+
+  const isInputEmpty = text !== ''
 
   return (
-    <Container>
-      <PlaceholderLabel
+    <Styled.StyledContainer>
+      <Styled.StyledPlaceholderLabel
         isFocused={isFocused}
-        isFilled={isFilled}
-        onPress={() => setIsFocused(!isFocused)}
+        isFilled={isInputEmpty}
+        onPress={toggleFocus}
       >
         {placeholder}
-      </PlaceholderLabel>
-      <LabeledInput
-        ref={inputRef}
-        keyboardAppearance='dark'
+      </Styled.StyledPlaceholderLabel>
+      <Styled.StyledLabeledInput
+        keyboardType='numeric'
         placeholderTextColor='#DCDCDC'
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
-        onChangeText={handleChangeText}
-        {...rest}
+        onChangeText={textInput}
+        value={text}
+        ref={inputRef}
       />
-      <RubleIcon>
+      <Styled.StyledRubleIcon>
         <Ruble width='12px' height='21px' />
-      </RubleIcon>
-    </Container>
+      </Styled.StyledRubleIcon>
+    </Styled.StyledContainer>
   )
 }
 
-export default Input
+export default InputPrice
