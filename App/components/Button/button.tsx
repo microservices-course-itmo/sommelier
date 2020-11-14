@@ -7,7 +7,7 @@ type Props = {
 }
 
 const Button = ({ onPress = () => {}, children = '' }: Props) => (
-  <Styled.ButtonContainer onPress={onPress}>
+  <Styled.ButtonContainer onPress={onPress} data-test='sommelier-button'>
     <Styled.ButtonText>{children}</Styled.ButtonText>
   </Styled.ButtonContainer>
 )

@@ -47,6 +47,7 @@ const SearchInput = ({
         onChange={onChange}
         onChangeText={(text) => setText(text)}
         maxLength={maxLength}
+        data-test='sommelier-search-input'
       />
       {clearButtonMode && (
         <Styled.ViewClose>

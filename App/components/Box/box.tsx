@@ -20,6 +20,7 @@ const Box = ({
     borderColor={borderColor}
     borderRadius={borderRadius}
     backgroundColor={backgroundColor}
+    data-test='sommelier-box'
   >
     {children}
   </Styled.BoxContainer>

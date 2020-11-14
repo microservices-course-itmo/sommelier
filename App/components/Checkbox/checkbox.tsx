@@ -12,6 +12,7 @@ const Checkbox = ({ checked, children }: Props) => (
     <NativeCheckbox
       value={checked}
       tintColors={{ true: '#A22841', false: '#757575' }}
+      data-test='sommelier-checkbox'
     />
     <CheckboxText>{children}</CheckboxText>
   </CheckboxContainer>
