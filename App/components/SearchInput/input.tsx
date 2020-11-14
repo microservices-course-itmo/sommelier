@@ -37,6 +37,7 @@ const SearchInput = ({
       <Search
         width={theme.searchSizes[size]}
         height={theme.searchSizes[size]}
+        testID='sommelier-search-input-search-svg'
       />
       <Styled.StyledInput
         defaultValue={defaultValue}
@@ -47,13 +48,18 @@ const SearchInput = ({
         onChange={onChange}
         onChangeText={(text) => setText(text)}
         maxLength={maxLength}
+        testID='sommelier-search-input'
       />
       {clearButtonMode && (
         <Styled.ViewClose>
-          <TouchableOpacity onPress={() => setText('')}>
+          <TouchableOpacity
+            onPress={() => setText('')}
+            testID='sommelier-search-input-clear-button'
+          >
             <Close
               width={theme.inputSearchFontSizes[size]}
               height={theme.inputSearchFontSizes[size]}
+              testID='sommelier-search-input-close-svg'
             />
           </TouchableOpacity>
         </Styled.ViewClose>

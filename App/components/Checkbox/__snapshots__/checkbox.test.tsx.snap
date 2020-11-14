@@ -28,6 +28,7 @@ exports[`Checkbox component Component with only necessary props matches snapshot
           undefined,
         ]
       }
+      testID="sommelier-checkbox"
       tintColors={
         Object {
           "false": "#757575",
@@ -50,25 +51,7 @@ exports[`Checkbox component Component with only necessary props matches snapshot
       ]
     }
   >
-    <Text
-      color="black"
-      size="md"
-      style={
-        Array [
-          Object {
-            "color": "#000",
-            "fontSize": 12,
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "textDecorationColor": "black",
-            "textDecorationLine": "none",
-            "textDecorationStyle": "solid",
-          },
-        ]
-      }
-    >
-      abc
-    </Text>
+    abc
   </Text>
 </View>
 `;

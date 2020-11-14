@@ -1,6 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Box component Component matches snapshot 1`] = `
+exports[`Box component Component with all props matches snapshot 1`] = `
+<View
+  backgroundColor="dark"
+  borderColor="white"
+  borderRadius={5}
+  mX="m"
+  mY="l"
+  pX="xs"
+  pY="s"
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#0366d6",
+        "borderColor": "#fff",
+        "borderRadius": 5,
+        "marginBottom": 16,
+        "marginLeft": 24,
+        "marginRight": 24,
+        "marginTop": 16,
+        "paddingBottom": 4,
+        "paddingLeft": 8,
+        "paddingRight": 8,
+        "paddingTop": 4,
+      },
+    ]
+  }
+  testID="sommelier-box"
+>
+  abc
+</View>
+`;
+
+exports[`Box component Component with only necessary props matches snapshot 1`] = `
 <View
   style={
     Array [
@@ -18,6 +50,7 @@ exports[`Box component Component matches snapshot 1`] = `
       },
     ]
   }
+  testID="sommelier-box"
 >
   abc
 </View>

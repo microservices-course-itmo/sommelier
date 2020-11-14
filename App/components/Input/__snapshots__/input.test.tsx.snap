@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input Price component Component with all props matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomColor": "#dcdcdc",
+        "borderBottomWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 50,
+        "marginTop": 40,
+        "paddingLeft": 1,
+        "paddingRight": 12,
+        "width": 126,
+      },
+    ]
+  }
+>
+  <Text
+    isFilled={true}
+    isFocused={false}
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#B5B5B5",
+          "fontSize": 12,
+          "left": 0,
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "translateY": 4,
+            },
+          ],
+        },
+      ]
+    }
+    testID="sommelier-input-price-placeholder"
+  >
+    123
+  </Text>
+  <TextInput
+    allowFontScaling={true}
+    keyboardType="numeric"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholderTextColor="#DCDCDC"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontSize": 18,
+          "marginBottom": -20,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+    testID="sommelier-input-price-label"
+    underlineColorAndroid="transparent"
+    value="123"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "bottom": 2,
+          "position": "absolute",
+          "right": 0,
+        },
+      ]
+    }
+  >
+    <SvgMock
+      height="21px"
+      width="12px"
+    />
+  </View>
+</View>
+`;
+
+exports[`Input Price component Component with only necessary props matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "borderBottomColor": "#dcdcdc",
+        "borderBottomWidth": 1,
+        "display": "flex",
+        "flexDirection": "row",
+        "height": 50,
+        "marginTop": 40,
+        "paddingLeft": 1,
+        "paddingRight": 12,
+        "width": 126,
+      },
+    ]
+  }
+>
+  <Text
+    isFilled={false}
+    isFocused={false}
+    onPress={[Function]}
+    style={
+      Array [
+        Object {
+          "color": "#B5B5B5",
+          "fontSize": 18,
+          "left": 0,
+          "position": "absolute",
+          "transform": Array [
+            Object {
+              "translateY": 25,
+            },
+          ],
+        },
+      ]
+    }
+    testID="sommelier-input-price-placeholder"
+  />
+  <TextInput
+    allowFontScaling={true}
+    keyboardType="numeric"
+    onBlur={[Function]}
+    onChangeText={[Function]}
+    onFocus={[Function]}
+    placeholderTextColor="#DCDCDC"
+    rejectResponderTermination={true}
+    style={
+      Array [
+        Object {
+          "color": "#333333",
+          "flexBasis": 0,
+          "flexGrow": 1,
+          "flexShrink": 1,
+          "fontSize": 18,
+          "marginBottom": -20,
+          "paddingBottom": 0,
+          "paddingLeft": 0,
+          "paddingRight": 0,
+          "paddingTop": 0,
+        },
+      ]
+    }
+    testID="sommelier-input-price-label"
+    underlineColorAndroid="transparent"
+    value=""
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "bottom": 2,
+          "position": "absolute",
+          "right": 0,
+        },
+      ]
+    }
+  >
+    <SvgMock
+      height="21px"
+      width="12px"
+    />
+  </View>
+</View>
+`;
