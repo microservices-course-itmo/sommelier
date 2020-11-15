@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
-import { Props, ToggleProps, NotchProps } from './switch.types'
+import { SwitchProps, ToggleProps, NotchProps } from './switch.types'
 
-export const SwitchContainer = styled.TouchableWithoutFeedback<Props>`
+export const SwitchContainer = styled.TouchableWithoutFeedback<SwitchProps>`
   ${({ disabled }) => disabled && `opacity: 0.5;`}
 `
 
