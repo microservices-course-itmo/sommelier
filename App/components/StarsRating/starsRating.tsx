@@ -21,7 +21,7 @@ const preparedStars = (rating: number) => {
 }
 
 const StarsRating = ({ score, rating }: Props) => (
-  <Styled.Container data-test='sommelier-stars-rating'>
+  <Styled.Container>
     <Styled.RatingContainer>
       <Styled.ImageContainer>{preparedStars(rating)}</Styled.ImageContainer>
       {!!score && <Styled.RatingText>{score}</Styled.RatingText>}

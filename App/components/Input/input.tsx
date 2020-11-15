@@ -54,7 +54,6 @@ const InputPrice = ({ placeholder, value = '' }: Props) => {
         onChangeText={textInput}
         value={text}
         ref={inputRef}
-        data-test='sommelier-input-price'
       />
       <Styled.StyledRubleIcon>
         <Ruble width='12px' height='21px' />

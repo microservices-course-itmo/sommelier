@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { View } from 'react-native'
 import FilledFavorite from '../../../assets/images/filledFavorite.svg'
 import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
 import CheckMark from '../../../assets/images/checkMark.svg'
@@ -29,7 +30,6 @@ const Switch = ({
       onPress={toggleSwitch}
       value={stateValue}
       disabled={disabled}
-      data-test='sommelier-switch'
     >
       {(() => {
         switch (switchType) {

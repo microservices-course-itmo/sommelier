@@ -9,7 +9,7 @@ export type NavbarProps = {
 }
 
 export const Navbar = ({ children }: NavbarProps) => (
-  <Styled.NavbarContainer data-test='sommelier-navbar'>
+  <Styled.NavbarContainer>
     <Styled.ItemsContainer>{children}</Styled.ItemsContainer>
   </Styled.NavbarContainer>
 )
@@ -21,7 +21,7 @@ export type NavbarItemProps = {
 }
 
 export const Item = ({ text, onPress, icon }: NavbarItemProps) => (
-  <Styled.ItemContainer onPress={onPress} data-test='sommelier-nav-item'>
+  <Styled.ItemContainer onPress={onPress}>
     <Styled.NavItemStyle>{icon}</Styled.NavItemStyle>
     {!!text && (
       <Label.Text

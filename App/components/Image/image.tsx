@@ -17,7 +17,6 @@ const Image = (props: Props) => {
         source={{ uri: image }}
         width={width}
         height={height}
-        data-test='sommelier-image'
       />
     </Box>
   )

@@ -57,7 +57,6 @@ export const Text = ({
     italic={italic}
     size={size}
     crossedOut={crossedOut}
-    data-test='sommelier-typography'
   >
     {children}
   </StyledText>
