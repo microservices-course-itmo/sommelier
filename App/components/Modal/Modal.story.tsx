@@ -24,7 +24,7 @@ const defaultModal = () => {
         </Content>
       </Modal>
 
-      <Text>Text inside modal</Text>
+      <Text>Text outside modal</Text>
     </>
   )
 }
