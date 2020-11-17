@@ -5,12 +5,12 @@ import * as Styled from './input.styled'
 
 import Ruble from '../../../assets/images/ruble.svg'
 
-type Props = {
+export type InputPriceProps = {
   placeholder?: string
   value?: string
 }
 
-const InputPrice = ({ placeholder, value = '' }: Props) => {
+const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
   const [isFocused, setIsFocused] = useState(false)
   const [text, setText] = useState(value)
 

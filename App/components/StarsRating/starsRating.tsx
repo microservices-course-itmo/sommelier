@@ -3,7 +3,7 @@ import * as Styled from './starsRating.styled'
 import FilledStar from '../../../assets/images/FilledStar.svg'
 import UnfilledStar from '../../../assets/images/UnfilledStar.svg'
 
-type Props = {
+export type StarsRatingProps = {
   rating: number
   score?: number
 }
@@ -20,7 +20,7 @@ const preparedStars = (rating: number) => {
   return stars
 }
 
-const StarsRating = ({ score, rating }: Props) => (
+const StarsRating = ({ score, rating }: StarsRatingProps) => (
   <Styled.Container>
     <Styled.RatingContainer>
       <Styled.ImageContainer>{preparedStars(rating)}</Styled.ImageContainer>

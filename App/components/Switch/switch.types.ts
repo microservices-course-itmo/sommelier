@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 import theme from '../../theme'
 
-export type Props = {
+export type SwitchProps = {
   switchType?: keyof typeof theme.switchTypes
   value?: boolean
   onChange?: (value: boolean) => void

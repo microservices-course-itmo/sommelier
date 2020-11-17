@@ -1,12 +1,12 @@
 import React, { ReactNode } from 'react'
 import * as Styled from './button.styled'
 
-type Props = {
+export type ButtonProps = {
   onPress: () => void
   children: ReactNode
 }
 
-const Button = ({ onPress = () => {}, children = '' }: Props) => (
+const Button = ({ onPress = () => {}, children = '' }: ButtonProps) => (
   <Styled.ButtonContainer onPress={onPress} testID='sommelier-button'>
     <Styled.ButtonText>{children}</Styled.ButtonText>
   </Styled.ButtonContainer>

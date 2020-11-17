@@ -1,15 +1,15 @@
 import React from 'react'
 import * as Styled from './image.styled'
 import Box from '../Box/box'
-import { BoxProps } from '../Box/box.types'
+import { BoxProps } from '../Box'
 
-export type Props = {
+export type ImageProps = {
   image: string
   width?: number
   height?: number
 } & BoxProps
 
-const Image = (props: Props) => {
+const Image = (props: ImageProps) => {
   const { image, width, height } = props
   return (
     <Box {...props}>

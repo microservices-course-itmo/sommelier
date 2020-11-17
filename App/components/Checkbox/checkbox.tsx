@@ -2,12 +2,12 @@ import React, { ReactNode } from 'react'
 import NativeCheckbox from '@react-native-community/checkbox'
 import { CheckboxContainer, CheckboxText } from './checkbox.styled'
 
-type Props = {
+export type CheckBoxProps = {
   checked: boolean
   children: ReactNode
 }
 
-const Checkbox = ({ checked, children }: Props) => (
+const Checkbox = ({ checked, children }: CheckBoxProps) => (
   <CheckboxContainer>
     <NativeCheckbox
       value={checked}

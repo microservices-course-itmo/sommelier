@@ -4,14 +4,14 @@ import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
 import CheckMark from '../../../assets/images/checkMark.svg'
 import * as Styled from './switch.styled'
 import theme from '../../theme'
-import { Props } from './switch.types'
+import { SwitchProps } from './switch.types'
 
 const Switch = ({
   switchType = 'default',
   value = false,
   onChange = (): void => {},
   disabled = false,
-}: Props) => {
+}: SwitchProps) => {
   const [stateValue, setStateValue] = useState(value)
 
   useEffect(() => {
