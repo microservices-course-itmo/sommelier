@@ -9,6 +9,7 @@ import { COLOR_KEYS } from '../../theme/colors/index'
 import Button from './button'
 import UnderButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
+import ButtonIcon from '../../../assets/images/ButtonIcon.svg'
 
 const defaultButton = () => (
   <Styled.Wrapper>
@@ -20,6 +21,9 @@ const defaultButton = () => (
       text={text('text', 'Применить')}
       fontSize={select('font-size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.hg)}
       color={select('text color', COLOR_KEYS, COLOR_KEYS.white)}
+      iconHeight={number('icon height', 16)}
+      iconWeight={number('icon width', 16)}
+      icon={<ButtonIcon />}
     />
     <UnderButton
       height={number('height 2', 35)}

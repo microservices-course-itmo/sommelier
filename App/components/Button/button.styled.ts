@@ -18,18 +18,25 @@ type UnderButtonProps = {
   shadowColor?: keyof typeof theme.colors
 }
 
+type IconProps = {
+  width?: number
+  height?: number
+  margin?: number
+}
+
 export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
-  position: absolute;
+  position: relative;
   background-color: ${({ theme }) => theme.colors.primaryRed};
   border-radius: ${({ borderRadius }) => borderRadius || 0};
   width: ${({ width }) => width || 0};
   height: ${({ height }) => height || 0};
   z-index: 2;
+  margin: auto;
 `
 
 export const UnderButtonContainer = styled.View<UnderButtonProps>`
     position: absolute;
-    left: 5;
+    margin-left: 30px;
     top: ${({ top }) => top || 0};
     background-color: ${({ theme }) => theme.colors.primaryDarkRed};
     border-radius: ${({ borderRadius }) => borderRadius || 0};
@@ -58,9 +65,13 @@ export const ButtonText = styled.Text`
   font-weight: 500;
 `
 
-export const Wrapper = styled.View<ButtonProps>`
-  background-color: ${({ theme }) => theme.colors.black};
+export const Wrapper = styled.View`
   position: relative;
+`
+
+export const iconContainer = styled.View<IconProps>`
   width: ${({ width }) => width || 0};
   height: ${({ height }) => height || 0};
+
+  margin-right: 9px;
 `

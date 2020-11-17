@@ -12,6 +12,9 @@ type Props = {
   text: string
   fontSize?: keyof typeof theme.fontSizes
   color?: keyof typeof theme.colors
+  icon: ReactNode
+  iconHeight?: number
+  iconWeight?: number
 }
 
 const Button = ({
@@ -22,6 +25,9 @@ const Button = ({
   height,
   fontSize = 'hg',
   color = COLOR_KEYS.white,
+  icon,
+  iconHeight,
+  iconWeight,
 }: Props) => (
   <Styled.ButtonContainer
     onPress={onPress}
@@ -31,6 +37,9 @@ const Button = ({
   >
     <Styled.ButtonTextContainer>
       <Typography.Text color={color} size={fontSize}>
+        <Styled.iconContainer height={iconHeight} width={iconWeight}>
+          {icon}
+        </Styled.iconContainer>
         {text}
       </Typography.Text>
     </Styled.ButtonTextContainer>
