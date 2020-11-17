@@ -22,6 +22,8 @@ export const colors = {
   switchToggleOff: '#ededed',
   switchNotchOn: '#45d09e',
   switchNotchOff: '#e0e0e0',
+
+  modalCover: 'rgba(15, 15, 15, 0.38)',
 } as const
 
 export const COLOR_KEYS = {
@@ -48,4 +50,5 @@ export const COLOR_KEYS = {
   switchToggleOff: 'switchToggleOff',
   switchNotchOn: 'switchNotchOn',
   switchNotchOff: 'switchNotchOff',
+  modalCover: 'modalCover',
 } as const
