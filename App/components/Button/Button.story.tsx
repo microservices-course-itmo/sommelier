@@ -7,7 +7,7 @@ import { FONT_SIZE_KEYS } from '../../theme/fontSizes/index'
 import { COLOR_KEYS } from '../../theme/colors/index'
 
 import Button from './button'
-import UnderButton from './underButton'
+import UnderscoreButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import ButtonIcon from '../../../assets/images/ButtonIcon.svg'
 
@@ -25,7 +25,7 @@ const defaultButton = () => (
       iconWeight={number('icon width', 16)}
       icon={<ButtonIcon />}
     />
-    <UnderButton
+    <UnderscoreButton
       height={number('height 2', 35)}
       width={number('width 2', 311)}
       borderRadius={number('border-radius 2', 10)}

@@ -6,7 +6,7 @@ import { COLOR_KEYS } from '../../theme/colors/index'
 import UnderButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
-const defaultUnderButton = () => (
+const defaultUnderscoreButton = () => (
   <UnderButton
     height={number('height', 35)}
     width={number('width', 311)}
@@ -22,4 +22,4 @@ const defaultUnderButton = () => (
 storiesOf('UnderButton', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
-  .add('Default button', defaultUnderButton)
+  .add('Default button', defaultUnderscoreButton)

@@ -14,7 +14,7 @@ type Props = {
   top?: number
 }
 
-const UnderButton = ({
+const UnderscoreButton = ({
   width,
   height,
   borderRadius,
@@ -24,7 +24,7 @@ const UnderButton = ({
   top,
   shadowColor = COLOR_KEYS.shadowButton,
 }: Props) => (
-  <Styled.UnderButtonContainer
+  <Styled.UnderscoreButtonContainer
     width={width}
     height={height}
     borderRadius={borderRadius}
@@ -36,4 +36,4 @@ const UnderButton = ({
   />
 )
 
-export default UnderButton
+export default UnderscoreButton

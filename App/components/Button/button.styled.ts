@@ -7,7 +7,7 @@ type ButtonProps = {
   height?: number
 }
 
-type UnderButtonProps = {
+type UnderscoreButtonProps = {
   width?: number
   height?: number
   borderRadius?: number
@@ -34,7 +34,7 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
   margin: auto;
 `
 
-export const UnderButtonContainer = styled.View<UnderButtonProps>`
+export const UnderscoreButtonContainer = styled.View<UnderscoreButtonProps>`
     position: absolute;
     margin-left: 30px;
     top: ${({ top }) => top || 0};
