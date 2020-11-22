@@ -14,6 +14,13 @@ export const colors = {
   primaryGray: '#666666',
   primaryDarkRed: '#680e24',
   shadowButton: 'rgba(104, 14, 36, 0.25)',
+  notEditableField: 'rgba(127, 127, 127, 0.3)',
+  searchInputBorder: '#9e9e9e',
+
+  switchToggleOn: 'rgba(69, 208, 158, 0.5)',
+  switchToggleOff: '#ededed',
+  switchNotchOn: '#45d09e',
+  switchNotchOff: '#e0e0e0',
 } as const
 
 export const COLOR_KEYS = {
@@ -32,4 +39,11 @@ export const COLOR_KEYS = {
   primaryGray: 'primaryGray',
   primaryDarkRed: 'primaryDarkRed',
   shadowButton: 'shadowButton',
+  notEditableField: 'notEditableField',
+  searchInputBorder: 'searchInputBorder',
+
+  switchToggleOn: 'switchToggleOn',
+  switchToggleOff: 'switchToggleOff',
+  switchNotchOn: 'switchNotchOn',
+  switchNotchOff: 'switchNotchOff',
 } as const

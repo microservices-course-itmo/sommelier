@@ -1,45 +1,37 @@
 import React from 'react'
-import Item from './navItem'
-import Navbar from './navbar'
 import { storiesOf } from '@storybook/react-native'
 import { action } from '@storybook/addon-actions'
+import { text } from '@storybook/addon-knobs'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import MenuItem1 from '../../../assets/images/MenuItem1.svg'
 import MenuItem2 from '../../../assets/images/MenuItem2.svg'
 import MenuItem3 from '../../../assets/images/MenuItem3.svg'
 import MenuItem4 from '../../../assets/images/MenuItem4.svg'
-import { text } from '@storybook/addon-knobs'
+import Item from './navItem'
+import Navbar from './navbar'
 
 const defaultNavbar = () => (
   <Navbar>
     <Item
       onPress={action('tapper-default')}
-      selected={true}
       text={text('main', 'Главное')}
-    >
-      <MenuItem1 />
-    </Item>
+      icon={<MenuItem1 />}
+    />
     <Item
       onPress={action('tapper-default')}
-      selected={false}
       text={text('catalog', 'Каталог')}
-    >
-      <MenuItem2 />
-    </Item>
+      icon={<MenuItem2 />}
+    />
     <Item
       onPress={action('tapper-default')}
-      selected={false}
       text={text('favorite', 'Избранное')}
-    >
-      <MenuItem3 />
-    </Item>
+      icon={<MenuItem3 />}
+    />
     <Item
       onPress={action('tapper-default')}
-      selected={false}
       text={text('profile', 'Профиль')}
-    >
-      <MenuItem4 />
-    </Item>
+      icon={<MenuItem4 />}
+    />
   </Navbar>
 )
 

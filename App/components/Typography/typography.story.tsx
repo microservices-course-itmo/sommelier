@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components/native'
 import { storiesOf } from '@storybook/react-native'
 import { boolean, select } from '@storybook/addon-knobs'
-import { H1, H2, H3, H4, H5, H6, Text } from './typography'
+import { H1, H2, H3, H4, H5, H6, Text, Header } from './typography'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import { FONT_SIZE_KEYS } from '../../theme/fontSizes/index'
-import { FONT_KEYS } from '../../theme/fonts/index'
-import { COLOR_KEYS } from '../../theme/colors/index'
+import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
+import { COLOR_KEYS } from '../../theme/colors'
+import { HEADER_SIZES_KEYS } from '../../theme/headerSizes'
 
 const StyledWrapper = styled.View`
   display: flex;
@@ -39,94 +39,31 @@ export const list = () => (
   </StyledWrapper>
 )
 
-export const knobs = () => (
+export const textKnobs = () => (
   <StyledWrapper>
-    <H1
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H1 value
-    </H1>
-    <H2
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H2 value
-    </H2>
-    <H3
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H3 value
-    </H3>
-    <H4
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H4 value
-    </H4>
-    <H5
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H5 value
-    </H5>
-    <H6
-      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
-      bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-    >
-      H6 value
-    </H6>
     <Text
       color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
       bold={boolean('bold', false)}
-      italic={boolean('font-style: italic', false)}
-      fontFamily={
-        boolean('font-family enabled', false)
-          ? select('font-family', FONT_KEYS, FONT_KEYS.PtSans)
-          : undefined
-      }
-      size={select('text font-size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.md)}
+      italic={boolean('italic', false)}
+      size={select('size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.md)}
       crossedOut={boolean('cross-out', false)}
     >
       Text value
     </Text>
+  </StyledWrapper>
+)
+
+export const headerKnobs = () => (
+  <StyledWrapper>
+    <Header
+      color={select('color', COLOR_KEYS, COLOR_KEYS.black)}
+      bold={boolean('bold', false)}
+      italic={boolean('italic', false)}
+      size='h1'
+      crossedOut={boolean('cross-out', false)}
+    >
+      Header value
+    </Header>
   </StyledWrapper>
 )
 
@@ -138,4 +75,9 @@ storiesOf('Typography', module)
 storiesOf('Typography', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
-  .add('Typography knobs', knobs)
+  .add('Text knobs', textKnobs)
+
+storiesOf('Typography', module)
+  .addDecorator(BufferView)
+  .addDecorator(ThemeDecorator)
+  .add('Header knobs', headerKnobs)

@@ -10,10 +10,8 @@ const defaultNavItem = () => (
   <Item
     onPress={action('tapper-default')}
     text={text('favorite', 'Избранное')}
-    selected={true}
-  >
-    <MenuItem3 />
-  </Item>
+    icon={<MenuItem3 />}
+  />
 )
 
 storiesOf('NavItem', module)

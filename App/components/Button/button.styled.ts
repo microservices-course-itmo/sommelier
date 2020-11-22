@@ -50,8 +50,6 @@ export const UnderscoreButtonContainer = styled.View<UnderscoreButtonProps>`
     shadow-color: ${({ theme }) => theme.colors.shadowButton};   
     z-index: 1;
 `
-/*${({shadowWidth}) => shadowWidth || 0}*/
-/*${({shadowHeight}) => shadowHeight || 0}*/
 
 export const ButtonTextContainer = styled.View`
   flex: 1;
@@ -69,7 +67,7 @@ export const Wrapper = styled.View`
   position: relative;
 `
 
-export const iconContainer = styled.View<IconProps>`
+export const IconContainer = styled.View<IconProps>`
   width: ${({ width }) => width || 0};
   height: ${({ height }) => height || 0};
 

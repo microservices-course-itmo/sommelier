@@ -1,21 +1,18 @@
-import React from 'react'
-import SvgUri from 'react-native-svg-uri'
+import React, { ReactNode } from 'react'
 import * as Label from '../Typography'
 import * as Styled from './navbar.styled'
 import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
-import { FONT_KEYS } from '../../theme/fonts'
 import { COLOR_KEYS } from '../../theme/colors'
 
 export type Props = {
-  children: object
+  icon: ReactNode
   onPress: () => void
   text?: string
-  selected: boolean
 }
 
-const Item = ({ children, text, onPress }: Props) => (
+const Item = ({ icon, text, onPress }: Props) => (
   <Styled.ItemContainer onPress={onPress} selected={false}>
-    <Styled.NavItemStyle>{children}</Styled.NavItemStyle>
+    <Styled.NavItemStyle>{icon}</Styled.NavItemStyle>
     {!!text && (
       <Label.Text
         color={COLOR_KEYS.primaryGray}
