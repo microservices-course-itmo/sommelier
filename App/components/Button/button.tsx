@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import * as Styled from './button.styled'
 import * as Typography from '../Typography'
 import theme from '../../theme'
-import { COLOR_KEYS } from '../../theme/colors/index'
+import { COLOR_KEYS } from '../../theme/colors'
 
 export type ButtonProps = {
   onPress: () => void
@@ -28,7 +28,7 @@ const Button = ({
   icon,
   iconHeight,
   iconWeight,
-}: Props) => (
+}: ButtonProps) => (
   <Styled.ButtonContainer
     onPress={onPress}
     width={width}

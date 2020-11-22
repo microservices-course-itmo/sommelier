@@ -35,20 +35,20 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
 `
 
 export const UnderscoreButtonContainer = styled.View<UnderscoreButtonProps>`
-    position: absolute;
-    margin-left: 30px;
-    top: ${({ top }) => top || 0};
-    background-color: ${({ theme }) => theme.colors.primaryDarkRed};
-    border-radius: ${({ borderRadius }) => borderRadius || 0};
-    width: ${({ width }) => width || 0};
-    height: ${({ height }) => height || 0};
-    shadow-offset: { 
-        width: ${({ shadowWidth }) => shadowWidth || 0}, 
-        height: ${({ shadowHeight }) => shadowHeight || 0} 
-    };
-    shadow-opacity: ${({ shadowOpacity }) => shadowOpacity || 0};
-    shadow-color: ${({ theme }) => theme.colors.shadowButton};   
-    z-index: 1;
+  position: absolute;
+  margin-left: 30px;
+  top: ${({ top }) => top || 0};
+  background-color: ${({ theme }) => theme.colors.primaryDarkRed};
+  border-radius: ${({ borderRadius }) => borderRadius || 0};
+  width: ${({ width }) => width || 0};
+  height: ${({ height }) => height || 0};
+  shadow-offset: {
+    width: ${({ shadowWidth }) => shadowWidth || 0};
+    height: ${({ shadowHeight }) => shadowHeight || 0};
+  }
+  shadow-opacity: ${({ shadowOpacity }) => shadowOpacity || 0};
+  shadow-color: ${({ theme }) => theme.colors.shadowButton};
+  z-index: 1;
 `
 
 export const ButtonTextContainer = styled.View`
@@ -56,11 +56,6 @@ export const ButtonTextContainer = styled.View`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-`
-
-export const ButtonText = styled.Text`
-  align-self: center;
-  font-weight: 500;
 `
 
 export const Wrapper = styled.View`

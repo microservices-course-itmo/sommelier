@@ -17,7 +17,8 @@ export const Navbar = ({ children }: NavbarProps) => (
 export type NavbarItemProps = {
   onPress: () => void
   text?: string
-  icon: ReactNode
+  icon?: ReactNode
+  children?: ReactNode
 }
 
 export const Item = ({ text, onPress, icon }: NavbarItemProps) => (
