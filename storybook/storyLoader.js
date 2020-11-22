@@ -7,13 +7,12 @@ function loadStories() {
   require('../App/components/Box/box.story')
   require('../App/components/Button/Button.story')
   require('../App/components/Button/UnderButton.story')
-  require('../App/components/Checkbox/checkbox.story')
   require('../App/components/Image/Image.story')
-  require('../App/components/SearchInput/input.story')
   require('../App/components/Input/input.story')
   require('../App/components/Navbar/navbar.story')
-  require('../App/components/SearchInput/input.story')
   require('../App/components/Navbar/navItem.story')
+  require('../App/components/RadioButton/RadioButton.story')
+  require('../App/components/SearchInput/input.story')
   require('../App/components/StarsRating/starsRating.story')
   require('../App/components/Switch/Switch.story')
   require('../App/components/Typography/typography.story')
@@ -22,12 +21,12 @@ function loadStories() {
 const stories = [
   '../App/components/Box/box.story',
   '../App/components/Button/Button.story',
-  '../App/components/Checkbox/checkbox.story',
   '../App/components/Button/UnderButton.story',
   '../App/components/Image/Image.story',
   '../App/components/Input/input.story',
   '../App/components/Navbar/navbar.story',
   '../App/components/Navbar/navItem.story',
+  '../App/components/RadioButton/RadioButton.story',
   '../App/components/SearchInput/input.story',
   '../App/components/StarsRating/starsRating.story',
   '../App/components/Switch/Switch.story',
