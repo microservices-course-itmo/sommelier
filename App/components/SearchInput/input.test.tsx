@@ -1,6 +1,6 @@
 import React from 'react'
 import { fireEvent } from '@testing-library/react-native'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import SearchInput from './input'
 
 describe('SearchInput component', () => {

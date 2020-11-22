@@ -4,7 +4,7 @@ import * as Typography from '../Typography'
 import theme from '../../theme'
 import { COLOR_KEYS } from '../../theme/colors/index'
 
-type Props = {
+export type ButtonProps = {
   onPress: () => void
   width?: number
   borderRadius?: number

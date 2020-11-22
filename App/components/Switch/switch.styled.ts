@@ -1,7 +1,7 @@
 import styled from 'styled-components/native'
-import { Props, ToggleProps, NotchProps } from './switch.types'
+import { SwitchProps, ToggleProps, NotchProps } from './switch.types'
 
-export const SwitchContainer = styled.TouchableWithoutFeedback<Props>`
+export const SwitchContainer = styled.TouchableWithoutFeedback<SwitchProps>`
   ${({ disabled }) => disabled && `opacity: 0.5;`}
 `
 
@@ -19,7 +19,7 @@ export const Notch = styled.View<NotchProps>`
   border-radius: 10px;
   background-color: ${({ value, theme }) =>
     value ? theme.colors.switchNotchOn : theme.colors.switchNotchOff};
-  ${({ value }) => (value ? 'right: -3px;' : 'left: -3px;')}
+  ${({ value }) => (value ? 'right: -3px;' : 'left: -3px;')};
   top: -2px;
   position: absolute;
   z-index: 1;

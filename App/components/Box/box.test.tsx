@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import Box from './box'
 
 describe('Box component', () => {
