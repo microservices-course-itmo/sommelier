@@ -8,6 +8,7 @@ export {
   NavbarItemProps,
   NavbarProps,
 } from './App/components/Navbar'
+export { RadioButton, RadioButtonProps } from './App/components/RadioButton'
 export { SearchInput, SearchInputProps } from './App/components/SearchInput'
 export { StarsRating, StarsRatingProps } from './App/components/StarsRating'
 export { Switch, SwitchProps } from './App/components/Switch'
