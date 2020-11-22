@@ -11,12 +11,9 @@ import { Navbar, Item } from './navbar'
 
 const defaultNavbar = () => (
   <Navbar>
-    <Item
-      onPress={action('tapper-default')}
-      text={text('main', 'Главное')}
-      icon={<MenuItem1 />}
-    />
-
+    <Item onPress={action('tapper-default')} text={text('main', 'Главное')}>
+      <MenuItem1 />
+    </Item>
     <Item
       onPress={action('tapper-default')}
       text={text('catalog', 'Каталог')}
