@@ -14,7 +14,7 @@ export type ButtonProps = {
   color?: keyof typeof theme.colors
   icon: ReactNode
   iconHeight?: number
-  iconWeight?: number
+  iconWidth?: number
 }
 
 const Button = ({
@@ -27,7 +27,7 @@ const Button = ({
   color = COLOR_KEYS.white,
   icon,
   iconHeight,
-  iconWeight,
+  iconWidth,
 }: ButtonProps) => (
   <Styled.ButtonContainer
     onPress={onPress}
@@ -37,7 +37,7 @@ const Button = ({
   >
     <Styled.ButtonTextContainer>
       <Typography.Text color={color} size={fontSize}>
-        <Styled.IconContainer height={iconHeight} width={iconWeight}>
+        <Styled.IconContainer height={iconHeight} width={iconWidth}>
           {icon}
         </Styled.IconContainer>
         {text}

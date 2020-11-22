@@ -22,7 +22,7 @@ const defaultButton = () => (
       fontSize={select('font-size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.hg)}
       color={select('text color', COLOR_KEYS, COLOR_KEYS.white)}
       iconHeight={number('icon height', 16)}
-      iconWeight={number('icon width', 16)}
+      iconWidth={number('icon width', 16)}
       icon={<ButtonIcon />}
     />
     <UnderscoreButton
