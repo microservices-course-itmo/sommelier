@@ -1,4 +1,4 @@
-export { Box, BoxProps } from './App/components/box'
+export { Box, BoxProps } from './App/components/Box'
 export { Button, ButtonProps } from './App/components/Button'
 export { Image, ImageProps } from './App/components/Image'
 export { InputPrice, InputPriceProps } from './App/components/Input'
@@ -24,4 +24,4 @@ export {
   HeaderProps,
   TextProps,
   TypographyProps,
-} from './App/components/typography'
+} from './App/components/Typography'
