@@ -14,7 +14,6 @@
     "lint": "eslint ./App/**/*.{js,ts,tsx}"
   },
   "dependencies": {
-    "@react-native-community/checkbox": "^0.5.5",
     "@react-navigation/bottom-tabs": "^5.9.2",
     "@react-navigation/native": "^5.7.6",
     "@storybook/addon-actions": "^5.3",
