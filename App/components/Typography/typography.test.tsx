@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import { H1, H2, H3, H4, H5, H6, Text } from './typography'
 
 describe('Typography component', () => {

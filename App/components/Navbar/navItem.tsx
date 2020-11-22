@@ -5,13 +5,13 @@ import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
 import { COLOR_KEYS } from '../../theme/colors'
 
 export type Props = {
+  icon: ReactNode
   onPress: () => void
   text?: string
-  icon: ReactNode
 }
 
-const Item = ({ text, onPress, icon }: Props) => (
-  <Styled.ItemContainer onPress={onPress}>
+const Item = ({ icon, text, onPress }: Props) => (
+  <Styled.ItemContainer onPress={onPress} selected={false}>
     <Styled.NavItemStyle>{icon}</Styled.NavItemStyle>
     {!!text && (
       <Label.Text

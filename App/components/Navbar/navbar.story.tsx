@@ -7,17 +7,13 @@ import MenuItem1 from '../../../assets/images/MenuItem1.svg'
 import MenuItem2 from '../../../assets/images/MenuItem2.svg'
 import MenuItem3 from '../../../assets/images/MenuItem3.svg'
 import MenuItem4 from '../../../assets/images/MenuItem4.svg'
-import Item from './navItem'
-import Navbar from './navbar'
+import { Navbar, Item } from './navbar'
 
 const defaultNavbar = () => (
   <Navbar>
-    <Item
-      onPress={action('tapper-default')}
-      text={text('main', 'Главное')}
-      icon={<MenuItem1 />}
-    />
-
+    <Item onPress={action('tapper-default')} text={text('main', 'Главное')}>
+      <MenuItem1 />
+    </Item>
     <Item
       onPress={action('tapper-default')}
       text={text('catalog', 'Каталог')}
@@ -36,7 +32,16 @@ const defaultNavbar = () => (
   </Navbar>
 )
 
+const defaultNavItem = () => (
+  <Item
+    onPress={action('tapper-default')}
+    text={text('favorite', 'Избранное')}
+    icon={<MenuItem3 />}
+  />
+)
+
 storiesOf('Navbar', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
   .add('Default navbar', defaultNavbar)
+  .add('Default item', defaultNavItem)

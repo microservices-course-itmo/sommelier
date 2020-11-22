@@ -1,6 +1,7 @@
 import React from 'react'
-import { themeRender } from '../test-utils'
+import { themeRender } from '../../config/test-utils'
 import Image from './image'
+import theme from '../../theme'
 
 describe('Image component', () => {
   it('Component matches snapshot', () => {
@@ -31,7 +32,8 @@ describe('Image component', () => {
     const elem = themeRender(
       <Image
         image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
-        border='solid'
+        borderColor='black'
+        borderRadius={2}
       />
     )
     expect(elem.toJSON().children[0].props.border).toBe('solid')

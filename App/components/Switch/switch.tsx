@@ -1,19 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { View } from 'react-native'
 import FilledFavorite from '../../../assets/images/filledFavorite.svg'
 import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
 import CheckMark from '../../../assets/images/checkMark.svg'
 import * as Styled from './switch.styled'
 import theme from '../../theme'
-import { Props } from './switch.types'
+import { SwitchProps } from './switch.types'
 
 const Switch = ({
-  children,
   switchType = 'default',
   value = false,
   onChange = (): void => {},
   disabled = false,
-}: Props) => {
+}: SwitchProps) => {
   const [stateValue, setStateValue] = useState(value)
 
   useEffect(() => {
