@@ -1,7 +1,17 @@
-export { Box } from './App/components/box'
-export { Button } from './App/components/Button'
-export { Image } from './App/components/Image'
-export { StarsRating } from './App/components/StarsRating'
+export { Box, BoxProps } from './App/components/Box'
+export { Button, ButtonProps } from './App/components/Button'
+export { Image, ImageProps } from './App/components/Image'
+export { InputPrice, InputPriceProps } from './App/components/Input'
+export {
+  Navbar,
+  Item,
+  NavbarItemProps,
+  NavbarProps,
+} from './App/components/Navbar'
+export { RadioButton, RadioButtonProps } from './App/components/RadioButton'
+export { SearchInput, SearchInputProps } from './App/components/SearchInput'
+export { StarsRating, StarsRatingProps } from './App/components/StarsRating'
+export { Switch, SwitchProps } from './App/components/Switch'
 export {
   H1,
   H2,
@@ -11,7 +21,7 @@ export {
   H6,
   Text,
   Header,
-} from './App/components/typography'
-export { Checkbox } from './App/components/Checkbox'
-export { SearchInput } from './App/components/SearchInput'
-export { Switch } from './App/components/Switch'
+  HeaderProps,
+  TextProps,
+  TypographyProps,
+} from './App/components/Typography'

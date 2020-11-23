@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components/native'
-import { action } from '@storybook/addon-actions'
 import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
