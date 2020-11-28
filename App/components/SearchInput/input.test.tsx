@@ -1,5 +1,5 @@
 import React from 'react'
-import { themeRender } from '../../config/test-utils'
+import { themeRender, fireEvent } from '../../config/test-utils'
 import SearchInput from './input'
 import theme from '../../theme'
 

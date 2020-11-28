@@ -36,7 +36,7 @@ const Button = ({
     height={height}
     testID='sommelier-button'
   >
-    <Styled.ButtonTextContainer>
+    <Styled.ButtonTextContainer testID='sommelier-button-textContainer'>
       <Typography.Text color={color} size={fontSize}>
         <Styled.IconContainer height={iconHeight} width={iconWidth}>
           {icon}
