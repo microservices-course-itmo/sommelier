@@ -1,6 +1,6 @@
 import { TextInputProps } from 'react-native'
 import styled from 'styled-components/native'
-import theme from '../../theme/index'
+import { theme } from '../../theme'
 
 type Props = {
   size: keyof typeof theme.inputSearchSizes

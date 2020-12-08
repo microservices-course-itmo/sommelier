@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
 import { withKnobs, number, select } from '@storybook/addon-knobs'
 
-import Image from './image'
+import { Image } from './image'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import { SIZE } from '../../theme/boxSizes'
 import { COLOR_KEYS } from '../../theme/colors'

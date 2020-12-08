@@ -1,1 +1,1 @@
-export { default as InputPrice, InputPriceProps } from './input'
+export { InputPrice, InputPriceProps } from './input'

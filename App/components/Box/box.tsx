@@ -2,7 +2,7 @@ import React from 'react'
 import * as Styled from './box.styled'
 import { Props } from './box.types'
 
-const Box = ({
+export const Box = ({
   pX,
   pY,
   mX,
@@ -25,5 +25,3 @@ const Box = ({
     {children}
   </Styled.BoxContainer>
 )
-
-export default Box

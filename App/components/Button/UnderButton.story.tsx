@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { number, select } from '@storybook/addon-knobs'
-import { COLOR_KEYS } from '../../theme/colors/index'
+import { COLOR_KEYS } from '../../theme/colors'
 
 import UnderButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'

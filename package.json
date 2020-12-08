@@ -97,7 +97,7 @@
   },
   "name": "sommelier",
   "description": "Sommelier is a React-Native UI library made for WineUp.",
-  "version": "0.3.1",
+  "version": "0.3.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/microservices-course-itmo/sommelier.git"

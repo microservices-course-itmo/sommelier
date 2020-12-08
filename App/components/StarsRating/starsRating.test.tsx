@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import StarsRating from './starsRating'
+import { StarsRating } from './starsRating'
 
 describe('Stars rating component', () => {
   it('Component with only necessary props matches snapshot', () => {
