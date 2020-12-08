@@ -43,6 +43,7 @@ export const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
         isFocused={isFocused}
         isFilled={isInputEmpty}
         onPress={toggleFocus}
+        testID='sommelier-input-price-placeholder'
       >
         {placeholder}
       </Styled.StyledPlaceholderLabel>
@@ -54,6 +55,7 @@ export const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
         onChangeText={textInput}
         value={text}
         ref={inputRef}
+        testID='sommelier-input-price-label'
       />
       <Styled.StyledRubleIcon>
         <Ruble width='12px' height='21px' />

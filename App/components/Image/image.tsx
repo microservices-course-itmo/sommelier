@@ -16,6 +16,7 @@ export const Image = (props: ImageProps) => {
         source={{ uri: image }}
         width={width}
         height={height}
+        testID='sommelier-image'
       />
     </Box>
   )

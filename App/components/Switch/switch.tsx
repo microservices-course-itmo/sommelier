@@ -29,6 +29,7 @@ export const Switch = ({
       onPress={toggleSwitch}
       value={stateValue}
       disabled={disabled}
+      testID='sommelier-switch'
     >
       {(() => {
         switch (switchType) {

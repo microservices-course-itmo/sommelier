@@ -20,6 +20,7 @@ export const Box = ({
     borderColor={borderColor}
     borderRadius={borderRadius}
     backgroundColor={backgroundColor}
+    testID='sommelier-box'
   >
     {children}
   </Styled.BoxContainer>
