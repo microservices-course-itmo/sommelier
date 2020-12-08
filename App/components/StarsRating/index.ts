@@ -1,1 +1,1 @@
-export { default as StarsRating, StarsRatingProps } from './starsRating'
+export { StarsRating, StarsRatingProps } from './starsRating'

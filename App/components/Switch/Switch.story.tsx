@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
 import { withKnobs, boolean, select } from '@storybook/addon-knobs'
-import Switch from './switch'
+import { Switch } from './switch'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultSwitch = () => (

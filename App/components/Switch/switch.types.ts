@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import theme from '../../theme'
+import { theme } from '../../theme'
 
 export type SwitchProps = {
   switchType?: keyof typeof theme.switchTypes

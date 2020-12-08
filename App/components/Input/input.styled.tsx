@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components/native'
-import theme from '../../theme/index'
+import { theme } from '../../theme'
 
 type Props = {
   isFocused: boolean
@@ -46,5 +46,5 @@ export const StyledLabeledInput = styled.TextInput`
 export const StyledRubleIcon = styled.View`
   position: absolute;
   bottom: 2px;
-  right: 0px;
+  right: 0;
 `

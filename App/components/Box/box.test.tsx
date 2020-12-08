@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import Box from './box'
+import { Box } from './box'
 
 describe('Box component', () => {
   it('Component matches snapshot', () => {

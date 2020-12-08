@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 import { boolean, select, text, number } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import SearchInput from './input'
+import { SearchInput } from './input'
 import { INPUT_SIZE_KEYS } from '../../theme/inputSearchSizes'
 
 const StyledWrapper = styled.View`

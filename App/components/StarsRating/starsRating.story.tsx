@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native/dist'
 import { withKnobs, number } from '@storybook/addon-knobs'
-import StarsRating from './starsRating'
+import { StarsRating } from './starsRating'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultRating = () => (

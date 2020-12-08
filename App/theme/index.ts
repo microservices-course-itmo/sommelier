@@ -10,7 +10,7 @@ import {
   inputSearchFontSizes,
 } from './inputSearchSizes'
 
-const theme = {
+export const theme = {
   boxSizes: {
     ...boxSizes,
   },
@@ -39,5 +39,3 @@ const theme = {
     ...inputSearchFontSizes,
   },
 }
-
-export default theme

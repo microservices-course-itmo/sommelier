@@ -11,7 +11,10 @@ export type RadioButtonProps = {
   children?: ReactNode
 }
 
-const RadioButton = ({ checked = true, children = '' }: RadioButtonProps) => {
+export const RadioButton = ({
+  checked = true,
+  children = '',
+}: RadioButtonProps) => {
   const [pressed, setPressed] = useState(checked)
   return (
     <RadioButtonContainer onPress={() => setPressed(!pressed)}>
@@ -20,5 +23,3 @@ const RadioButton = ({ checked = true, children = '' }: RadioButtonProps) => {
     </RadioButtonContainer>
   )
 }
-
-export default RadioButton

@@ -1,6 +1,6 @@
 import React from 'react'
-import { themeRender, fireEvent } from '../test-utils'
-import RadioButton from './RadioButton'
+import { themeRender } from '../test-utils'
+import { RadioButton } from './RadioButton'
 import { Text } from '../Typography'
 
 describe('RadioButton component', () => {

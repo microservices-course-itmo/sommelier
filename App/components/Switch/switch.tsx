@@ -3,10 +3,10 @@ import FilledFavorite from '../../../assets/images/filledFavorite.svg'
 import UnfilledFavorite from '../../../assets/images/unfilledFavorite.svg'
 import CheckMark from '../../../assets/images/checkMark.svg'
 import * as Styled from './switch.styled'
-import theme from '../../theme'
+import { theme } from '../../theme'
 import { SwitchProps } from './switch.types'
 
-const Switch = ({
+export const Switch = ({
   switchType = 'default',
   value = false,
   onChange = (): void => {},
@@ -59,5 +59,3 @@ const Switch = ({
     </Styled.SwitchContainer>
   )
 }
-
-export default Switch

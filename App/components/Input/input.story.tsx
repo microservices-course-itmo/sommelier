@@ -3,7 +3,7 @@ import styled from 'styled-components/native'
 import { withKnobs, text } from '@storybook/addon-knobs'
 import { storiesOf } from '@storybook/react-native/dist'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
-import Input from './input'
+import { InputPrice as Input } from './input'
 
 const Container = styled.View`
   display: flex;

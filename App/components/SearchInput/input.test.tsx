@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import SearchInput from './input'
+import { SearchInput } from './input'
 
 describe('SearchInput component', () => {
   const mockFn = jest.fn((x) => x + 42)

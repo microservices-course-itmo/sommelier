@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react-native'
 import { boolean } from '@storybook/addon-knobs'
 
-import RadioButton from './RadioButton'
+import { RadioButton } from './RadioButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 
 const defaultRadioButton = () => (

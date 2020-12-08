@@ -1,1 +1,1 @@
-export { default as SearchInput, SearchInputProps } from './input'
+export { SearchInput, SearchInputProps } from './input'

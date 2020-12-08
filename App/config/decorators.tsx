@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
 import React from 'react'
 import styled from 'styled-components/native'
-import theme from '../theme'
+import { theme } from '../theme'
 
 const StyledBufferView = styled.View`
   flex: 1;

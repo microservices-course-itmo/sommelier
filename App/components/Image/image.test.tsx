@@ -1,7 +1,7 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import Image from './image'
-import theme from '../../theme'
+import { Image } from './image'
+import { theme } from '../../theme'
 
 describe('Image component', () => {
   it('Component matches snapshot', () => {

@@ -10,7 +10,7 @@ export type InputPriceProps = {
   value?: string
 }
 
-const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
+export const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
   const [isFocused, setIsFocused] = useState(false)
   const [text, setText] = useState(value)
 
@@ -61,5 +61,3 @@ const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
     </Styled.StyledContainer>
   )
 }
-
-export default InputPrice

@@ -4,7 +4,7 @@ import {
   TextInputChangeEventData,
   TouchableOpacity,
 } from 'react-native'
-import theme from '../../theme/index'
+import { theme } from '../../theme'
 import * as Styled from './input.styled'
 import Search from '../../../assets/images/search.svg'
 import Close from '../../../assets/images/close.svg'
@@ -21,7 +21,7 @@ export type SearchInputProps = {
   clearButtonMode?: boolean
 }
 
-const SearchInput = ({
+export const SearchInput = ({
   value,
   onChange,
   maxLength,
@@ -61,5 +61,3 @@ const SearchInput = ({
     </Styled.StyledView>
   )
 }
-
-export default SearchInput

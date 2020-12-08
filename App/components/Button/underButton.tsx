@@ -1,6 +1,6 @@
 import React from 'react'
 import * as Styled from './button.styled'
-import theme from '../../theme'
+import { theme } from '../../theme'
 import { COLOR_KEYS } from '../../theme/colors'
 
 type Props = {

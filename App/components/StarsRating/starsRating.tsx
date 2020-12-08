@@ -20,7 +20,7 @@ const preparedStars = (rating: number) => {
   return stars
 }
 
-const StarsRating = ({ score, rating }: StarsRatingProps) => (
+export const StarsRating = ({ score, rating }: StarsRatingProps) => (
   <Styled.Container>
     <Styled.RatingContainer>
       <Styled.ImageContainer>{preparedStars(rating)}</Styled.ImageContainer>
@@ -28,5 +28,3 @@ const StarsRating = ({ score, rating }: StarsRatingProps) => (
     </Styled.RatingContainer>
   </Styled.Container>
 )
-
-export default StarsRating
