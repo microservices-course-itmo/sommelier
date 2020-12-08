@@ -6,7 +6,7 @@ import * as Styled from './button.styled'
 import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
 import { COLOR_KEYS } from '../../theme/colors'
 
-import Button from './button'
+import { Button } from './button'
 import UnderscoreButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import ButtonIcon from '../../../assets/images/ButtonIcon.svg'

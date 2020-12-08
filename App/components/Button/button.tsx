@@ -45,5 +45,3 @@ export const Button = ({
     </Styled.ButtonTextContainer>
   </Styled.ButtonContainer>
 )
-
-export default Button

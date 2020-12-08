@@ -1,7 +1,6 @@
 import React from 'react'
 import * as Styled from './image.styled'
-import { Box } from '../Box'
-import { BoxProps } from '../Box'
+import { Box, BoxProps } from '../Box'
 
 export type ImageProps = {
   image: string
