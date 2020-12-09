@@ -1,7 +1,7 @@
 import React from 'react'
 import { themeRender, fireEvent } from '../../config/test-utils'
-import SearchInput from './input'
-import theme from '../../theme'
+import { SearchInput } from './input'
+import { theme } from '../../theme'
 
 describe('SearchInput component', () => {
   const onChangeMock = jest.fn()

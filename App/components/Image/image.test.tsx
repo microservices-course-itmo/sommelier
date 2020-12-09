@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import Image from './image'
+import { Image } from './image'
 
 describe('Image component', () => {
   const imageMock = 'image.jpg'

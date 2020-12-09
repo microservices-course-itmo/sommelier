@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import InputPrice from './input'
+import { InputPrice } from './input'
 
 describe('Input Price component', () => {
   it('Component with only necessary props matches snapshot', () => {

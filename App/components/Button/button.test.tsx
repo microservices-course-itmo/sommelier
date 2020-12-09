@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender, fireEvent } from '../../config/test-utils'
-import Button from './button'
+import { Button } from './button'
 import icon from '../../../assets/images/ButtonIcon.svg'
 
 describe('Button component', () => {

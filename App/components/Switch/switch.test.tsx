@@ -1,6 +1,6 @@
 import React from 'react'
 import { themeRender, fireEvent } from '../../config/test-utils'
-import Switch from './switch'
+import { Switch } from './switch'
 
 describe('Switch component', () => {
   const onChangeMock = jest.fn()
