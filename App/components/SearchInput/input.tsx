@@ -10,7 +10,7 @@ import Search from '../../../assets/images/search.svg'
 import Close from '../../../assets/images/close.svg'
 import { INPUT_SIZE_KEYS } from '../../theme/inputSearchSizes'
 
-type Props = {
+export type SearchInputProps = {
   defaultValue?: string
   placeholder?: string
   editable?: boolean
@@ -22,15 +22,15 @@ type Props = {
 }
 
 const SearchInput = ({
-  defaultValue,
-  placeholder,
-  editable = true,
-  size = INPUT_SIZE_KEYS.md,
   value,
   onChange,
-  clearButtonMode,
   maxLength,
-}: Props) => {
+  placeholder,
+  defaultValue,
+  clearButtonMode,
+  editable = true,
+  size = INPUT_SIZE_KEYS.md,
+}: SearchInputProps) => {
   const [text, setText] = useState(value)
   return (
     <Styled.StyledView editable={editable}>

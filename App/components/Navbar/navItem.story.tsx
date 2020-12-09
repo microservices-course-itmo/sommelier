@@ -17,5 +17,4 @@ const defaultNavItem = () => (
 storiesOf('NavItem', module)
   .addDecorator(BufferView)
   .addDecorator(ThemeDecorator)
-  .addDecorator(withKnobs)
   .add('Default item', defaultNavItem)
