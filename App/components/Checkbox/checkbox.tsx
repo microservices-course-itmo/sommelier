@@ -12,7 +12,7 @@ export type CheckboxProps = {
   children: ReactNode
 }
 
-export const Checkbox = ({ checked, children }: Props) => {
+export const Checkbox = ({ checked, children }: CheckboxProps) => {
   const [pressed, setPressed] = useState(checked)
   return (
     <CheckboxContainer>
