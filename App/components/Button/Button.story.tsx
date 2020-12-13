@@ -3,10 +3,10 @@ import { storiesOf } from '@storybook/react-native'
 import { action } from '@storybook/addon-actions'
 import { number, text, select } from '@storybook/addon-knobs'
 import * as Styled from './button.styled'
-import { FONT_SIZE_KEYS } from '../../theme/fontSizes/index'
-import { COLOR_KEYS } from '../../theme/colors/index'
+import { FONT_SIZE_KEYS } from '../../theme/fontSizes'
+import { COLOR_KEYS } from '../../theme/colors'
 
-import Button from './button'
+import { Button } from './button'
 import UnderscoreButton from './underButton'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import ButtonIcon from '../../../assets/images/ButtonIcon.svg'
@@ -22,7 +22,7 @@ const defaultButton = () => (
       fontSize={select('font-size', FONT_SIZE_KEYS, FONT_SIZE_KEYS.hg)}
       color={select('text color', COLOR_KEYS, COLOR_KEYS.white)}
       iconHeight={number('icon height', 16)}
-      iconWeight={number('icon width', 16)}
+      iconWidth={number('icon width', 16)}
       icon={<ButtonIcon />}
     />
     <UnderscoreButton

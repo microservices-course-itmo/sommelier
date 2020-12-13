@@ -1,6 +1,79 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Stars rating component Component renders correctly 1`] = `
+exports[`Stars rating component Component all props matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "flexBasis": 0,
+        "flexGrow": 1,
+        "flexShrink": 1,
+        "justifyContent": "center",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          },
+        ]
+      }
+    >
+      <SvgMock
+        height="25"
+        width="25"
+      />
+      <SvgMock
+        height="25"
+        width="25"
+      />
+      <SvgMock
+        height="25"
+        width="25"
+      />
+      <SvgMock
+        height="25"
+        width="25"
+      />
+      <SvgMock
+        height="25"
+        width="25"
+      />
+    </View>
+    <Text
+      style={
+        Array [
+          Object {
+            "alignSelf": "center",
+            "color": "#000",
+            "fontSize": 20,
+            "fontWeight": "500",
+          },
+        ]
+      }
+    >
+      123
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Stars rating component Component with only necessary props matches snapshot 1`] = `
 <View
   style={
     Array [

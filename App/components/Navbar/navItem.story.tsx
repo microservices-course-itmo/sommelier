@@ -1,8 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react-native'
-import { withKnobs, text } from '@storybook/addon-knobs'
+import { text } from '@storybook/addon-knobs'
 import { action } from '@storybook/addon-actions'
-import Item from './navItem'
+import { Item } from './navbar'
 import { BufferView, ThemeDecorator } from '../../config/decorators'
 import MenuItem3 from '../../../assets/images/MenuItem3.svg'
 

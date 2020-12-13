@@ -1,50 +1,36 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import Image from './image'
-import theme from '../../theme'
+import { Image } from './image'
 
 describe('Image component', () => {
-  it('Component matches snapshot', () => {
-    const tree = themeRender(
-      <Image image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg' />
-    ).toJSON()
-    expect(tree).toMatchSnapshot()
+  const imageMock = 'image.jpg'
+  it('Component with only necessary props matches snapshot', () => {
+    const component = themeRender(<Image image={imageMock} />)
+    expect(component.toJSON()).toMatchSnapshot()
+  })
+  it('Component with all props matches snapshot', () => {
+    const component = themeRender(
+      <Image image={imageMock} width={900} height={600} />
+    )
+    expect(component.toJSON()).toMatchSnapshot()
+  })
+  it('Uri prop assigns correctly', () => {
+    const component = themeRender(<Image image={imageMock} />)
+    expect(component.getByTestId('sommelier-image').props.source.uri).toBe(
+      imageMock
+    )
   })
   it('Width prop assigns correctly', () => {
-    const elem = themeRender(
-      <Image
-        image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
-        width={50}
-      />
-    )
-    expect(elem.toJSON().children[0].props.width).toBe(50)
+    const component = themeRender(<Image image={imageMock} width={50} />)
+    expect(component.getByTestId('sommelier-image').props.width).toBe(50)
   })
   it('Height prop assigns correctly', () => {
-    const elem = themeRender(
+    const component = themeRender(
       <Image
         image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
         height={50}
       />
     )
-    expect(elem.toJSON().children[0].props.height).toBe(50)
-  })
-  it('Border prop assigns correctly', () => {
-    const elem = themeRender(
-      <Image
-        image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
-        borderColor='black'
-        borderRadius={2}
-      />
-    )
-    expect(elem.toJSON().children[0].props.border).toBe('solid')
-  })
-  it('Border radius prop assigns correctly', () => {
-    const elem = themeRender(
-      <Image
-        image='https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg'
-        borderRadius={5}
-      />
-    )
-    expect(elem.toJSON().props.borderRadius).toBe(5)
+    expect(component.getByTestId('sommelier-image').props.height).toBe(50)
   })
 })

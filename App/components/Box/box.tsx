@@ -2,7 +2,7 @@ import React from 'react'
 import * as Styled from './box.styled'
 import { Props } from './box.types'
 
-const Box = ({
+export const Box = ({
   pX,
   pY,
   mX,
@@ -20,9 +20,8 @@ const Box = ({
     borderColor={borderColor}
     borderRadius={borderRadius}
     backgroundColor={backgroundColor}
+    testID='sommelier-box'
   >
     {children}
   </Styled.BoxContainer>
 )
-
-export default Box

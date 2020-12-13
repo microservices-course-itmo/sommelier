@@ -1,6 +1,6 @@
 import React from 'react'
-import { themeRender, fireEvent } from '../test-utils'
-import RadioButton from './RadioButton'
+import { themeRender, fireEvent } from '../../config/test-utils'
+import { RadioButton } from './RadioButton'
 import { Text } from '../Typography'
 
 describe('RadioButton component', () => {
@@ -11,7 +11,7 @@ describe('RadioButton component', () => {
   })
   it('Component with all props matches snapshot', () => {
     const tree = themeRender(
-      <RadioButton checked={false} onPress={mockFn}>
+      <RadioButton checked={false}>
         <Text>abc</Text>
       </RadioButton>
     ).toJSON()
@@ -19,9 +19,9 @@ describe('RadioButton component', () => {
   })
   it('Checked prop assigns correctly', () => {
     const elem = themeRender(<RadioButton checked={false} />)
-    elem.debug()
     expect(elem.toJSON().children[1].props.checked).toBeFalsy()
   })
+  // TODO: New functionality
   // it('onPress function should be called when pressing', () => {
   //   const elem = themeRender(<RadioButton onPress={mockFn} />)
   //   fireEvent.press()

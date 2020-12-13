@@ -1,18 +1,15 @@
 import React from 'react'
 import { themeRender } from '../../config/test-utils'
-import StarsRating from './starsRating'
+import { StarsRating } from './starsRating'
 
 describe('Stars rating component', () => {
-  it('Component renders correctly', () => {
-    const tree = themeRender(<StarsRating rating={3.5} />).toJSON()
-    expect(tree).toMatchSnapshot()
+  it('Component with only necessary props matches snapshot', () => {
+    const component = themeRender(<StarsRating rating={3.5} />)
+    expect(component.toJSON()).toMatchSnapshot()
   })
-  // it('Rating prop assigns correctly', () => {
-  //   const elem = themeRender(<StarsRating rating={10} />)
-  //   expect(elem.toJSON().props.rating).toBe(5)
-  // })
-  // it('Score prop assigns correctly', () => {
-  //   const elem = themeRender(<StarsRating rating={3} score={10934} />)
-  //   expect(elem.toJSON().props.score).toBe(10934)
-  // })
+  it('Component all props matches snapshot', () => {
+    const component = themeRender(<StarsRating rating={4} score={123} />)
+    expect(component.toJSON()).toMatchSnapshot()
+  })
+  // TODO: Rating & Score testing
 })

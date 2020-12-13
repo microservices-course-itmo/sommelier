@@ -10,7 +10,7 @@ export type InputPriceProps = {
   value?: string
 }
 
-const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
+export const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
   const [isFocused, setIsFocused] = useState(false)
   const [text, setText] = useState(value)
 
@@ -43,6 +43,7 @@ const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
         isFocused={isFocused}
         isFilled={isInputEmpty}
         onPress={toggleFocus}
+        testID='sommelier-input-price-placeholder'
       >
         {placeholder}
       </Styled.StyledPlaceholderLabel>
@@ -54,6 +55,7 @@ const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
         onChangeText={textInput}
         value={text}
         ref={inputRef}
+        testID='sommelier-input-price-label'
       />
       <Styled.StyledRubleIcon>
         <Ruble width='12px' height='21px' />
@@ -61,5 +63,3 @@ const InputPrice = ({ placeholder, value = '' }: InputPriceProps) => {
     </Styled.StyledContainer>
   )
 }
-
-export default InputPrice

@@ -6,12 +6,15 @@ import {
   RadioButtonViewUnfilled,
 } from './RadioButton.styled'
 
-type Props = {
+export type RadioButtonProps = {
   checked?: boolean
   children?: ReactNode
 }
 
-const RadioButton = ({ checked = true, children = '' }: Props) => {
+export const RadioButton = ({
+  checked = true,
+  children = '',
+}: RadioButtonProps) => {
   const [pressed, setPressed] = useState(checked)
   return (
     <RadioButtonContainer onPress={() => setPressed(!pressed)}>
@@ -20,5 +23,3 @@ const RadioButton = ({ checked = true, children = '' }: Props) => {
     </RadioButtonContainer>
   )
 }
-
-export default RadioButton

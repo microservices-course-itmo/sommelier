@@ -9,7 +9,7 @@ export type NavbarProps = {
 }
 
 export const Navbar = ({ children }: NavbarProps) => (
-  <Styled.NavbarContainer>
+  <Styled.NavbarContainer testID='sommelier-navbar'>
     <Styled.ItemsContainer>{children}</Styled.ItemsContainer>
   </Styled.NavbarContainer>
 )
@@ -17,11 +17,12 @@ export const Navbar = ({ children }: NavbarProps) => (
 export type NavbarItemProps = {
   onPress: () => void
   text?: string
-  icon: ReactNode
+  icon?: ReactNode
+  children?: ReactNode
 }
 
 export const Item = ({ text, onPress, icon }: NavbarItemProps) => (
-  <Styled.ItemContainer onPress={onPress}>
+  <Styled.ItemContainer onPress={onPress} testID='sommelier-nav-item'>
     <Styled.NavItemStyle>{icon}</Styled.NavItemStyle>
     {!!text && (
       <Label.Text

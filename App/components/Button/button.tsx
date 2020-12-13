@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react'
 import * as Styled from './button.styled'
 import * as Typography from '../Typography'
-import theme from '../../theme'
-import { COLOR_KEYS } from '../../theme/colors/index'
+import { theme } from '../../theme'
+import { COLOR_KEYS } from '../../theme/colors'
 
 export type ButtonProps = {
   onPress: () => void
@@ -14,10 +14,10 @@ export type ButtonProps = {
   color?: keyof typeof theme.colors
   icon: ReactNode
   iconHeight?: number
-  iconWeight?: number
+  iconWidth?: number
 }
 
-const Button = ({
+export const Button = ({
   onPress = () => {},
   text,
   width,
@@ -27,17 +27,18 @@ const Button = ({
   color = COLOR_KEYS.white,
   icon,
   iconHeight,
-  iconWeight,
-}: Props) => (
+  iconWidth,
+}: ButtonProps) => (
   <Styled.ButtonContainer
     onPress={onPress}
     width={width}
     borderRadius={borderRadius}
     height={height}
+    testID='sommelier-button'
   >
-    <Styled.ButtonTextContainer>
+    <Styled.ButtonTextContainer testID='sommelier-button-textContainer'>
       <Typography.Text color={color} size={fontSize}>
-        <Styled.IconContainer height={iconHeight} width={iconWeight}>
+        <Styled.IconContainer height={iconHeight} width={iconWidth}>
           {icon}
         </Styled.IconContainer>
         {text}
@@ -45,5 +46,3 @@ const Button = ({
     </Styled.ButtonTextContainer>
   </Styled.ButtonContainer>
 )
-
-export default Button

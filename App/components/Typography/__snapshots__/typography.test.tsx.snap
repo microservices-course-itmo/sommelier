@@ -143,6 +143,7 @@ exports[`Typography component Component matches snapshot Text renders correctly 
       },
     ]
   }
+  testID="sommelier-typography"
 >
   Abc 123
 </Text>

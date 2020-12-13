@@ -1,8 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image component Component matches snapshot 1`] = `
+exports[`Image component Component with all props matches snapshot 1`] = `
 <View
-  borderRadius={NaN}
   style={
     Array [
       Object {
@@ -19,22 +18,64 @@ exports[`Image component Component matches snapshot 1`] = `
       },
     ]
   }
+  testID="sommelier-box"
 >
   <Image
+    height={600}
     source={
       Object {
-        "uri": "https://i.pinimg.com/originals/53/54/81/535481ed597409956a8e1288987a4ae3.jpg",
+        "uri": "image.jpg",
       }
     }
     style={
       Array [
         Object {
-          "borderRadius": 0,
+          "height": 600,
+          "width": 900,
+        },
+      ]
+    }
+    testID="sommelier-image"
+    width={900}
+  />
+</View>
+`;
+
+exports[`Image component Component with only necessary props matches snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#000",
+        "borderColor": "#000",
+        "marginBottom": 0,
+        "marginLeft": 0,
+        "marginRight": 0,
+        "marginTop": 0,
+        "paddingBottom": 0,
+        "paddingLeft": 0,
+        "paddingRight": 0,
+        "paddingTop": 0,
+      },
+    ]
+  }
+  testID="sommelier-box"
+>
+  <Image
+    source={
+      Object {
+        "uri": "image.jpg",
+      }
+    }
+    style={
+      Array [
+        Object {
           "height": 0,
           "width": 0,
         },
       ]
     }
+    testID="sommelier-image"
   />
 </View>
 `;
