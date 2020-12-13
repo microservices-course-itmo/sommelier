@@ -7,12 +7,12 @@ import {
   CheckedCB,
 } from './checkbox.styled'
 
-type Props = {
+export type CheckboxProps = {
   checked: boolean
   children: ReactNode
 }
 
-const Checkbox = ({ checked, children }: Props) => {
+export const Checkbox = ({ checked, children }: Props) => {
   const [pressed, setPressed] = useState(checked)
   return (
     <CheckboxContainer>
@@ -27,5 +27,3 @@ const Checkbox = ({ checked, children }: Props) => {
     </CheckboxContainer>
   )
 }
-
-export default Checkbox

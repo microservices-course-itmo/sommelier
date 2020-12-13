@@ -12,6 +12,6 @@ export {
   Text,
   Header,
 } from './App/components/typography'
-export { Checkbox } from './App/components/Checkbox'
+export { Checkbox, CheckboxProps } from './App/components/Checkbox'
 export { SearchInput } from './App/components/SearchInput'
 export { Switch } from './App/components/Switch'
