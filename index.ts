@@ -24,4 +24,7 @@ export {
   HeaderProps,
   TextProps,
   TypographyProps,
-} from './App/components/Typography'
+} from './App/components/typography'
+export { Checkbox, CheckboxProps } from './App/components/Checkbox'
+export { SearchInput } from './App/components/SearchInput'
+export { Switch } from './App/components/Switch'
